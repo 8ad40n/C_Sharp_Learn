@@ -1,0 +1,17 @@
+D:\AIUB\CODING\C#\hudai\hudai\bin\Debug\net6.0-windows\hudai.exe
+D:\AIUB\CODING\C#\hudai\hudai\bin\Debug\net6.0-windows\hudai.deps.json
+D:\AIUB\CODING\C#\hudai\hudai\bin\Debug\net6.0-windows\hudai.runtimeconfig.json
+D:\AIUB\CODING\C#\hudai\hudai\bin\Debug\net6.0-windows\hudai.dll
+D:\AIUB\CODING\C#\hudai\hudai\bin\Debug\net6.0-windows\hudai.pdb
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.Form1.resources
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.csproj.GenerateResource.cache
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.GeneratedMSBuildEditorConfig.editorconfig
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.AssemblyInfoInputs.cache
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.AssemblyInfo.cs
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.dll
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\refint\hudai.dll
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.pdb
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\hudai.genruntimeconfig.cache
+D:\AIUB\CODING\C#\hudai\hudai\obj\Debug\net6.0-windows\ref\hudai.dll

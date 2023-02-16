@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C#\Task2\Task2\bin\Debug\Task2.exe.config
+D:\AIUB\CODING\C#\Task2\Task2\bin\Debug\Task2.exe
+D:\AIUB\CODING\C#\Task2\Task2\bin\Debug\Task2.pdb
+D:\AIUB\CODING\C#\Task2\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C#\Task2\Task2\obj\Debug\Task2.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C#\Task2\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C#\Task2\Task2\obj\Debug\Task2.exe
+D:\AIUB\CODING\C#\Task2\Task2\obj\Debug\Task2.pdb

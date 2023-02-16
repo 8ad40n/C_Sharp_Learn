@@ -1,0 +1,15 @@
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\bin\Debug\ConsoleAppStruct.exe.config
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\bin\Debug\ConsoleAppStruct.exe
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\bin\Debug\ConsoleAppStruct.pdb
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.csprojAssemblyReference.cache
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.csproj.CoreCompileInputs.cache
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.exe
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.pdb
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\bin\Debug\ConsoleAppStruct.exe.config
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\bin\Debug\ConsoleAppStruct.exe
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\bin\Debug\ConsoleAppStruct.pdb
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.exe
+D:\AIUB\CODING\C#\ConsoleAppStruct\ConsoleAppStruct\obj\Debug\ConsoleAppStruct.pdb

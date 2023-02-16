@@ -1,0 +1,15 @@
+D:\AIUB\CODING\C#\Struct\Struct\bin\Debug\net6.0\Struct.exe
+D:\AIUB\CODING\C#\Struct\Struct\bin\Debug\net6.0\Struct.deps.json
+D:\AIUB\CODING\C#\Struct\Struct\bin\Debug\net6.0\Struct.runtimeconfig.json
+D:\AIUB\CODING\C#\Struct\Struct\bin\Debug\net6.0\Struct.dll
+D:\AIUB\CODING\C#\Struct\Struct\bin\Debug\net6.0\Struct.pdb
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.GeneratedMSBuildEditorConfig.editorconfig
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.AssemblyInfoInputs.cache
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.AssemblyInfo.cs
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.dll
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\refint\Struct.dll
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.pdb
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\Struct.genruntimeconfig.cache
+D:\AIUB\CODING\C#\Struct\Struct\obj\Debug\net6.0\ref\Struct.dll
