@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\bin\Debug\Encap1.exe.config
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\bin\Debug\Encap1.exe
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\bin\Debug\Encap1.pdb
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\obj\Debug\Encap1.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\obj\Debug\Encap1.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\obj\Debug\Encap1.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\obj\Debug\Encap1.exe
+D:\AIUB\CODING\C Sharp\Encap1\Encap1\obj\Debug\Encap1.pdb

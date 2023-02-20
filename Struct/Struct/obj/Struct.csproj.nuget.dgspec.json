@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AIUB\\CODING\\C#\\Struct\\Struct\\Struct.csproj": {}
+    "D:\\AIUB\\CODING\\C Sharp\\Struct\\Struct\\Struct.csproj": {}
   },
   "projects": {
-    "D:\\AIUB\\CODING\\C#\\Struct\\Struct\\Struct.csproj": {
+    "D:\\AIUB\\CODING\\C Sharp\\Struct\\Struct\\Struct.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AIUB\\CODING\\C#\\Struct\\Struct\\Struct.csproj",
+        "projectUniqueName": "D:\\AIUB\\CODING\\C Sharp\\Struct\\Struct\\Struct.csproj",
         "projectName": "Struct",
-        "projectPath": "D:\\AIUB\\CODING\\C#\\Struct\\Struct\\Struct.csproj",
+        "projectPath": "D:\\AIUB\\CODING\\C Sharp\\Struct\\Struct\\Struct.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\AIUB\\CODING\\C#\\Struct\\Struct\\obj\\",
+        "outputPath": "D:\\AIUB\\CODING\\C Sharp\\Struct\\Struct\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
