@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\bin\Debug\ConsoleAppAMPro.exe.config
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\bin\Debug\ConsoleAppAMPro.exe
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\bin\Debug\ConsoleAppAMPro.pdb
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\obj\Debug\ConsoleAppAMPro.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\obj\Debug\ConsoleAppAMPro.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\obj\Debug\ConsoleAppAMPro.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\obj\Debug\ConsoleAppAMPro.exe
+D:\AIUB\CODING\C Sharp\ConsoleAppAMSln\ConsoleAppAMPro\obj\Debug\ConsoleAppAMPro.pdb
