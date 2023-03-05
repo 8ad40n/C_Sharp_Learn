@@ -18,7 +18,7 @@ namespace MidPractice
 
 
             DateFormat ob1= new DateFormat("13","Septermber","2001");  //struct
-            Basics ob2= new Basics(ob1 , "Badhon Nath Joy" , "21-45390-3" , 3.95);
+            Basics ob2= new Basics(ob1 , "Badhon Nath Joy" , "21-45390-3" , -3.95);
             ob2.PrintBasics();
 
 
@@ -31,6 +31,13 @@ namespace MidPractice
             Console.WriteLine("CLASS: Enumeration:");
             Enumeration e = new Enumeration();
             e.PrintEnum();
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Copy Constructor");
+            Enumeration e1 = e;
+            e1.PrintEnum();
 
 
             Console.WriteLine();
@@ -55,6 +62,9 @@ namespace MidPractice
             Console.WriteLine(yInt);      // Outputs 9
             Console.WriteLine(yDouble);   // Outputs 9
 
+
+
+            
 
 
 
