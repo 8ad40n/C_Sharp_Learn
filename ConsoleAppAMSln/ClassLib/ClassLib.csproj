@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A3CFA638-CCFB-4992-A104-57C32B4AAFD2}</ProjectGuid>
+    <ProjectGuid>{415B5E71-CA31-45E8-973C-3A2E0C10B720}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClassLib</RootNamespace>
@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConsoleAppAMPro\ConsoleAppAMPro.csproj">
-      <Project>{e13a4fde-1723-4171-8df1-0de4f8ded165}</Project>
+      <Project>{6c2d2240-1a4f-4579-b2ec-46cb08282b2f}</Project>
       <Name>ConsoleAppAMPro</Name>
     </ProjectReference>
   </ItemGroup>

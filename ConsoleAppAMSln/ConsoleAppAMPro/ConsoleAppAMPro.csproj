@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E13A4FDE-1723-4171-8DF1-0DE4F8DED165}</ProjectGuid>
+    <ProjectGuid>{6C2D2240-1A4F-4579-B2EC-46CB08282B2F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleAppAMPro</RootNamespace>
     <AssemblyName>ConsoleAppAMPro</AssemblyName>
@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="School.cs" />
-    <Compile Include="Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="Sub\College.cs" />
   </ItemGroup>
   <ItemGroup>

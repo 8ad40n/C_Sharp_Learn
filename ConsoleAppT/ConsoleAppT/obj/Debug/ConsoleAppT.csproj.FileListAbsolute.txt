@@ -1,0 +1,7 @@
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\bin\Debug\ConsoleAppT.exe.config
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\bin\Debug\ConsoleAppT.exe
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\bin\Debug\ConsoleAppT.pdb
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\obj\Debug\ConsoleAppT.csprojAssemblyReference.cache
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\obj\Debug\ConsoleAppT.csproj.CoreCompileInputs.cache
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\obj\Debug\ConsoleAppT.exe
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppT\ConsoleAppT\obj\Debug\ConsoleAppT.pdb

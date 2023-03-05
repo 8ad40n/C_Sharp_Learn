@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppAMPro.Sub
 {
-    class College:Student
+    class College : Student
     {
         public int m;
         private int n;
         protected int o;
         internal int p;
         protected internal int q;
+
+        void M2()
+        {
+            this.
+        }
     }
 }

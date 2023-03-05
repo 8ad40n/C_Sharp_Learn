@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\obj\Debug\MidPractice.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\obj\Debug\MidPractice.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\obj\Debug\MidPractice.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\bin\Debug\MidPractice.exe.config
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\bin\Debug\MidPractice.exe
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\bin\Debug\MidPractice.pdb
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\obj\Debug\MidPractice.exe
+D:\AIUB\CODING\C Sharp\MidPractice\MidPractice\obj\Debug\MidPractice.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppAMPro
 {
-    class School:Student
+    class School : Student
     {
         public int m;
         private int n;
@@ -14,8 +14,9 @@ namespace ConsoleAppAMPro
         internal int p;
         protected internal int q;
 
-        void M2() {
-        
+        void M2()
+        { 
+            
         }
     }
 }
