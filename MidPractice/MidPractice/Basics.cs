@@ -19,7 +19,13 @@ namespace MidPractice
             this.year = year;
         }
 
-        public void PrintDate
+        public void PrintDateFormat()
+        {
+            Console.WriteLine("\tDay: {0}", day);
+            Console.WriteLine("\tMonth: {0}", month);
+            Console.WriteLine("\tYear: {0}", year);
+
+        }
     }
 
     internal class Basics
@@ -27,6 +33,80 @@ namespace MidPractice
         //constant:
         public const int a = 10;
         //for accessing constant we have to use class name
+
+
+        private DateFormat dateF;
+        private string name;
+        private string id;
+        private double cgpa;
+
+        //default constructor:
+        public Basics()
+        {
+
+        }
+
+
+        //properties:
+
+        public DateFormat DateF { 
+        
+            get { return dateF; }
+            set { this.dateF = value; }
+        }
+
+        public string Name
+        {
+
+            get { return name; }
+            set { this.name = value; }
+        }
+
+        public string Id
+        {
+
+            get { return id; }
+            set { this.id = value; }
+        }
+
+        public double Cgpa
+        {
+
+            get { return cgpa; }
+            set { 
+                  if(value>= 0)
+                  {
+                    this.cgpa = value;
+                  }
+                  else
+                  {
+                    this.cgpa = -1;
+                  }
+
+                }
+        }
+
+
+        //parameterized constructor:
+        public Basics(DateFormat dateF, string name, string id, double cgpa)
+        {
+            this.DateF= dateF;
+            this.Name= name;
+            this.Id= id;
+            this.Cgpa= cgpa;
+
+        }
+
+        public void PrintBasics()
+        {
+            Console.WriteLine("DATE:");
+            this.DateF.PrintDateFormat();
+
+            Console.WriteLine("Name: {0}", this.Name);
+            Console.WriteLine("ID: {0}", this.Id);
+            Console.WriteLine("Cgpa: {0}", this.Cgpa);
+        }
+
 
     }
 }
