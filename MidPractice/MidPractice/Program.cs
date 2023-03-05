@@ -11,7 +11,7 @@ namespace MidPractice
         static void Main(string[] args)
         {
 
-            //CLASS: Basics
+            //CLASS: Basics  //
             Console.WriteLine("CLASS: Basics:");
             //constant:
             Console.WriteLine("Value of constant: {0}",Basics.a);
@@ -22,12 +22,19 @@ namespace MidPractice
             ob2.PrintBasics();
 
 
+            Console.WriteLine();
+            Console.WriteLine();
+
+            //readonly:
+            Basics ob = new Basics();
+            Console.WriteLine("Readonly: {0}",ob2.readOnly);
+
 
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
-            //CLASS: Enumeration
+            //CLASS: Enumeration  //
             Console.WriteLine("CLASS: Enumeration:");
             Enumeration e = new Enumeration();
             e.PrintEnum();
@@ -35,7 +42,9 @@ namespace MidPractice
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("Copy Constructor");
+
+            //COPY CONSTRUCTOR:  //
+            Console.WriteLine("Copy Constructor:");
             Enumeration e1 = e;
             e1.PrintEnum();
 
@@ -43,7 +52,8 @@ namespace MidPractice
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            //TYPE CASTING:
+
+            //TYPE CASTING:  //
 
             //Explicit Casting (manually) - converting a larger type to a smaller size type:
             //information might be lost:

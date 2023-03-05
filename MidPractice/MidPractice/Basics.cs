@@ -35,6 +35,9 @@ namespace MidPractice
         //for accessing constant we have to use class name
 
 
+        //readonly:  // runtime constant
+        public readonly int readOnly;  // =20;   we can initialize value with declaration or in constructor
+
         private DateFormat dateF;
         private string name;
         private string id;
@@ -43,6 +46,7 @@ namespace MidPractice
         //default constructor:
         public Basics()
         {
+            readOnly= 0;
 
         }
 
