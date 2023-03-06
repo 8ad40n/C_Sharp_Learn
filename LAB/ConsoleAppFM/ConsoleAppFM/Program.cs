@@ -25,25 +25,25 @@ namespace ConsoleAppFM
             //c.Addition("3", 5);
             //c.Addition(4, "3", 6);
             //c.Addition();
-            //int[] a1 = new int[5] { 3, 5, 8, 2, 7 };
-            //int[] a2 = new int[7] { 9, 4, 3, 6, 9, 5, 1 };
+            int[] a1 = new int[5] { 3, 5, 8, 2, 7 };
+            int[] a2 = new int[7] { 9, 4, 3, 6, 9, 5, 1 };
             //c.Addition(a1);
             //c.Addition(a2);
 
-            //Sample s = new Sample();
-            //s.Summation(3, 4, 7);
-            //s.Summation(1, 9);
-            //s.Summation(3, 5, 8, 4, 8, 1, 3, 2);
-            //s.Summation();
-            //s.Summation(5, 3, 8, 2);
-            //s.Summation(a1);
+            Sample s = new Sample();
+            s.Summation(3, 4, 7);
+            s.Summation(1, 9);
+            s.Summation(3, 5, 8, 4, 8, 1, 3, 2);
+            s.Summation();
+            s.Summation(5, 3, 8, 2);
+            s.Summation(a1);
 
-            //int p = 10, q = 20, r;
-            //s.Swap(ref p, ref q);
-            //Console.WriteLine("p:{0},q:{1}", p, q);
-            //s.M1(out r);
-            //s.M3(7);
-            //s.M4(y:5, z:6, x:7);
+            int p = 10, q = 20, r;
+            s.Swap(ref p, ref q);
+            Console.WriteLine("p:{0},q:{1}", p, q);
+            s.M1(out r);
+            s.M3(7);
+            s.M4(y:5, z:6, x:7);
 
             //byte a = 9;
             //int b = a;
