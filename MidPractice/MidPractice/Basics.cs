@@ -43,6 +43,8 @@ namespace MidPractice
         private string id;
         private double cgpa;
 
+        
+
         //default constructor:
         public Basics()
         {
@@ -98,7 +100,7 @@ namespace MidPractice
             this.Name= name;
             this.Id= id;
             this.Cgpa= cgpa;
-
+            
         }
 
         public void PrintBasics()

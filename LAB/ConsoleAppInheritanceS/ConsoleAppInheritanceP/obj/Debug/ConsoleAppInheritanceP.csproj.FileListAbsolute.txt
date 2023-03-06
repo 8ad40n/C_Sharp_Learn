@@ -1,0 +1,15 @@
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.exe.config
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.exe
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.pdb
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csprojAssemblyReference.cache
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.CoreCompileInputs.cache
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.exe
+C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.pdb
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.exe.config
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.exe
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.pdb
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.exe
+D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.pdb

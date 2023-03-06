@@ -73,11 +73,73 @@ namespace MidPractice
             Console.WriteLine(yDouble);   // Outputs 9
 
 
+            //VAR:  //
 
-            
+            //var can be declared only as local variable; (declare + initialize)
+            //it specify type from first element's type
+            //var a = 10;
 
 
 
+            Console.WriteLine();
+            Console.WriteLine("Nullable Type:");
+            //NULLABLE TYPE:   //
+            Nullable<int> p = null;
+            //or,
+            //int? q = null;
+
+            if (p.HasValue)
+            {
+                Console.WriteLine("Y");
+            }
+            else
+            {
+                Console.WriteLine("N");
+            }
+            int r = p ?? 0; //assigning 0 when the value of p is null
+
+            Console.WriteLine(r);
+
+
+          
+            Console.WriteLine();
+            Console.WriteLine();
+
+            //INHERITANCE: //
+            Console.WriteLine("INHERITANCE:");
+
+            Parent p1=new Parent();
+            Child1 c1= new Child1();
+
+            Child1 c2 = new Child1(5);
+            Child1 c3 = new Child1("JOY");
+
+            c1.MethodA();
+            c1.MethodB();
+
+            p1.MethodA();
+            p1.MethodB();
+
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            //OBJECT:
+
+            Console.WriteLine("OBJECT:");
+
+            Object o1 = 23;
+            Object o2 = 3.44;
+            Object o3 = "hello";
+            Object o4 = new Parent();
+
+            Console.WriteLine(o1.GetType());
+            Console.WriteLine(o2.GetType());
+            Console.WriteLine(o3.GetType());
+            Console.WriteLine(o4.GetType());
+
+            Console.ReadLine();
 
         }
     }
