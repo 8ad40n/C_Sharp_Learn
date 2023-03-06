@@ -13,16 +13,11 @@ namespace JaggedArray
             int[][] jagged=new int[3][];
             jagged[0] = new int[3] { 0, 1, 2 };
             jagged[1] = new int[5] { 0, 1, 2, 3, 4 };
-            jagged[2] = new int[1] { 0 };
-            jagged[4] = new int[1];
+            jagged[2] = new int[1] ;
+            //jagged[3] = new int[1] { 1 };
 
-            int sum = 0;
-            for(int i=0;i<jagged.Length;i++)
-            {
-                for(int j = 0; j < jagged[i].Length;j++)
-                jagged[4] = sum + jagged[i][j];
-            }
-
+          
+            
             for(int i=0; i<jagged.Length; i++)
             {
                 for(int j = 0; j < jagged[i].Length;j++)
@@ -31,7 +26,7 @@ namespace JaggedArray
                 }
                 Console.WriteLine();
             }
-
+           
             Console.WriteLine("---------------------"); 
 
             int i1 = 0;
