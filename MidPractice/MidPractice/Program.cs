@@ -110,15 +110,19 @@ namespace MidPractice
 
             Parent p1=new Parent();
             Child1 c1= new Child1();
-
+            
             Child1 c2 = new Child1(5);
             Child1 c3 = new Child1("JOY");
 
+            Parent op= new Child1();
+
+            //c1.hudai();
             c1.MethodA();
             c1.MethodB();
 
             p1.MethodA();
             p1.MethodB();
+            op.MethodB();
 
 
 
@@ -190,8 +194,9 @@ namespace MidPractice
             Console.WriteLine("REF:");
 
             int x1 = 10, y1 = 20;
-            s.Swap(ref x1,ref y1);
-            Console.WriteLine("x1:{0},y1:{1}", x1, y1);   // without ref => x1= 10 and y1= 20
+            int x = 0;
+            s.Swap(ref x1,ref y1,ref x);
+            Console.WriteLine("x1:{0},y1:{1},x:{2}", x1, y1,x);   // without ref => x1= 10 and y1= 20
 
 
 
@@ -207,7 +212,8 @@ namespace MidPractice
             s.Method(out argNumber, out argMessage, out argDefault);
             Console.WriteLine(argNumber);
             Console.WriteLine(argMessage);
-            Console.WriteLine(argDefault);
+            Console.WriteLine(argDefault == null);
+
 
 
             Console.ReadLine();

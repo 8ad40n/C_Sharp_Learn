@@ -23,12 +23,13 @@ namespace MidPractice
 
         //ref:
 
-        public void Swap(ref int a,ref int b)
+        public void Swap(ref int a,ref int b,ref int x)
         {
             int t = a;
             a = b;
             b = t;
-            Console.WriteLine("a:{0},b:{1}", a, b);
+            x = x + 5;
+            Console.WriteLine("a:{0},b:{1},x:{2}", a, b,x);
         }
 
         //out:

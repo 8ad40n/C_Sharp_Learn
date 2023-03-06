@@ -13,3 +13,11 @@ D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\C
 D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.CoreCompileInputs.cache
 D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.exe
 D:\AIUB\CODING\C Sharp\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.pdb
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.exe.config
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.exe
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\bin\Debug\ConsoleAppInheritanceP.pdb
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.exe
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppInheritanceS\ConsoleAppInheritanceP\obj\Debug\ConsoleAppInheritanceP.pdb

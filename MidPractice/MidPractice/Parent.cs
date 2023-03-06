@@ -27,5 +27,10 @@ namespace MidPractice
         {
             Console.WriteLine("Parent MethodB");
         }
+
+        internal void hudai()
+        {
+            Console.WriteLine("Hudai");
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace ConsoleAppInheritanceP
 
         static void Main(string[] args)
         {
+            /*
             Parent p1 = new Parent();
             Parent p2 = new Parent(100);
             Parent p3 = new Parent("Hello");
@@ -19,9 +20,10 @@ namespace ConsoleAppInheritanceP
             Child c2 = new Child(200);
             Child c3 = new Child("Chain");
 
+            */
             Parent p = new Parent();
             Child c = new Child();
-            //Parent p1 = new Child();
+            Parent p1 = new Child();
 
             p.MethodA();
             c.MethodA();
