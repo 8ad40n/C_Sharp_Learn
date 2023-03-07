@@ -85,6 +85,7 @@ namespace MidPractice
             Console.WriteLine("Nullable Type:");
             //NULLABLE TYPE:   //
             Nullable<int> p = null;
+
             //or,
             //int? q = null;
 
@@ -114,7 +115,7 @@ namespace MidPractice
             Child1 c2 = new Child1(5);
             Child1 c3 = new Child1("JOY");
 
-            Parent op= new Child1();
+            Parent op= new Child1(); //polymorphic object
 
             //c1.hudai();
             c1.MethodA();
@@ -175,7 +176,7 @@ namespace MidPractice
             Console.WriteLine("PARAMS:");
             
             int[] a1 = new int[5] { 3, 5, 8, 2, 7 };
-            int[] a2 = new int[7] { 9, 4, 3, 6, 9, 5, 1 };
+            //int[] a2 = new int[7] { 9, 4, 3, 6, 9, 5, 1 };
             ParamsRefOutIn s = new ParamsRefOutIn();
             s.Summation(3, 4, 7);
             s.Summation(1, 9);

@@ -28,6 +28,7 @@ namespace MidPractice
             int t = a;
             a = b;
             b = t;
+
             x = x + 5;
             Console.WriteLine("a:{0},b:{1},x:{2}", a, b,x);
         }

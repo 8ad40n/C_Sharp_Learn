@@ -8,7 +8,7 @@ namespace ConsoleAppInheritanceP
 {
     internal class Child : Parent
     {
-        internal Child() //: base("5") 
+        internal Child() : base("5") 
         {            
             Console.WriteLine("C Default");
         }

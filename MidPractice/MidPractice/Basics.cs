@@ -80,7 +80,7 @@ namespace MidPractice
 
             get { return cgpa; }
             set { 
-                  if(value>= 0)
+                  if(value>= 0 && value<=4)
                   {
                     this.cgpa = value;
                   }

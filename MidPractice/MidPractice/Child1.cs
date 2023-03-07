@@ -8,7 +8,7 @@ namespace MidPractice
 {
     internal class Child1 : Parent
     {
-        internal Child1() : base() 
+        internal Child1() : base("Badhon") 
         {
             Console.WriteLine("Default child");
         }
