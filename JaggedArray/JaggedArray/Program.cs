@@ -10,13 +10,12 @@ namespace JaggedArray
     {
         static void Main(string[] args)
         {
-            int[][] jagged=new int[3][];
-            jagged[0] = new int[3] { 0, 1, 2 };
-            jagged[1] = new int[5] { 0, 1, 2, 3, 4 };
-            jagged[2] = new int[1] ;
+            double[][] jagged=new double[3][];
+            jagged[0] = new double[3] { 0, 1.3, 2 };
+            jagged[1] = new double[5] { 0, 1, 2.1, 3, 4 };
+            jagged[2] = new double[1] ;
             //jagged[3] = new int[1] { 1 };
 
-          
             
             for(int i=0; i<jagged.Length; i++)
             {
@@ -43,6 +42,14 @@ namespace JaggedArray
                 Console.WriteLine();
                 
             }
+            /*
+            int[] a = { 1, 2, 3, 4 };
+
+            foreach(int v in a)
+            {
+                Console.WriteLine(v);
+            }
+            */
 
         }
     }
