@@ -13,22 +13,22 @@ namespace ConsoleAppINH
 
         static void Main(string[] args)
         {
-            //parent p1 = new parent();
-            ////parent p2 = new parent(1);
-            //child c1 = new child();
-            ////child c2 = new child(77);
-            ////child c3 = new child("hello");
+            Parent p1 = new Parent();
+            Parent p2 = new Parent(1);
+            Child c1 = new Child();
+            Child c2 = new Child(77);
+            Child c3 = new Child("hello");
 
-            //parent pp = new child();
+            Parent pp = new Child();
 
-            //p1.methoda();
-            //c1.methoda();
-            //p1.methodb();
-            //c1.methodb();
+            p1.MethodA();
+            c1.MethodA();
+            p1.MethodB();
+            c1.MethodB();
 
-            //pp.methoda();
-            //pp.methodb();
-            //pp.methodc();
+            pp.MethodA();
+            pp.MethodB();
+            pp.MethodC();
 
             //parent[] p = new parent[3];
             //p[0] = new parent();
@@ -65,12 +65,13 @@ namespace ConsoleAppINH
             //dynamic d1 = 34;
             //dynamic d2 = new parent();
             //d2.fakemethod();
-
+/*
             Program.M1();
             M2(67);
             c = 9;
             Program pp = new Program();
             pp.M3();
+*/
         }
 
         internal static void M1()

@@ -8,7 +8,7 @@ namespace ConsoleAppINH
 {
     internal class Parent
     {
-        internal Parent() //: this("Bye")
+        internal Parent() : this("Bye")
         {
             Console.WriteLine("Parent D");
         }

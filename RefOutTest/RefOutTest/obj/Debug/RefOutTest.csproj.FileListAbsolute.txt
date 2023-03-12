@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\bin\Debug\RefOutTest.exe.config
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\bin\Debug\RefOutTest.exe
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\bin\Debug\RefOutTest.pdb
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\obj\Debug\RefOutTest.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\obj\Debug\RefOutTest.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\obj\Debug\RefOutTest.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\obj\Debug\RefOutTest.exe
+D:\AIUB\CODING\C Sharp\RefOutTest\RefOutTest\obj\Debug\RefOutTest.pdb

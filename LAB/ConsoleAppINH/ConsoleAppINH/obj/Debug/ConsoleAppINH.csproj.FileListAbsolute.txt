@@ -5,3 +5,11 @@ C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppINH\Conso
 C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.csproj.CoreCompileInputs.cache
 C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.exe
 C:\Users\HASIB\Dropbox\AIUB\23. Spring 2022-23\OOP-2\Project\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.pdb
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\bin\Debug\ConsoleAppINH.exe.config
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\bin\Debug\ConsoleAppINH.exe
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\bin\Debug\ConsoleAppINH.pdb
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.exe
+D:\AIUB\CODING\C Sharp\LAB\ConsoleAppINH\ConsoleAppINH\obj\Debug\ConsoleAppINH.pdb

@@ -85,6 +85,7 @@ namespace MidPractice
             Console.WriteLine("Nullable Type:");
             //NULLABLE TYPE:   //
             Nullable<int> p = null;
+            
 
             //or,
             //int? q = null;
@@ -165,6 +166,7 @@ namespace MidPractice
             Console.WriteLine("Dynamic:");
             dynamic v1 = 23;
             dynamic v2 = new Parent();
+            Console.WriteLine(v1);
             //v2.FakeMethod();
 
 

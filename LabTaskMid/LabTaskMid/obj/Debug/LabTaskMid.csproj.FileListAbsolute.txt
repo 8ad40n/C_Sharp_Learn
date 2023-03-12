@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\bin\Debug\LabTaskMid.exe.config
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\bin\Debug\LabTaskMid.exe
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\bin\Debug\LabTaskMid.pdb
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\obj\Debug\LabTaskMid.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\obj\Debug\LabTaskMid.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\obj\Debug\LabTaskMid.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\obj\Debug\LabTaskMid.exe
+D:\AIUB\CODING\C Sharp\LabTaskMid\LabTaskMid\obj\Debug\LabTaskMid.pdb
