@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\bin\Debug\FfinalTask1.exe.config
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\bin\Debug\FfinalTask1.exe
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\bin\Debug\FfinalTask1.pdb
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\obj\Debug\FfinalTask1.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\obj\Debug\FfinalTask1.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\obj\Debug\FfinalTask1.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\obj\Debug\FfinalTask1.exe
+D:\AIUB\CODING\C Sharp\FfinalTask1\FfinalTask1\obj\Debug\FfinalTask1.pdb

@@ -17,6 +17,23 @@ namespace GuiPractice
             InitializeComponent();
         }
 
-        
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text== "Badhon Nath Joy")
+            {
+               MessageBox.Show("Hello Boss");
+               
+            }
+            else
+            {
+                MessageBox.Show("Hello " + textBox1.Text);
+            }
+            
+        }
     }
 }
