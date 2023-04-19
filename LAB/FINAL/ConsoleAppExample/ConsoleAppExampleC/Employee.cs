@@ -21,8 +21,13 @@ namespace ConsoleAppExampleC
                     this.salary = -2;
             }
         }
+        internal override string Id
+        {
+            get { return "P-" + id + "-E"; }
+            set { id = value; }
+        }
 
-        internal Employee(int id, string name, AddressFormat address, string bloodGroup, double salary) : base(id, name, address, bloodGroup)
+        internal Employee( string name, AddressFormat address, string bloodGroup, double salary) : base( name, address, bloodGroup)
         {
             this.Salary = salary;
         }

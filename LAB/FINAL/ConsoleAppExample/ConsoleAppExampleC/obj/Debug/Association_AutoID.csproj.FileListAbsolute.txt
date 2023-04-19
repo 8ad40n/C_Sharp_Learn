@@ -1,0 +1,8 @@
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\obj\Debug\Association_AutoID.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\obj\Debug\Association_AutoID.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\obj\Debug\Association_AutoID.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\obj\Debug\ConsoleAppExampleC.exe
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\obj\Debug\ConsoleAppExampleC.pdb
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\bin\Debug\ConsoleAppExampleC.exe.config
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\bin\Debug\ConsoleAppExampleC.exe
+D:\AIUB\CODING\C Sharp\LAB\FINAL\ConsoleAppExample\ConsoleAppExampleC\bin\Debug\ConsoleAppExampleC.pdb

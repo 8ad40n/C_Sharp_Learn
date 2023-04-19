@@ -3,9 +3,12 @@ D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\bin\Debug\GuiPractice.exe
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\bin\Debug\GuiPractice.pdb
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.csproj.AssemblyReference.cache
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.csproj.SuggestedBindingRedirects.cache
-D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.Form1.resources
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.Properties.Resources.resources
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.csproj.GenerateResource.cache
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.csproj.CoreCompileInputs.cache
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.exe
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.pdb
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\bin\Debug\Guna.UI2.dll
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.csproj.CopyComplete
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.frmCalculator.resources
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.frmLogin.resources

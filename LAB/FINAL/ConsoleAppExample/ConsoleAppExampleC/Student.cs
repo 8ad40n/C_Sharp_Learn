@@ -21,8 +21,13 @@ namespace ConsoleAppExampleC
                     this.cgpa = -1;
             }
         }
+        internal override string Id
+        {
+            get { return "P-" + id+ "-S"; }
+            set { id = value; }
+        }
 
-        internal Student(int id, string name, AddressFormat address, string bloodGroup, double cgpa) : base(id, name, address, bloodGroup)
+        internal Student(string name, AddressFormat address, string bloodGroup, double cgpa) : base( name, address, bloodGroup)
         {
             this.Cgpa = cgpa;
         }

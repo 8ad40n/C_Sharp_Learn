@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleAppExampleC
@@ -30,17 +31,20 @@ namespace ConsoleAppExampleC
         }
     }
     
+    
     internal class Person
     {
-        private int id;
+        protected string id;
         private string name;
         private AddressFormat address;
         private string bloodGroup;
+        private static int count = 100;
+        
 
-        internal int Id 
+        internal virtual string Id 
         {
-            get { return this.id; }
-            set { this.id = value; }
+            get { return "P-"+id ; }
+            set { id = value; }
         }
 
         internal string Name
@@ -62,10 +66,15 @@ namespace ConsoleAppExampleC
         }
 
         //internal Person() { }
-
-        internal Person(int id, string name, AddressFormat address, string bloodGroup)
+        
+        internal Person(string name, AddressFormat address, string bloodGroup)
         {
-            this.Id = id;
+            //this.Id = id;
+            //id = string 
+            //count = int
+            Id = Convert.ToString(count);
+            count++;
+
             this.Name = name;
             this.Address = address;
             this.BloodGroup = bloodGroup;
@@ -73,6 +82,7 @@ namespace ConsoleAppExampleC
 
         internal virtual void ShowInfo()
         {
+            
             Console.WriteLine($"Id: {this.Id}");
             Console.WriteLine("Name: {0}", this.Name);
             Console.WriteLine("Blood Group: " + this.BloodGroup);

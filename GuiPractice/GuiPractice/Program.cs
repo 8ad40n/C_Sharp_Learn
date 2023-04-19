@@ -14,9 +14,14 @@ namespace GuiPractice
         [STAThread]
         static void Main()
         {
+            //output Show
             Application.EnableVisualStyles();
+
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            //Application is static  
+            //Form1 will run first
+            Application.Run(new frmLogin());
         }
     }
 }
