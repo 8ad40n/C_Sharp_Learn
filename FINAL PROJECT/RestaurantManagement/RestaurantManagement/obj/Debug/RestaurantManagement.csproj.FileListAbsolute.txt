@@ -1,0 +1,13 @@
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\bin\Debug\RestaurantManagement.exe.config
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\bin\Debug\RestaurantManagement.exe
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\bin\Debug\RestaurantManagement.pdb
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\bin\Debug\Guna.UI2.dll
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmLogin.resources
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.Properties.Resources.resources
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.GenerateResource.cache
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.CopyComplete
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.exe
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
