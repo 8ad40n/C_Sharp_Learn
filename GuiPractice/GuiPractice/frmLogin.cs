@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Data.SqlClient;
+using System.Data.SqlClient; //sql
+using System.Globalization;
 
 namespace GuiPractice
 {
@@ -46,6 +47,9 @@ namespace GuiPractice
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
+
+            string sql="select * from LoginInfo where UserName = '"+this.txtUserName.Text+"' and Password = '" + this.txtPassword.Text+"';";
+
             //for connection create
             SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=GuiPractice;User ID=joy;Password=1234");
             
@@ -53,7 +57,8 @@ namespace GuiPractice
             sqlcon.Open();
 
             //for writing queries
-            SqlCommand sqlcom = new SqlCommand("select * from LoginInfo", sqlcon);
+            //SqlCommand sqlcom = new SqlCommand("select * from LoginInfo", sqlcon);
+            SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
 
             //for executing the queries
             SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
@@ -63,9 +68,10 @@ namespace GuiPractice
             sda.Fill(ds);
 
 
-            //MessageBox.Show(ds.Tables[0].Rows[0][0].ToString());
 
 
+
+            /*
             bool f = false;
             int index = 0;
 
@@ -85,11 +91,33 @@ namespace GuiPractice
 
             }
 
+            */
 
 
+
+            if (ds.Tables[0].Rows.Count==1)
+            {
+                MessageBox.Show("Valid Login");
+
+            }
+            else
+            {
+                MessageBox.Show("Invalid Login");
+            }
 
 
             sqlcon.Close();
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            
+            frmSignUp f= new frmSignUp(this);
+            f.Visible= true;
+            this.Visible= false;
+            
+            
+
         }
     }
 }
