@@ -11,3 +11,4 @@ D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\o
 D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.CopyComplete
 D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.exe
 D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmSplashScreen.resources
