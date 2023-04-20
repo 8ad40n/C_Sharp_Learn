@@ -71,5 +71,20 @@ namespace RestaurantManagement
             sqlcon.Close(); 
 
         }
+
+        private void lblDonotHaveAccount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblForgotPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSignUpNow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

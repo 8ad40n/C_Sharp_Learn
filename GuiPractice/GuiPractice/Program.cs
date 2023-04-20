@@ -21,7 +21,7 @@ namespace GuiPractice
 
             //Application is static  
             //Form1 will run first
-            Application.Run(new frmLogin());
+            Application.Run(new frmSignUp());
         }
     }
 }

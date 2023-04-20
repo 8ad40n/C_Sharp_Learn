@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,39 +36,44 @@ namespace GuiPractice
             string password = txtPassword.Text;
             string role = txtRole.Text;
 
-            // Check if all fields are filled out
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(role))
             {
-                MessageBox.Show("Please fill out all fields.");
+                // One or more fields are empty
+                MessageBox.Show("Please fill in all fields");
                 return;
             }
 
-            // Save the new user account to the database
-                    SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=GuiPractice;User ID=joy;Password=1234");
+            // Connect to SQL Server database
+            string connectionString = "Data Source=DESKTOP-M8MURCJ\\SQLEXPRESS;Initial Catalog=GuiPractice;User ID=joy;Password=1234;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
 
+                // Check if username is already taken
+                string query = "SELECT COUNT(*) FROM LoginInfo WHERE UserName = @username";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserName", username);
+                int count = (int)command.ExecuteScalar();
 
-                    string sql = "INSERT INTO LoginInfo (UserName, Password, Role) VALUES (@UserName, @Password, @Role)";
-                    sqlcon.Open();
+                if (count > 0)
+                {
+                    // Username already taken
+                    MessageBox.Show("Username already taken");
+                }
+                else
+                {
+                    // Username is available, create new account
+                    query = "INSERT INTO LoginInfo (UserName, Password, Role) VALUES (@username, @password, @role)";
+                    command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@UserName", username);
+                    command.Parameters.AddWithValue("@Password", password);
+                    command.Parameters.AddWithValue("@Role", role);
+                    command.ExecuteNonQuery();
 
-            
-                    SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
+                    MessageBox.Show("Account created");
+                }
+            }
 
-                    sqlcom.Parameters.AddWithValue("@UserName", username);
-                    sqlcom.Parameters.AddWithValue("@Password", password);
-                    sqlcom.Parameters.AddWithValue("@Role", role);
-                    
-                    int result = sqlcom.ExecuteNonQuery();
-                    // Check if the insert was successful
-                    if (result > 0)
-                    {
-                        MessageBox.Show("Account created successfully.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("An error occurred while creating the account.");
-                    }
-                
-            
 
         }
 
