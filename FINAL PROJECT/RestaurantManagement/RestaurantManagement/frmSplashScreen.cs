@@ -39,5 +39,10 @@ namespace RestaurantManagement
                 timer1.Stop();
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

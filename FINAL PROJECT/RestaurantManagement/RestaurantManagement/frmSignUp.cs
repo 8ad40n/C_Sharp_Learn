@@ -48,14 +48,12 @@ namespace RestaurantManagement
                 string connectionString = "Data Source=DESKTOP-M8MURCJ\\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Create a SQL SELECT statement to check if the username exists in the database
                     string sqlSelect = "SELECT COUNT(*) FROM UserInfo WHERE Username = @Username";
 
                     using (SqlCommand command = new SqlCommand(sqlSelect, connection))
                     {
                         command.Parameters.AddWithValue("@Username", username);
 
-                        // Open the SQL connection and execute the SQL command
                         connection.Open();
                         int count = (int)command.ExecuteScalar();
 
@@ -68,48 +66,49 @@ namespace RestaurantManagement
 
                 if (usernameExists)
                 {
-                    // If the username already exists in the database, display an error message
+                    
                     MessageBox.Show("Username already taken");
                 }
                 else
                 {
-                    // If the username does not exist in the database, create the user account
-                    // Create a SQL INSERT statement for the UserInfo table
-                    string sqlInsertUserInfo = "INSERT INTO UserInfo (Username, Password) VALUES (@Username, @Password)";
-
-                    // Create a SQL INSERT statement for the UserInfo2 table
-                    string sqlInsertUserInfo2 = "INSERT INTO UserInfo2 (Username, FullName, DOB, Gender, Role, Email) VALUES (@Username, @FullName, @DOB, @Gender, @Role, @Email)";
-
-                    // Create a SQL Connection and SqlCommand objects
-                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    if (txtSetPassword.Text == txtConfirmPassword.Text)
                     {
-                        using (SqlCommand command = new SqlCommand())
+
+                        string sqlInsertUserInfo = "INSERT INTO UserInfo (Username, Password) VALUES (@Username, @Password)";
+
+                        string sqlInsertUserInfo2 = "INSERT INTO UserInfo2 (Username, FullName, DOB, Gender, Role, Email) VALUES (@Username, @FullName, @DOB, @Gender, @Role, @Email)";
+
+                        using (SqlConnection connection = new SqlConnection(connectionString))
                         {
-                            // Set the SQL commands and parameters
-                            command.Connection = connection;
-                            command.CommandText = "BEGIN TRANSACTION; " + sqlInsertUserInfo + "; " + sqlInsertUserInfo2 + "; COMMIT;";
-                            command.Parameters.AddWithValue("@Username", username);
-                            command.Parameters.AddWithValue("@Password", password);
-                            command.Parameters.AddWithValue("@FullName", fullName);
-                            command.Parameters.AddWithValue("@DOB", dob);
-                            command.Parameters.AddWithValue("@Gender", gender);
-                            command.Parameters.AddWithValue("@Role", role);
-                            command.Parameters.AddWithValue("@Email", email);
-
-                            // Open the SQL connection and execute the SQL commands
-                            connection.Open();
-                            int rowsAffected = command.ExecuteNonQuery();
-
-                            // Check if the user account was created successfully
-                            if (rowsAffected > 0)
+                            using (SqlCommand command = new SqlCommand())
                             {
-                                MessageBox.Show("User account created successfully");
-                            }
-                            else
-                            {
-                                MessageBox.Show("Failed to create user account");
+                                command.Connection = connection;
+                                command.CommandText = "BEGIN TRANSACTION; " + sqlInsertUserInfo + "; " + sqlInsertUserInfo2 + "; COMMIT;";
+                                command.Parameters.AddWithValue("@Username", username);
+                                command.Parameters.AddWithValue("@Password", password);
+                                command.Parameters.AddWithValue("@FullName", fullName);
+                                command.Parameters.AddWithValue("@DOB", dob);
+                                command.Parameters.AddWithValue("@Gender", gender);
+                                command.Parameters.AddWithValue("@Role", role);
+                                command.Parameters.AddWithValue("@Email", email);
+
+                                connection.Open();
+                                int rowsAffected = command.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("User account created successfully");
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Failed to create user account");
+                                }
                             }
                         }
+                    }
+                    else if(txtSetPassword.Text != txtConfirmPassword.Text)
+                    {
+                        MessageBox.Show("Password not matched.");
                     }
                 }
             }

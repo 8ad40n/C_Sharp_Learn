@@ -31,25 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignUp));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblDOB = new System.Windows.Forms.Label();
-            this.lblRole = new System.Windows.Forms.Label();
-            this.txtSetPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.cbGender = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dtpDOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblCreateAccount = new System.Windows.Forms.Label();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.txtConfirmPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblConfirmPassword = new System.Windows.Forms.Label();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.lblCreateAccount = new System.Windows.Forms.Label();
+            this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dtpDOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.cbGender = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtSetPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblFullName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -91,201 +91,49 @@
             this.panel1.Size = new System.Drawing.Size(633, 615);
             this.panel1.TabIndex = 1;
             // 
-            // lblFullName
+            // lblCreateAccount
             // 
-            this.lblFullName.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(42, 131);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(113, 27);
-            this.lblFullName.TabIndex = 0;
-            this.lblFullName.Text = "Full Name:";
+            this.lblCreateAccount.AutoSize = true;
+            this.lblCreateAccount.Font = new System.Drawing.Font("Monospac821 BT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreateAccount.Location = new System.Drawing.Point(195, 32);
+            this.lblCreateAccount.Name = "lblCreateAccount";
+            this.lblCreateAccount.Size = new System.Drawing.Size(297, 40);
+            this.lblCreateAccount.TabIndex = 21;
+            this.lblCreateAccount.Text = "Create Account";
             // 
-            // txtFullName
+            // btnBack
             // 
-            this.txtFullName.AutoRoundedCorners = true;
-            this.txtFullName.BorderColor = System.Drawing.Color.Blue;
-            this.txtFullName.BorderRadius = 18;
-            this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFullName.DefaultText = "";
-            this.txtFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFullName.Location = new System.Drawing.Point(47, 162);
-            this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.PasswordChar = '\0';
-            this.txtFullName.PlaceholderText = "";
-            this.txtFullName.SelectedText = "";
-            this.txtFullName.Size = new System.Drawing.Size(262, 38);
-            this.txtFullName.TabIndex = 1;
+            this.btnBack.AutoRoundedCorners = true;
+            this.btnBack.BorderRadius = 25;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Location = new System.Drawing.Point(145, 506);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(164, 53);
+            this.btnBack.TabIndex = 20;
+            this.btnBack.Text = "Back";
             // 
-            // lblGender
+            // btnConfirm
             // 
-            this.lblGender.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(42, 214);
-            this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(87, 27);
-            this.lblGender.TabIndex = 2;
-            this.lblGender.Text = "Gender:";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.AutoRoundedCorners = true;
-            this.txtUsername.BorderColor = System.Drawing.Color.Blue;
-            this.txtUsername.BorderRadius = 18;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(362, 162);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderText = "";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(262, 38);
-            this.txtUsername.TabIndex = 5;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(357, 131);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(149, 27);
-            this.lblUsername.TabIndex = 4;
-            this.lblUsername.Text = "Set Username:";
-            // 
-            // lblDOB
-            // 
-            this.lblDOB.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lblDOB.AutoSize = true;
-            this.lblDOB.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(357, 214);
-            this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(61, 27);
-            this.lblDOB.TabIndex = 6;
-            this.lblDOB.Text = "DOB:";
-            // 
-            // lblRole
-            // 
-            this.lblRole.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lblRole.AutoSize = true;
-            this.lblRole.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.Location = new System.Drawing.Point(42, 301);
-            this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(59, 27);
-            this.lblRole.TabIndex = 8;
-            this.lblRole.Text = "Role:";
-            // 
-            // txtSetPassword
-            // 
-            this.txtSetPassword.AutoRoundedCorners = true;
-            this.txtSetPassword.BorderColor = System.Drawing.Color.Blue;
-            this.txtSetPassword.BorderRadius = 18;
-            this.txtSetPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSetPassword.DefaultText = "";
-            this.txtSetPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSetPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSetPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSetPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSetPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSetPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSetPassword.Location = new System.Drawing.Point(47, 424);
-            this.txtSetPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSetPassword.Name = "txtSetPassword";
-            this.txtSetPassword.PasswordChar = '\0';
-            this.txtSetPassword.PlaceholderText = "";
-            this.txtSetPassword.SelectedText = "";
-            this.txtSetPassword.Size = new System.Drawing.Size(262, 38);
-            this.txtSetPassword.TabIndex = 11;
-            this.txtSetPassword.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(42, 393);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(144, 27);
-            this.lblPassword.TabIndex = 10;
-            this.lblPassword.Text = "Set Password:";
-            // 
-            // cbGender
-            // 
-            this.cbGender.AutoRoundedCorners = true;
-            this.cbGender.BackColor = System.Drawing.Color.Transparent;
-            this.cbGender.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.cbGender.BorderRadius = 17;
-            this.cbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbGender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbGender.ItemHeight = 30;
-            this.cbGender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Others"});
-            this.cbGender.Location = new System.Drawing.Point(47, 245);
-            this.cbGender.Name = "cbGender";
-            this.cbGender.Size = new System.Drawing.Size(262, 36);
-            this.cbGender.TabIndex = 12;
-            // 
-            // dtpDOB
-            // 
-            this.dtpDOB.AutoRoundedCorners = true;
-            this.dtpDOB.BorderColor = System.Drawing.Color.Blue;
-            this.dtpDOB.BorderRadius = 22;
-            this.dtpDOB.Checked = true;
-            this.dtpDOB.FillColor = System.Drawing.Color.White;
-            this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDOB.Location = new System.Drawing.Point(362, 245);
-            this.dtpDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(262, 46);
-            this.dtpDOB.TabIndex = 13;
-            this.dtpDOB.Value = new System.DateTime(2023, 4, 21, 0, 7, 8, 279);
-            // 
-            // cbRole
-            // 
-            this.cbRole.AutoRoundedCorners = true;
-            this.cbRole.BackColor = System.Drawing.Color.Transparent;
-            this.cbRole.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.cbRole.BorderRadius = 17;
-            this.cbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbRole.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbRole.ItemHeight = 30;
-            this.cbRole.Items.AddRange(new object[] {
-            "Admin",
-            "Employee"});
-            this.cbRole.Location = new System.Drawing.Point(47, 334);
-            this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(262, 36);
-            this.cbRole.TabIndex = 14;
+            this.btnConfirm.AutoRoundedCorners = true;
+            this.btnConfirm.BorderRadius = 25;
+            this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConfirm.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
+            this.btnConfirm.Location = new System.Drawing.Point(362, 506);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(162, 53);
+            this.btnConfirm.TabIndex = 19;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // txtConfirmPassword
             // 
@@ -355,49 +203,201 @@
             this.lblEmail.TabIndex = 15;
             this.lblEmail.Text = "Email:";
             // 
-            // btnConfirm
+            // cbRole
             // 
-            this.btnConfirm.AutoRoundedCorners = true;
-            this.btnConfirm.BorderRadius = 25;
-            this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnConfirm.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
-            this.btnConfirm.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirm.Location = new System.Drawing.Point(362, 506);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(180, 53);
-            this.btnConfirm.TabIndex = 19;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            this.cbRole.AutoRoundedCorners = true;
+            this.cbRole.BackColor = System.Drawing.Color.Transparent;
+            this.cbRole.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.cbRole.BorderRadius = 17;
+            this.cbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbRole.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbRole.ItemHeight = 30;
+            this.cbRole.Items.AddRange(new object[] {
+            "Admin",
+            "Employee"});
+            this.cbRole.Location = new System.Drawing.Point(47, 334);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(262, 36);
+            this.cbRole.TabIndex = 14;
             // 
-            // btnBack
+            // dtpDOB
             // 
-            this.btnBack.AutoRoundedCorners = true;
-            this.btnBack.BorderRadius = 25;
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBack.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
-            this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(129, 506);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(180, 53);
-            this.btnBack.TabIndex = 20;
-            this.btnBack.Text = "Back";
+            this.dtpDOB.AutoRoundedCorners = true;
+            this.dtpDOB.BorderColor = System.Drawing.Color.Blue;
+            this.dtpDOB.BorderRadius = 22;
+            this.dtpDOB.Checked = true;
+            this.dtpDOB.FillColor = System.Drawing.Color.White;
+            this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpDOB.Location = new System.Drawing.Point(362, 245);
+            this.dtpDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.Size = new System.Drawing.Size(262, 46);
+            this.dtpDOB.TabIndex = 13;
+            this.dtpDOB.Value = new System.DateTime(2023, 4, 21, 0, 7, 8, 279);
             // 
-            // lblCreateAccount
+            // cbGender
             // 
-            this.lblCreateAccount.AutoSize = true;
-            this.lblCreateAccount.Font = new System.Drawing.Font("Monospac821 BT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreateAccount.Location = new System.Drawing.Point(195, 32);
-            this.lblCreateAccount.Name = "lblCreateAccount";
-            this.lblCreateAccount.Size = new System.Drawing.Size(298, 41);
-            this.lblCreateAccount.TabIndex = 21;
-            this.lblCreateAccount.Text = "Create Account";
+            this.cbGender.AutoRoundedCorners = true;
+            this.cbGender.BackColor = System.Drawing.Color.Transparent;
+            this.cbGender.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.cbGender.BorderRadius = 17;
+            this.cbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbGender.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbGender.ItemHeight = 30;
+            this.cbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Others"});
+            this.cbGender.Location = new System.Drawing.Point(47, 245);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(262, 36);
+            this.cbGender.TabIndex = 12;
+            // 
+            // txtSetPassword
+            // 
+            this.txtSetPassword.AutoRoundedCorners = true;
+            this.txtSetPassword.BorderColor = System.Drawing.Color.Blue;
+            this.txtSetPassword.BorderRadius = 18;
+            this.txtSetPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSetPassword.DefaultText = "";
+            this.txtSetPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSetPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSetPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSetPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSetPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSetPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSetPassword.Location = new System.Drawing.Point(47, 424);
+            this.txtSetPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSetPassword.Name = "txtSetPassword";
+            this.txtSetPassword.PasswordChar = '\0';
+            this.txtSetPassword.PlaceholderText = "";
+            this.txtSetPassword.SelectedText = "";
+            this.txtSetPassword.Size = new System.Drawing.Size(262, 38);
+            this.txtSetPassword.TabIndex = 11;
+            this.txtSetPassword.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(42, 393);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(144, 27);
+            this.lblPassword.TabIndex = 10;
+            this.lblPassword.Text = "Set Password:";
+            // 
+            // lblRole
+            // 
+            this.lblRole.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.Location = new System.Drawing.Point(42, 301);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(59, 27);
+            this.lblRole.TabIndex = 8;
+            this.lblRole.Text = "Role:";
+            // 
+            // lblDOB
+            // 
+            this.lblDOB.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDOB.Location = new System.Drawing.Point(357, 214);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(61, 27);
+            this.lblDOB.TabIndex = 6;
+            this.lblDOB.Text = "DOB:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.AutoRoundedCorners = true;
+            this.txtUsername.BorderColor = System.Drawing.Color.Blue;
+            this.txtUsername.BorderRadius = 18;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(362, 162);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(262, 38);
+            this.txtUsername.TabIndex = 5;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(357, 131);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(149, 27);
+            this.lblUsername.TabIndex = 4;
+            this.lblUsername.Text = "Set Username:";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Location = new System.Drawing.Point(42, 214);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(87, 27);
+            this.lblGender.TabIndex = 2;
+            this.lblGender.Text = "Gender:";
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.AutoRoundedCorners = true;
+            this.txtFullName.BorderColor = System.Drawing.Color.Blue;
+            this.txtFullName.BorderRadius = 18;
+            this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFullName.DefaultText = "";
+            this.txtFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFullName.Location = new System.Drawing.Point(47, 162);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.PasswordChar = '\0';
+            this.txtFullName.PlaceholderText = "";
+            this.txtFullName.SelectedText = "";
+            this.txtFullName.Size = new System.Drawing.Size(262, 38);
+            this.txtFullName.TabIndex = 1;
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(42, 131);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(113, 27);
+            this.lblFullName.TabIndex = 0;
+            this.lblFullName.Text = "Full Name:";
             // 
             // frmSignUp
             // 
@@ -407,9 +407,12 @@
             this.ClientSize = new System.Drawing.Size(1115, 615);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSignUp";
+            this.Text = "Create Account";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

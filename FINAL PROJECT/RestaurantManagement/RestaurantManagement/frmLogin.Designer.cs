@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pbLogin = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbLogin2 = new System.Windows.Forms.PictureBox();
+            this.lblSignUpNow = new System.Windows.Forms.Label();
+            this.lblDonotHaveAccount = new System.Windows.Forms.Label();
+            this.lblForgotPassword = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
@@ -40,15 +44,11 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lblForgotPassword = new System.Windows.Forms.Label();
-            this.lblDonotHaveAccount = new System.Windows.Forms.Label();
-            this.lblSignUpNow = new System.Windows.Forms.Label();
-            this.pbLogin2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).BeginInit();
             this.SuspendLayout();
             // 
             // pbLogin
@@ -67,9 +67,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.pbLogin2);
             this.panel1.Controls.Add(this.lblSignUpNow);
             this.panel1.Controls.Add(this.lblDonotHaveAccount);
+            this.panel1.Controls.Add(this.pbLogin2);
             this.panel1.Controls.Add(this.lblForgotPassword);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -85,6 +85,54 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 604);
             this.panel1.TabIndex = 1;
+            // 
+            // pbLogin2
+            // 
+            this.pbLogin2.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin2.Image")));
+            this.pbLogin2.Location = new System.Drawing.Point(195, 22);
+            this.pbLogin2.Name = "pbLogin2";
+            this.pbLogin2.Size = new System.Drawing.Size(176, 144);
+            this.pbLogin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogin2.TabIndex = 14;
+            this.pbLogin2.TabStop = false;
+            // 
+            // lblSignUpNow
+            // 
+            this.lblSignUpNow.AutoSize = true;
+            this.lblSignUpNow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSignUpNow.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignUpNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblSignUpNow.Location = new System.Drawing.Point(355, 528);
+            this.lblSignUpNow.Name = "lblSignUpNow";
+            this.lblSignUpNow.Size = new System.Drawing.Size(65, 19);
+            this.lblSignUpNow.TabIndex = 12;
+            this.lblSignUpNow.Text = "Sign Up";
+            this.lblSignUpNow.Click += new System.EventHandler(this.lblSignUpNow_Click);
+            // 
+            // lblDonotHaveAccount
+            // 
+            this.lblDonotHaveAccount.AutoSize = true;
+            this.lblDonotHaveAccount.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonotHaveAccount.ForeColor = System.Drawing.Color.Black;
+            this.lblDonotHaveAccount.Location = new System.Drawing.Point(169, 528);
+            this.lblDonotHaveAccount.Name = "lblDonotHaveAccount";
+            this.lblDonotHaveAccount.Size = new System.Drawing.Size(170, 19);
+            this.lblDonotHaveAccount.TabIndex = 11;
+            this.lblDonotHaveAccount.Text = "Don\'t have an account?";
+            this.lblDonotHaveAccount.Click += new System.EventHandler(this.lblDonotHaveAccount_Click);
+            // 
+            // lblForgotPassword
+            // 
+            this.lblForgotPassword.AutoSize = true;
+            this.lblForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblForgotPassword.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblForgotPassword.Location = new System.Drawing.Point(319, 285);
+            this.lblForgotPassword.Name = "lblForgotPassword";
+            this.lblForgotPassword.Size = new System.Drawing.Size(135, 19);
+            this.lblForgotPassword.TabIndex = 10;
+            this.lblForgotPassword.Text = "Forgot Password?";
+            this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
             // 
             // pictureBox2
             // 
@@ -225,54 +273,6 @@
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username: ";
             // 
-            // lblForgotPassword
-            // 
-            this.lblForgotPassword.AutoSize = true;
-            this.lblForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblForgotPassword.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblForgotPassword.Location = new System.Drawing.Point(319, 285);
-            this.lblForgotPassword.Name = "lblForgotPassword";
-            this.lblForgotPassword.Size = new System.Drawing.Size(135, 19);
-            this.lblForgotPassword.TabIndex = 10;
-            this.lblForgotPassword.Text = "Forgot Password?";
-            this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
-            // 
-            // lblDonotHaveAccount
-            // 
-            this.lblDonotHaveAccount.AutoSize = true;
-            this.lblDonotHaveAccount.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDonotHaveAccount.ForeColor = System.Drawing.Color.Black;
-            this.lblDonotHaveAccount.Location = new System.Drawing.Point(169, 528);
-            this.lblDonotHaveAccount.Name = "lblDonotHaveAccount";
-            this.lblDonotHaveAccount.Size = new System.Drawing.Size(170, 19);
-            this.lblDonotHaveAccount.TabIndex = 11;
-            this.lblDonotHaveAccount.Text = "Don\'t have an account?";
-            this.lblDonotHaveAccount.Click += new System.EventHandler(this.lblDonotHaveAccount_Click);
-            // 
-            // lblSignUpNow
-            // 
-            this.lblSignUpNow.AutoSize = true;
-            this.lblSignUpNow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSignUpNow.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignUpNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblSignUpNow.Location = new System.Drawing.Point(355, 528);
-            this.lblSignUpNow.Name = "lblSignUpNow";
-            this.lblSignUpNow.Size = new System.Drawing.Size(65, 19);
-            this.lblSignUpNow.TabIndex = 12;
-            this.lblSignUpNow.Text = "Sign Up";
-            this.lblSignUpNow.Click += new System.EventHandler(this.lblSignUpNow_Click);
-            // 
-            // pbLogin2
-            // 
-            this.pbLogin2.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin2.Image")));
-            this.pbLogin2.Location = new System.Drawing.Point(198, 3);
-            this.pbLogin2.Name = "pbLogin2";
-            this.pbLogin2.Size = new System.Drawing.Size(176, 144);
-            this.pbLogin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogin2.TabIndex = 14;
-            this.pbLogin2.TabStop = false;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,9 +290,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).EndInit();
             this.ResumeLayout(false);
 
         }
