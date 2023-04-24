@@ -116,5 +116,9 @@ namespace RestaurantManagement
 
 
         }
+
+        private void txtFullName_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

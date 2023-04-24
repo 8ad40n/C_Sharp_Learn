@@ -52,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmForgotPasswordSetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgotPasswordSetPassword.Designer.cs">
+      <DependentUpon>frmForgotPasswordSetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgotPasswordVarify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgotPasswordVarify.Designer.cs">
+      <DependentUpon>frmForgotPasswordVarify.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmForgotPasswordSetPassword.resx">
+      <DependentUpon>frmForgotPasswordSetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgotPasswordVarify.resx">
+      <DependentUpon>frmForgotPasswordVarify.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

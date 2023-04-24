@@ -37,6 +37,10 @@ namespace RestaurantManagement
             if(panel2.Width >= 632)
             {
                 timer1.Stop();
+
+                
+
+
             }
         }
 

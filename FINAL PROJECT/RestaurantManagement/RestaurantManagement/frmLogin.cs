@@ -84,7 +84,7 @@ namespace RestaurantManagement
 
         private void lblSignUpNow_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -387,6 +387,7 @@
             this.txtFullName.SelectedText = "";
             this.txtFullName.Size = new System.Drawing.Size(262, 38);
             this.txtFullName.TabIndex = 1;
+            this.txtFullName.TextChanged += new System.EventHandler(this.txtFullName_TextChanged);
             // 
             // lblFullName
             // 
