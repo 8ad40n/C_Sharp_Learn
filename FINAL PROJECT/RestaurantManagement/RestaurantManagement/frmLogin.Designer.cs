@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.pbLogin = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbLogin2 = new System.Windows.Forms.PictureBox();
             this.lblSignUpNow = new System.Windows.Forms.Label();
             this.lblDonotHaveAccount = new System.Windows.Forms.Label();
+            this.pbLogin2 = new System.Windows.Forms.PictureBox();
             this.lblForgotPassword = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,24 +43,13 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
+            this.pbLogin = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbLogin
-            // 
-            this.pbLogin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbLogin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbLogin.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin.Image")));
-            this.pbLogin.Location = new System.Drawing.Point(0, 0);
-            this.pbLogin.Name = "pbLogin";
-            this.pbLogin.Size = new System.Drawing.Size(800, 604);
-            this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbLogin.TabIndex = 0;
-            this.pbLogin.TabStop = false;
             // 
             // panel1
             // 
@@ -85,16 +73,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 604);
             this.panel1.TabIndex = 1;
-            // 
-            // pbLogin2
-            // 
-            this.pbLogin2.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin2.Image")));
-            this.pbLogin2.Location = new System.Drawing.Point(195, 22);
-            this.pbLogin2.Name = "pbLogin2";
-            this.pbLogin2.Size = new System.Drawing.Size(176, 144);
-            this.pbLogin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogin2.TabIndex = 14;
-            this.pbLogin2.TabStop = false;
             // 
             // lblSignUpNow
             // 
@@ -120,6 +98,16 @@
             this.lblDonotHaveAccount.TabIndex = 11;
             this.lblDonotHaveAccount.Text = "Don\'t have an account?";
             this.lblDonotHaveAccount.Click += new System.EventHandler(this.lblDonotHaveAccount_Click);
+            // 
+            // pbLogin2
+            // 
+            this.pbLogin2.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin2.Image")));
+            this.pbLogin2.Location = new System.Drawing.Point(195, 22);
+            this.pbLogin2.Name = "pbLogin2";
+            this.pbLogin2.Size = new System.Drawing.Size(176, 144);
+            this.pbLogin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogin2.TabIndex = 14;
+            this.pbLogin2.TabStop = false;
             // 
             // lblForgotPassword
             // 
@@ -273,6 +261,18 @@
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username: ";
             // 
+            // pbLogin
+            // 
+            this.pbLogin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbLogin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogin.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin.Image")));
+            this.pbLogin.Location = new System.Drawing.Point(0, 0);
+            this.pbLogin.Name = "pbLogin";
+            this.pbLogin.Size = new System.Drawing.Size(800, 604);
+            this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbLogin.TabIndex = 0;
+            this.pbLogin.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -287,12 +287,12 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.ResumeLayout(false);
 
         }

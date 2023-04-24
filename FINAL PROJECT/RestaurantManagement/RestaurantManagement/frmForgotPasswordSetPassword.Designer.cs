@@ -103,11 +103,12 @@
             this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(370, 363);
+            this.btnConfirm.Location = new System.Drawing.Point(349, 366);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(179, 58);
             this.btnConfirm.TabIndex = 4;
             this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // frmForgotPasswordSetPassword
             // 
@@ -121,6 +122,7 @@
             this.Controls.Add(this.lblNewPassword);
             this.Name = "frmForgotPasswordSetPassword";
             this.Text = "frmForgotPasswordSetPassword";
+            this.Load += new System.EventHandler(this.frmForgotPasswordSetPassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

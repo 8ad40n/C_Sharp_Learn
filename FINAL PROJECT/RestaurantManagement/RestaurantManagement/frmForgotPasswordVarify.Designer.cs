@@ -78,6 +78,7 @@
             this.btnVerify.Size = new System.Drawing.Size(180, 45);
             this.btnVerify.TabIndex = 3;
             this.btnVerify.Text = "Verify";
+            this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // txtCode
             // 
