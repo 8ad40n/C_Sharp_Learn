@@ -44,20 +44,23 @@ namespace RestaurantManagement
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM USERINFO WHERE Username='" + this.txtUsername.Text + "' and Password='" + this.txtPassword.Text + "';";
+            string sql = "SELECT * FROM LoginInfo WHERE Username='" + this.txtUsername.Text + "' and Password='" + this.txtPassword.Text + "';";
 
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234");
-            sqlcon.Open();
-            
-            SqlCommand sqlcom= new SqlCommand(sql, sqlcon);
+            //SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234");
+            //sqlcon.Open();
 
-            SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
+            //SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
 
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
+            //SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
+
+            //DataSet ds = new DataSet();
+            //sda.Fill(ds);
+
+            DataAccess d = new DataAccess();
+            d.ExecuteQueryTable(sql);
 
 
-            if (ds.Tables[0].Rows.Count == 1)
+            if (d.Ds.Tables[0].Rows.Count == 1)
             {
                 MessageBox.Show("Valid Login");
 
@@ -68,7 +71,7 @@ namespace RestaurantManagement
             }
 
 
-            sqlcon.Close(); 
+            
 
         }
 

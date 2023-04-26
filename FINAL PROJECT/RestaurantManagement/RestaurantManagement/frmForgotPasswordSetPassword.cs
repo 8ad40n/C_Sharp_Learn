@@ -30,7 +30,7 @@ namespace RestaurantManagement
             if (txtNewPassword.Text == txtConfirmPassword.Text)
             { 
 
-                string sql = "UPDATE UserInfo SET UserInfo.Password ='"+this.txtConfirmPassword.Text+"' FROM UserInfo INNER JOIN UserInfo2 ON UserInfo.Username = UserInfo2.Username WHERE UserInfo2.Email = '"+ email +"';";
+                string sql = "UPDATE LoginInfo SET LoginInfo.Password ='"+this.txtConfirmPassword.Text+"' FROM LoginInfo INNER JOIN UserInfo ON LoginInfo.Username = UserInfo.Username WHERE UserInfo.Email = '"+ email +"';";
 
                 SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234");
                 sqlcon.Open();
