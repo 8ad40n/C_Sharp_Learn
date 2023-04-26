@@ -34,25 +34,19 @@ namespace RestaurantManagement
         private void btnSendCode_Click(object sender, EventArgs e)
         {
 
-            string sql = "SELECT * FROM USERINFO2 WHERE Email='" + this.txtEmail.Text  + "';";
+            string sql = "SELECT * FROM USERINFO WHERE Email='" + this.txtEmail.Text  + "';";
 
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234");
-            sqlcon.Open();
+            DataAccess d = new DataAccess();
 
-            SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
-
-            SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
-
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
+            d.ExecuteQueryTable(sql);
 
 
-            if (ds.Tables[0].Rows.Count == 1)
+            if (d.Ds.Tables[0].Rows.Count == 1)
             {
                 string to, from, pass;
 
                 Random x = new Random();
-                randomCode = x.Next(1000, 9999);
+                randomCode = x.Next(100000, 999999);
 
 
                 MailMessage message = new MailMessage();
@@ -81,7 +75,7 @@ namespace RestaurantManagement
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("       " + ex.Message + "\n       Please check your internet connection and try again!!       ");
+                    MessageBox.Show("An error has occured: " + ex.Message);
                 }
 
             }
@@ -100,6 +94,7 @@ namespace RestaurantManagement
             {
                 string email = txtEmail.Text;
                 frmForgotPasswordSetPassword obj = new frmForgotPasswordSetPassword(email);
+
                 Hide();
                 obj.Location = this.Location;
                 obj.Show();
@@ -108,6 +103,13 @@ namespace RestaurantManagement
             {
                 MessageBox.Show("       Wrong Code.                  ");
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmLogin f = new frmLogin();
+            f.Show();
+            this.Hide();
         }
     }
 }

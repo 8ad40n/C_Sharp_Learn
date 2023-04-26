@@ -32,18 +32,17 @@ namespace RestaurantManagement
 
                 string sql = "UPDATE LoginInfo SET LoginInfo.Password ='"+this.txtConfirmPassword.Text+"' FROM LoginInfo INNER JOIN UserInfo ON LoginInfo.Username = UserInfo.Username WHERE UserInfo.Email = '"+ email +"';";
 
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-M8MURCJ\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234");
-                sqlcon.Open();
-            
 
+                DataAccess d = new DataAccess();
 
-            
-                SqlCommand sqlcom = new SqlCommand(sql, sqlcon);
-
-                sqlcom.ExecuteNonQuery();
+                d.ExecuteDMLQuery(sql);
 
                 MessageBox.Show("Password updated successfully.");
 
+
+                frmLogin f = new frmLogin();
+                f.Show();
+                this.Hide();
 
 
             }
@@ -60,6 +59,13 @@ namespace RestaurantManagement
         private void frmForgotPasswordSetPassword_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmForgotPasswordVarify f = new frmForgotPasswordVarify();
+            f.Show();
+            this.Hide();
         }
     }
 }

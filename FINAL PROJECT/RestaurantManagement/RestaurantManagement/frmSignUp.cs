@@ -25,91 +25,7 @@ namespace RestaurantManagement
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            //if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtConfirmPassword.Text) ||string.IsNullOrEmpty(txtFullName.Text) || string.IsNullOrEmpty(txtEmail.Text))
-            //{
-            //    MessageBox.Show("Please fill in all required fields");
-            //}
-            //else
-            //{
-
-            //    string username = txtUsername.Text;
-            //    string password = txtConfirmPassword.Text;
-            //    string fullName = txtFullName.Text;
-            //    DateTime dob = dtpDOB.Value;
-            //    string gender = cbGender.SelectedItem.ToString();
-            //    string role = cbRole.SelectedItem.ToString();
-            //    string email = txtEmail.Text;
-
-            //    bool usernameExists = false;
-
-
-            //    string connectionString = "Data Source=DESKTOP-M8MURCJ\\SQLEXPRESS;Initial Catalog=RestaurantManagement;User ID=joy;Password=1234";
-            //    using (SqlConnection connection = new SqlConnection(connectionString))
-            //    {
-            //        string sqlSelect = "SELECT COUNT(*) FROM LoginInfo WHERE Username = @Username";
-
-            //        using (SqlCommand command = new SqlCommand(sqlSelect, connection))
-            //        {
-            //            command.Parameters.AddWithValue("@Username", username);
-
-            //            connection.Open();
-            //            int count = (int)command.ExecuteScalar();
-
-            //            if (count > 0)
-            //            {
-            //                usernameExists = true;
-            //            }
-            //        }
-            //    }
-
-            //    if (usernameExists)
-            //    {
-
-            //        MessageBox.Show("Username already taken");
-            //    }
-            //    else
-            //    {
-            //        if (txtSetPassword.Text == txtConfirmPassword.Text)
-            //        {
-
-            //            string sqlInsertUserInfo = "INSERT INTO LoginInfo (Username, Password) VALUES (@Username, @Password)";
-
-            //            string sqlInsertUserInfo2 = "INSERT INTO UserInfo (Username, FullName, DOB, Gender, Role, Email) VALUES (@Username, @FullName, @DOB, @Gender, @Role, @Email)";
-
-            //            using (SqlConnection connection = new SqlConnection(connectionString))
-            //            {
-            //                using (SqlCommand command = new SqlCommand())
-            //                {
-            //                    command.Connection = connection;
-            //                    command.CommandText = "BEGIN TRANSACTION; " + sqlInsertUserInfo + "; " + sqlInsertUserInfo2 + "; COMMIT;";
-            //                    command.Parameters.AddWithValue("@Username", username);
-            //                    command.Parameters.AddWithValue("@Password", password);
-            //                    command.Parameters.AddWithValue("@FullName", fullName);
-            //                    command.Parameters.AddWithValue("@DOB", dob);
-            //                    command.Parameters.AddWithValue("@Gender", gender);
-            //                    command.Parameters.AddWithValue("@Role", role);
-            //                    command.Parameters.AddWithValue("@Email", email);
-
-            //                    connection.Open();
-            //                    int rowsAffected = command.ExecuteNonQuery();
-
-            //                    if (rowsAffected > 0)
-            //                    {
-            //                        MessageBox.Show("User account created successfully");
-            //                    }
-            //                    else
-            //                    {
-            //                        MessageBox.Show("Failed to create user account");
-            //                    }
-            //                }
-            //            }
-            //        }
-            //        else if(txtSetPassword.Text != txtConfirmPassword.Text)
-            //        {
-            //            MessageBox.Show("Password not matched.");
-            //        }
-            //    }
-            //}
+           
 
             try 
             {
@@ -152,6 +68,10 @@ namespace RestaurantManagement
                             if (a > 0 && b > 0)
                             {
                                 MessageBox.Show("User account created successfully");
+
+                                frmLogin f = new frmLogin();
+                                f.Show();
+                                this.Hide();
                             }
                             else
                             {
@@ -169,7 +89,7 @@ namespace RestaurantManagement
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("Invalid.");
+                MessageBox.Show("An error has occured: "+ex.Message);
 
             }
 
@@ -179,6 +99,25 @@ namespace RestaurantManagement
 
         private void txtFullName_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.txtFullName.Clear();
+            this.txtConfirmPassword.Clear();
+            this.txtEmail.Clear();
+            this.txtSetPassword.Clear();
+            this.txtUsername.Clear();
+            this.cbGender.Text=null;
+            this.cbRole.Text=null;
+            this.dtpDOB.Value = DateTime.Now;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmLogin f = new frmLogin();
+            f.Show();
+            this.Hide();
         }
     }
 }

@@ -80,7 +80,7 @@
             this.lblSignUpNow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSignUpNow.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignUpNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblSignUpNow.Location = new System.Drawing.Point(355, 528);
+            this.lblSignUpNow.Location = new System.Drawing.Point(351, 528);
             this.lblSignUpNow.Name = "lblSignUpNow";
             this.lblSignUpNow.Size = new System.Drawing.Size(65, 19);
             this.lblSignUpNow.TabIndex = 12;

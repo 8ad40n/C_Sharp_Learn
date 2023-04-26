@@ -50,6 +50,7 @@
             this.lblGender = new System.Windows.Forms.Label();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblFullName = new System.Windows.Forms.Label();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +67,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.lblCreateAccount);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnConfirm);
@@ -112,11 +114,12 @@
             this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBack.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(145, 506);
+            this.btnBack.Location = new System.Drawing.Point(67, 506);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(164, 53);
             this.btnBack.TabIndex = 20;
             this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnConfirm
             // 
@@ -128,7 +131,7 @@
             this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConfirm.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
             this.btnConfirm.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirm.Location = new System.Drawing.Point(362, 506);
+            this.btnConfirm.Location = new System.Drawing.Point(438, 506);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(162, 53);
             this.btnConfirm.TabIndex = 19;
@@ -149,7 +152,7 @@
             this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(362, 424);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(362, 426);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '\0';
@@ -400,6 +403,24 @@
             this.lblFullName.TabIndex = 0;
             this.lblFullName.Text = "Full Name:";
             // 
+            // btnClear
+            // 
+            this.btnClear.AutoRoundedCorners = true;
+            this.btnClear.BorderRadius = 25;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.FillColor = System.Drawing.Color.Red;
+            this.btnClear.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(254, 506);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(162, 53);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -444,5 +465,6 @@
         private System.Windows.Forms.Label lblEmail;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private System.Windows.Forms.Label lblCreateAccount;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
     }
 }
