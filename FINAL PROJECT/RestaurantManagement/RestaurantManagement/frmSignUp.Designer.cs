@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignUp));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.lblCreateAccount = new System.Windows.Forms.Label();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
@@ -50,7 +51,7 @@
             this.lblGender = new System.Windows.Forms.Label();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblFullName = new System.Windows.Forms.Label();
-            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.cbShow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cbShow);
             this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.lblCreateAccount);
             this.panel1.Controls.Add(this.btnBack);
@@ -93,6 +95,24 @@
             this.panel1.Size = new System.Drawing.Size(633, 615);
             this.panel1.TabIndex = 1;
             // 
+            // btnClear
+            // 
+            this.btnClear.AutoRoundedCorners = true;
+            this.btnClear.BorderRadius = 25;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.FillColor = System.Drawing.Color.Red;
+            this.btnClear.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(254, 514);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(162, 53);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // lblCreateAccount
             // 
             this.lblCreateAccount.AutoSize = true;
@@ -114,7 +134,7 @@
             this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBack.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(67, 506);
+            this.btnBack.Location = new System.Drawing.Point(67, 514);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(164, 53);
             this.btnBack.TabIndex = 20;
@@ -131,7 +151,7 @@
             this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnConfirm.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
             this.btnConfirm.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirm.Location = new System.Drawing.Point(438, 506);
+            this.btnConfirm.Location = new System.Drawing.Point(438, 514);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(162, 53);
             this.btnConfirm.TabIndex = 19;
@@ -151,12 +171,13 @@
             this.txtConfirmPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtConfirmPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.Location = new System.Drawing.Point(362, 426);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '\0';
-            this.txtConfirmPassword.PlaceholderText = "";
+            this.txtConfirmPassword.PlaceholderText = "Enter password again";
             this.txtConfirmPassword.SelectedText = "";
             this.txtConfirmPassword.Size = new System.Drawing.Size(262, 38);
             this.txtConfirmPassword.TabIndex = 18;
@@ -185,12 +206,13 @@
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.Location = new System.Drawing.Point(362, 335);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.PlaceholderText = "Enter email";
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(262, 38);
             this.txtEmail.TabIndex = 16;
@@ -217,7 +239,7 @@
             this.cbRole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbRole.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbRole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbRole.ItemHeight = 30;
             this.cbRole.Items.AddRange(new object[] {
             "Admin",
@@ -235,6 +257,7 @@
             this.dtpDOB.Checked = true;
             this.dtpDOB.FillColor = System.Drawing.Color.White;
             this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpDOB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpDOB.Location = new System.Drawing.Point(362, 245);
             this.dtpDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -255,7 +278,7 @@
             this.cbGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbGender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbGender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbGender.ItemHeight = 30;
             this.cbGender.Items.AddRange(new object[] {
             "Male",
@@ -279,12 +302,13 @@
             this.txtSetPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSetPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSetPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSetPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSetPassword.Location = new System.Drawing.Point(47, 424);
             this.txtSetPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSetPassword.Name = "txtSetPassword";
             this.txtSetPassword.PasswordChar = '\0';
-            this.txtSetPassword.PlaceholderText = "";
+            this.txtSetPassword.PlaceholderText = "Enter password";
             this.txtSetPassword.SelectedText = "";
             this.txtSetPassword.Size = new System.Drawing.Size(262, 38);
             this.txtSetPassword.TabIndex = 11;
@@ -336,12 +360,13 @@
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Location = new System.Drawing.Point(362, 162);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.PlaceholderText = "Enter username";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(262, 38);
             this.txtUsername.TabIndex = 5;
@@ -381,12 +406,13 @@
             this.txtFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFullName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFullName.Location = new System.Drawing.Point(47, 162);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
-            this.txtFullName.PlaceholderText = "";
+            this.txtFullName.PlaceholderText = "Enter fullname";
             this.txtFullName.SelectedText = "";
             this.txtFullName.Size = new System.Drawing.Size(262, 38);
             this.txtFullName.TabIndex = 1;
@@ -403,23 +429,18 @@
             this.lblFullName.TabIndex = 0;
             this.lblFullName.Text = "Full Name:";
             // 
-            // btnClear
+            // cbShow
             // 
-            this.btnClear.AutoRoundedCorners = true;
-            this.btnClear.BorderRadius = 25;
-            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClear.FillColor = System.Drawing.Color.Red;
-            this.btnClear.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
-            this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(254, 506);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(162, 53);
-            this.btnClear.TabIndex = 22;
-            this.btnClear.Text = "Clear";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.cbShow.AutoSize = true;
+            this.cbShow.Checked = true;
+            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShow.Location = new System.Drawing.Point(562, 471);
+            this.cbShow.Name = "cbShow";
+            this.cbShow.Size = new System.Drawing.Size(62, 20);
+            this.cbShow.TabIndex = 23;
+            this.cbShow.Text = "Show";
+            this.cbShow.UseVisualStyleBackColor = true;
+            this.cbShow.CheckedChanged += new System.EventHandler(this.cbShow_CheckedChanged);
             // 
             // frmSignUp
             // 
@@ -466,5 +487,6 @@
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private System.Windows.Forms.Label lblCreateAccount;
         private Guna.UI2.WinForms.Guna2Button btnClear;
+        private System.Windows.Forms.CheckBox cbShow;
     }
 }

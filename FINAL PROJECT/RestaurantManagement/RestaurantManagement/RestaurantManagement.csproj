@@ -53,6 +53,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess.cs" />
+    <Compile Include="frmUcAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcAdd.Designer.cs">
+      <DependentUpon>frmUcAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminDashboard.Designer.cs">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeDashboard.Designer.cs">
+      <DependentUpon>frmEmployeeDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmForgotPasswordSetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +103,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmUcAdd.resx">
+      <DependentUpon>frmUcAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminDashboard.resx">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmForgotPasswordSetPassword.resx">
       <DependentUpon>frmForgotPasswordSetPassword.cs</DependentUpon>
     </EmbeddedResource>

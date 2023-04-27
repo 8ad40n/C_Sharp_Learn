@@ -37,6 +37,7 @@
             this.lblResetPasswordFinal = new System.Windows.Forms.Label();
             this.pbResetFinal = new System.Windows.Forms.PictureBox();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.cbShow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbResetFinal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,12 +64,13 @@
             this.txtNewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNewPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNewPassword.ForeColor = System.Drawing.Color.Black;
             this.txtNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNewPassword.Location = new System.Drawing.Point(589, 189);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '\0';
-            this.txtNewPassword.PlaceholderText = "";
+            this.txtNewPassword.PlaceholderText = "Enter password";
             this.txtNewPassword.SelectedText = "";
             this.txtNewPassword.Size = new System.Drawing.Size(293, 48);
             this.txtNewPassword.TabIndex = 1;
@@ -86,12 +88,13 @@
             this.txtConfirmPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtConfirmPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtConfirmPassword.ForeColor = System.Drawing.Color.Black;
             this.txtConfirmPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConfirmPassword.Location = new System.Drawing.Point(589, 309);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '\0';
-            this.txtConfirmPassword.PlaceholderText = "";
+            this.txtConfirmPassword.PlaceholderText = "Enter password again";
             this.txtConfirmPassword.SelectedText = "";
             this.txtConfirmPassword.Size = new System.Drawing.Size(293, 48);
             this.txtConfirmPassword.TabIndex = 3;
@@ -163,12 +166,26 @@
             this.btnBack.Text = "Back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // cbShow
+            // 
+            this.cbShow.AutoSize = true;
+            this.cbShow.Checked = true;
+            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShow.Location = new System.Drawing.Point(820, 364);
+            this.cbShow.Name = "cbShow";
+            this.cbShow.Size = new System.Drawing.Size(62, 20);
+            this.cbShow.TabIndex = 26;
+            this.cbShow.Text = "Show";
+            this.cbShow.UseVisualStyleBackColor = true;
+            this.cbShow.CheckedChanged += new System.EventHandler(this.cbShow_CheckedChanged);
+            // 
             // frmForgotPasswordSetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(933, 623);
+            this.Controls.Add(this.cbShow);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblResetPasswordFinal);
             this.Controls.Add(this.pbResetFinal);
@@ -177,7 +194,11 @@
             this.Controls.Add(this.lblConfirmPassword);
             this.Controls.Add(this.txtNewPassword);
             this.Controls.Add(this.lblNewPassword);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmForgotPasswordSetPassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmForgotPasswordSetPassword";
             this.Load += new System.EventHandler(this.frmForgotPasswordSetPassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbResetFinal)).EndInit();
@@ -196,5 +217,6 @@
         private System.Windows.Forms.Label lblResetPasswordFinal;
         private System.Windows.Forms.PictureBox pbResetFinal;
         private Guna.UI2.WinForms.Guna2Button btnBack;
+        private System.Windows.Forms.CheckBox cbShow;
     }
 }

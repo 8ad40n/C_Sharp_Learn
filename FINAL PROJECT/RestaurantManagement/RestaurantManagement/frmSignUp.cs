@@ -119,5 +119,20 @@ namespace RestaurantManagement
             f.Show();
             this.Hide();
         }
+
+        private void cbShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbShow.Checked == true)
+            {
+                this.txtSetPassword.UseSystemPasswordChar = false;
+                this.txtConfirmPassword.UseSystemPasswordChar = false;
+
+            }
+            else
+            {
+                this.txtSetPassword.UseSystemPasswordChar = true;
+                this.txtConfirmPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

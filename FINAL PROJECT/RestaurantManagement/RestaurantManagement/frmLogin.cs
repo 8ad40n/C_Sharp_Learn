@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Web.Security;
 
 namespace RestaurantManagement
 {
@@ -56,6 +57,22 @@ namespace RestaurantManagement
             {
                 MessageBox.Show("Valid Login");
 
+                string sqlDashboard = "select * from UserInfo where Role ='Admin' and Username='"+txtUsername.Text+"';";
+
+                d.ExecuteQueryTable(sqlDashboard);
+
+                if (d.Ds.Tables[0].Rows.Count==1)
+                {
+                    frmAdminDashboard admin = new frmAdminDashboard();
+                    admin.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    frmEmployeeDashboard emp = new frmEmployeeDashboard();
+                    emp.Show();
+                    this.Hide();
+                }
 
 
             }
