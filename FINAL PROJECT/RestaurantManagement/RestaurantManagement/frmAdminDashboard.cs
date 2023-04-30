@@ -37,6 +37,7 @@ namespace RestaurantManagement
         {
             frmUcAdd f= new frmUcAdd();
             addUserControl(f);
+            //this.panelContainer.Controls.Add(f);
         }
     }
     

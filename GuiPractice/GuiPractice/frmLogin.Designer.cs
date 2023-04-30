@@ -39,6 +39,7 @@
             this.lblPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.Panel1.SuspendLayout();
             this.Panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -50,7 +51,7 @@
             this.Panel1.Controls.Add(this.lblLogIn);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(0, 0);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(1080, 655);
             this.Panel1.TabIndex = 0;
@@ -60,7 +61,7 @@
             this.lblLogIn.BackColor = System.Drawing.Color.Transparent;
             this.lblLogIn.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogIn.Location = new System.Drawing.Point(129, 82);
-            this.lblLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.lblLogIn.Name = "lblLogIn";
             this.lblLogIn.Size = new System.Drawing.Size(155, 62);
             this.lblLogIn.TabIndex = 0;
@@ -69,6 +70,7 @@
             // Panel2
             // 
             this.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Panel2.Controls.Add(this.metroButton1);
             this.Panel2.Controls.Add(this.btnSignUp);
             this.Panel2.Controls.Add(this.btnSignIn);
             this.Panel2.Controls.Add(this.txtPassword);
@@ -78,7 +80,7 @@
             this.Panel2.Controls.Add(this.lblUserName);
             this.Panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.Panel2.Location = new System.Drawing.Point(449, 0);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(631, 655);
             this.Panel2.TabIndex = 1;
@@ -96,7 +98,7 @@
             this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.Location = new System.Drawing.Point(323, 425);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(265, 41);
             this.btnSignUp.TabIndex = 8;
@@ -115,7 +117,7 @@
             this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.Location = new System.Drawing.Point(323, 377);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(265, 41);
             this.btnSignIn.TabIndex = 7;
@@ -148,7 +150,7 @@
             // 
             this.panel3.Controls.Add(this.cbShowPassword);
             this.panel3.Location = new System.Drawing.Point(461, 298);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(147, 30);
             this.panel3.TabIndex = 5;
@@ -160,7 +162,7 @@
             this.cbShowPassword.Checked = true;
             this.cbShowPassword.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowPassword.Location = new System.Drawing.Point(57, 4);
-            this.cbShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.cbShowPassword.Name = "cbShowPassword";
             this.cbShowPassword.Size = new System.Drawing.Size(62, 20);
             this.cbShowPassword.TabIndex = 7;
@@ -173,7 +175,7 @@
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(51, 254);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(135, 36);
             this.lblPassword.TabIndex = 2;
@@ -194,7 +196,7 @@
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Location = new System.Drawing.Point(323, 190);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(5);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderText = "";
@@ -207,11 +209,21 @@
             this.lblUserName.BackColor = System.Drawing.Color.Transparent;
             this.lblUserName.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserName.Location = new System.Drawing.Point(51, 190);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(4);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(155, 36);
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "User Name:";
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(89, 547);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(332, 36);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton1.TabIndex = 9;
+            this.metroButton1.Text = "metroButton1";
+            this.metroButton1.UseSelectable = true;
             // 
             // frmLogin
             // 
@@ -220,7 +232,7 @@
             this.ClientSize = new System.Drawing.Size(1080, 655);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             this.Panel1.ResumeLayout(false);
@@ -246,5 +258,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

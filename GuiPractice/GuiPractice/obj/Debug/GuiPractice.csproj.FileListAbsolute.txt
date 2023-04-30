@@ -13,3 +13,6 @@ D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.csproj.Copy
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.frmCalculator.resources
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.frmLogin.resources
 D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\obj\Debug\GuiPractice.frmSignUp.resources
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\bin\Debug\MetroFramework.Design.dll
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\bin\Debug\MetroFramework.dll
+D:\AIUB\CODING\C Sharp\GuiPractice\GuiPractice\bin\Debug\MetroFramework.Fonts.dll
