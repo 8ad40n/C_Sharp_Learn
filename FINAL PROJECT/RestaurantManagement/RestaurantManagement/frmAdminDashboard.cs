@@ -39,6 +39,18 @@ namespace RestaurantManagement
             addUserControl(f);
             //this.panelContainer.Controls.Add(f);
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmUcUpdate f = new frmUcUpdate();
+            addUserControl(f);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            frmUcDelete f = new frmUcDelete();
+            addUserControl(f);
+        }
     }
     
 }

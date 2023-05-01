@@ -32,10 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblSignUpNow = new System.Windows.Forms.Label();
             this.lblDonotHaveAccount = new System.Windows.Forms.Label();
-            this.pbLogin2 = new System.Windows.Forms.PictureBox();
             this.lblForgotPassword = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
             this.cbShow = new System.Windows.Forms.CheckBox();
@@ -43,6 +40,9 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.pbLogin2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbLogin = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin2)).BeginInit();
@@ -99,16 +99,6 @@
             this.lblDonotHaveAccount.Text = "Don\'t have an account?";
             this.lblDonotHaveAccount.Click += new System.EventHandler(this.lblDonotHaveAccount_Click);
             // 
-            // pbLogin2
-            // 
-            this.pbLogin2.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin2.Image")));
-            this.pbLogin2.Location = new System.Drawing.Point(195, 22);
-            this.pbLogin2.Name = "pbLogin2";
-            this.pbLogin2.Size = new System.Drawing.Size(176, 144);
-            this.pbLogin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogin2.TabIndex = 14;
-            this.pbLogin2.TabStop = false;
-            // 
             // lblForgotPassword
             // 
             this.lblForgotPassword.AutoSize = true;
@@ -121,26 +111,6 @@
             this.lblForgotPassword.TabIndex = 10;
             this.lblForgotPassword.Text = "Forgot Password?";
             this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(97, 309);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(97, 217);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // btnClear
             // 
@@ -260,6 +230,36 @@
             this.lblUsername.Size = new System.Drawing.Size(119, 27);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username: ";
+            // 
+            // pbLogin2
+            // 
+            this.pbLogin2.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin2.Image")));
+            this.pbLogin2.Location = new System.Drawing.Point(195, 22);
+            this.pbLogin2.Name = "pbLogin2";
+            this.pbLogin2.Size = new System.Drawing.Size(176, 144);
+            this.pbLogin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogin2.TabIndex = 14;
+            this.pbLogin2.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(97, 309);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(407, 224);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // pbLogin
             // 

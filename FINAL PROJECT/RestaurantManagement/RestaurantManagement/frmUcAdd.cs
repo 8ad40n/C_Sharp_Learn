@@ -12,25 +12,27 @@ namespace RestaurantManagement
 {
     public partial class frmUcAdd : UserControl
     {
-        
+
+        private DataAccess Da { get; set; }
         public frmUcAdd()
         {
             InitializeComponent();
 
-            
+            this.Da = new DataAccess();
+
+            this.PopulateGridView();
             //this.AutoIdGenerate();
         }
-        
 
 
-        private bool IsValidToSave()
+        private void PopulateGridView(string sql = "select FoodDetails.FoodId,FoodDetails.FoodName,FoodPrices.Category,FoodPrices.Price from FoodDetails,FoodPrices where FoodDetails.FoodId = FoodPrices.FoodId;")
         {
-            if (String.IsNullOrEmpty(this.txtFoodId.Text) || String.IsNullOrEmpty(this.txtFoodName.Text) ||
-                String.IsNullOrEmpty(this.txtPrice.Text) || String.IsNullOrEmpty(this.cmbCategory.Text))
-                return false;
-            else
-                return true;
+            this.Da.ExecuteQueryTable(sql);
+
+            //this.dgvAdd.AutoGenerateColumns = false;
+            this.dgvAdd.DataSource = Da.Ds.Tables[0];
         }
+        
 
         private void ClearContent()
         {
@@ -49,7 +51,7 @@ namespace RestaurantManagement
 
         //private void AutoIdGenerate()
         //{
-        //    var q = "select Id from Movie order by Id desc;";
+        //    var q = "select FoodId from FoodDetails order by FoodId desc;";
         //    var dt = this.Da.ExecuteQueryTable(q);
         //    var lastId = dt.Rows[0][0].ToString();
         //    string[] s = lastId.Split('-');
@@ -60,23 +62,91 @@ namespace RestaurantManagement
         //}
         private void btnShow_Click(object sender, EventArgs e)
         {
-            DataAccess d = new DataAccess();
-            string sql = "select FoodDetails.FoodId,FoodDetails.FoodName,FoodPrices.Category,FoodPrices.Price from FoodDetails,FoodPrices where FoodDetails.FoodId = FoodPrices.FoodId;";
-            d.ExecuteQueryTable(sql);
-
-            //this.dgvAdd.AutoGenerateColumns = false;
-            this.dgvAdd.DataSource = d.Ds.Tables[0];
+            this.PopulateGridView();
 
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            if (String.IsNullOrEmpty(this.txtFoodId.Text) || String.IsNullOrEmpty(this.txtFoodName.Text) ||
+                String.IsNullOrEmpty(this.txtPrice.Text) || String.IsNullOrEmpty(this.cmbCategory.Text))
+            {
+                MessageBox.Show("Fields are blank!");
+            }
+
+            else
+            {
+                try
+                {
+
+                string sqlSelect = "SELECT * FROM FoodDetails WHERE FoodId = '" + txtFoodId.Text + "';";
+
+                Da.ExecuteQueryTable(sqlSelect);
+
+
+                    if (Da.Ds.Tables[0].Rows.Count > 0)
+                    {
+                        MessageBox.Show("FoodId already taken");
+                    }
+
+
+                    else
+                    {
+                        
+
+                        string sql1 = "INSERT INTO FoodDetails (FoodId, FoodName) VALUES ('" + txtFoodId.Text + "', '" + txtFoodName.Text + "');";
+                        string sql2 = "INSERT INTO FoodPrices (FoodId, Category, Price) VALUES ('" + txtFoodId.Text + "', '" + cmbCategory.Text + "', '" + txtPrice.Text + "');";
+
+                        DialogResult d = MessageBox.Show("Are you sure want to add food?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                        if (d == DialogResult.No)
+                            return;
+
+
+                        int a = Da.ExecuteDMLQuery(sql1);
+                        int b = Da.ExecuteDMLQuery(sql2);
+
+
+
+                        if (a > 0 && b > 0)
+                        {
+                            MessageBox.Show("Successfully added!");
+                            this.PopulateGridView();
+                            this.ClearContent();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add");
+                        }
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error has occured!",ex.Message);
+                }
+            }
+
         }
+            
+    
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             this.ClearContent();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string sql = "select FoodDetails.FoodId,FoodDetails.FoodName,FoodPrices.Category,FoodPrices.Price from FoodDetails,FoodPrices where FoodDetails.FoodId=FoodPrices.FoodId and FoodDetails.FoodName like '"+ this.txtSearch.Text +"%';";
+            this.PopulateGridView(sql);
+        }
+
+        private void dgvAdd_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            
         }
     }
 }
