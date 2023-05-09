@@ -115,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEmployeeDashboard.resx">
+      <DependentUpon>frmEmployeeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUcAdd.resx">
       <DependentUpon>frmUcAdd.cs</DependentUpon>
     </EmbeddedResource>

@@ -38,9 +38,9 @@ namespace RestaurantManagement
             {
                 timer1.Stop();
 
-                frmLogin f= new frmLogin();
+                frmLogin f= new frmLogin(this);
 
-                f.Show();
+                f.Visible= true;
                 this.Hide();
                 
 

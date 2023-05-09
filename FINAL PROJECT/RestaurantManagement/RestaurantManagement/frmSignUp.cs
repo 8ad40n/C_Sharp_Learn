@@ -13,9 +13,18 @@ namespace RestaurantManagement
 {
     public partial class frmSignUp : Form
     {
+        private frmLogin F1 { get; set; }
+
         public frmSignUp()
         {
             InitializeComponent();
+        }
+
+        public frmSignUp(frmLogin f1)
+        {
+            InitializeComponent();
+            this.F1 = f1;
+
         }
 
         private void guna2TextBox6_TextChanged(object sender, EventArgs e)
@@ -115,8 +124,7 @@ namespace RestaurantManagement
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmLogin f = new frmLogin();
-            f.Show();
+            F1.Visible = true;
             this.Hide();
         }
 

@@ -36,7 +36,7 @@ namespace RestaurantManagement
             this.txtFoodId.Clear();
             this.txtFoodName.Clear();
             this.txtPrice.Clear();
-            this.cmbCategory.Text = null;
+            this.txtCategory.Text = null;
 
 
             this.txtSearch.Clear();
@@ -117,7 +117,7 @@ namespace RestaurantManagement
 
                 txtFoodId.Text = FoodId;
                 txtFoodName.Text = FoodName;
-                cmbCategory.Text = Category;
+                txtCategory.Text = Category;
                 txtPrice.Text = Price;
             }
         }

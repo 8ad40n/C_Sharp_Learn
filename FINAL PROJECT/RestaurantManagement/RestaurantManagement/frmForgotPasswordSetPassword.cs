@@ -14,15 +14,19 @@ namespace RestaurantManagement
     public partial class frmForgotPasswordSetPassword : Form
     {
         private string email;
+
+        private frmForgotPasswordVarify F1 { get; set; }
         public frmForgotPasswordSetPassword()
         {
             InitializeComponent();
         }
-        public frmForgotPasswordSetPassword(string email)
+        public frmForgotPasswordSetPassword(string email, frmForgotPasswordVarify f1)
         {
             InitializeComponent();
 
             this.email = email;
+            this.F1 = f1;
+            
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -40,8 +44,8 @@ namespace RestaurantManagement
                 MessageBox.Show("Password updated successfully.");
 
 
-                frmLogin f = new frmLogin();
-                f.Show();
+                frmLogin f = new frmLogin(this);
+                f.Visible= true;
                 this.Hide();
 
 
@@ -63,8 +67,7 @@ namespace RestaurantManagement
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmForgotPasswordVarify f = new frmForgotPasswordVarify();
-            f.Show();
+            F1.Visible= true;
             this.Hide();
         }
 

@@ -14,9 +14,23 @@ namespace RestaurantManagement
 {
     public partial class frmLogin : Form
     {
+        private frmSplashScreen F1 { get; set; }
+        private frmForgotPasswordSetPassword F2 { get; set; }
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        public frmLogin(frmSplashScreen f1)
+        {
+            InitializeComponent();
+            this.F1 = f1;
+        }
+
+        public frmLogin(frmForgotPasswordSetPassword f2)
+        {
+            InitializeComponent();
+            this.F2 = f2;
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
@@ -63,13 +77,13 @@ namespace RestaurantManagement
 
                 if (d.Ds.Tables[0].Rows.Count==1)
                 {
-                    frmAdminDashboard admin = new frmAdminDashboard();
+                    frmAdminDashboard admin = new frmAdminDashboard(this);
                     admin.Show();
                     this.Hide();
                 }
                 else
                 {
-                    frmEmployeeDashboard emp = new frmEmployeeDashboard();
+                    frmEmployeeDashboard emp = new frmEmployeeDashboard(this);
                     emp.Show();
                     this.Hide();
                 }
@@ -93,7 +107,7 @@ namespace RestaurantManagement
 
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
-            frmForgotPasswordVarify f = new frmForgotPasswordVarify();
+            frmForgotPasswordVarify f = new frmForgotPasswordVarify(this);
             f.Show();
             this.Hide();
 
@@ -101,7 +115,7 @@ namespace RestaurantManagement
 
         private void lblSignUpNow_Click(object sender, EventArgs e)
         {
-            frmSignUp f = new frmSignUp();
+            frmSignUp f = new frmSignUp(this);
             f.Show();
             this.Hide();
         }

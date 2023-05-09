@@ -14,9 +14,17 @@ namespace RestaurantManagement
     public partial class frmAdminDashboard : Form
     {
         bool sidebarExpand;
+
+        private frmLogin F1 { get; set; }
         public frmAdminDashboard()
         {
             InitializeComponent();
+        }
+
+        public frmAdminDashboard(frmLogin f1)
+        {
+            InitializeComponent();
+            F1 = f1;
         }
 
         private void addUserControl(UserControl userControl) 

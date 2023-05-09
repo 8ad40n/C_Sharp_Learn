@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnShow = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -48,6 +47,7 @@
             this.dgvDelete = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCategory = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDelete)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,13 +64,13 @@
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(63, 372);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Location = new System.Drawing.Point(47, 302);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search by food name";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(229, 35);
+            this.txtSearch.Size = new System.Drawing.Size(172, 28);
             this.txtSearch.TabIndex = 25;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -82,9 +82,10 @@
             this.btnShow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnShow.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnShow.ForeColor = System.Drawing.Color.White;
-            this.btnShow.Location = new System.Drawing.Point(1047, 362);
+            this.btnShow.Location = new System.Drawing.Point(785, 294);
+            this.btnShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(126, 45);
+            this.btnShow.Size = new System.Drawing.Size(94, 37);
             this.btnShow.TabIndex = 24;
             this.btnShow.Text = "Show";
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
@@ -97,33 +98,13 @@
             this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(803, 99);
+            this.btnClear.Location = new System.Drawing.Point(602, 80);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(180, 45);
+            this.btnClear.Size = new System.Drawing.Size(135, 37);
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // cmbCategory
-            // 
-            this.cmbCategory.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCategory.BorderThickness = 3;
-            this.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbCategory.ItemHeight = 30;
-            this.cmbCategory.Items.AddRange(new object[] {
-            "Burger",
-            "Beverage",
-            "Dessert",
-            ""});
-            this.cmbCategory.Location = new System.Drawing.Point(264, 202);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(229, 36);
-            this.cmbCategory.TabIndex = 22;
             // 
             // txtPrice
             // 
@@ -137,47 +118,51 @@
             this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.Location = new System.Drawing.Point(517, 202);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPrice.Location = new System.Drawing.Point(388, 164);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
             this.txtPrice.PlaceholderText = "";
             this.txtPrice.ReadOnly = true;
             this.txtPrice.SelectedText = "";
-            this.txtPrice.Size = new System.Drawing.Size(229, 36);
+            this.txtPrice.Size = new System.Drawing.Size(172, 36);
             this.txtPrice.TabIndex = 20;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1173, 0);
+            this.panel3.Location = new System.Drawing.Point(880, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(68, 342);
+            this.panel3.Size = new System.Drawing.Size(51, 278);
             this.panel3.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(63, 342);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(47, 278);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(527, 172);
+            this.lblPrice.Location = new System.Drawing.Point(395, 140);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(41, 16);
+            this.lblPrice.Size = new System.Drawing.Size(34, 13);
             this.lblPrice.TabIndex = 19;
             this.lblPrice.Text = "Price:";
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(261, 169);
+            this.lblCategory.Location = new System.Drawing.Point(196, 137);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(65, 16);
+            this.lblCategory.Size = new System.Drawing.Size(52, 13);
             this.lblCategory.TabIndex = 18;
             this.lblCategory.Text = "Category:";
             // 
@@ -193,22 +178,23 @@
             this.txtFoodName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFoodName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFoodName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFoodName.Location = new System.Drawing.Point(517, 96);
-            this.txtFoodName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFoodName.Location = new System.Drawing.Point(388, 78);
+            this.txtFoodName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtFoodName.Name = "txtFoodName";
             this.txtFoodName.PasswordChar = '\0';
             this.txtFoodName.PlaceholderText = "";
             this.txtFoodName.ReadOnly = true;
             this.txtFoodName.SelectedText = "";
-            this.txtFoodName.Size = new System.Drawing.Size(229, 45);
+            this.txtFoodName.Size = new System.Drawing.Size(172, 37);
             this.txtFoodName.TabIndex = 17;
             // 
             // lblFoodName
             // 
             this.lblFoodName.AutoSize = true;
-            this.lblFoodName.Location = new System.Drawing.Point(527, 66);
+            this.lblFoodName.Location = new System.Drawing.Point(395, 54);
+            this.lblFoodName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFoodName.Name = "lblFoodName";
-            this.lblFoodName.Size = new System.Drawing.Size(82, 16);
+            this.lblFoodName.Size = new System.Drawing.Size(65, 13);
             this.lblFoodName.TabIndex = 16;
             this.lblFoodName.Text = "Food Name:";
             // 
@@ -224,22 +210,23 @@
             this.txtFoodId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFoodId.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFoodId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFoodId.Location = new System.Drawing.Point(264, 93);
-            this.txtFoodId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFoodId.Location = new System.Drawing.Point(198, 76);
+            this.txtFoodId.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtFoodId.Name = "txtFoodId";
             this.txtFoodId.PasswordChar = '\0';
             this.txtFoodId.PlaceholderText = "";
             this.txtFoodId.ReadOnly = true;
             this.txtFoodId.SelectedText = "";
-            this.txtFoodId.Size = new System.Drawing.Size(229, 48);
+            this.txtFoodId.Size = new System.Drawing.Size(172, 39);
             this.txtFoodId.TabIndex = 15;
             // 
             // lblFoodId
             // 
             this.lblFoodId.AutoSize = true;
-            this.lblFoodId.Location = new System.Drawing.Point(261, 63);
+            this.lblFoodId.Location = new System.Drawing.Point(196, 51);
+            this.lblFoodId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFoodId.Name = "lblFoodId";
-            this.lblFoodId.Size = new System.Drawing.Size(56, 16);
+            this.lblFoodId.Size = new System.Drawing.Size(46, 13);
             this.lblFoodId.TabIndex = 14;
             this.lblFoodId.Text = "Food Id:";
             // 
@@ -249,44 +236,46 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 425);
+            this.panel2.Location = new System.Drawing.Point(0, 345);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1241, 342);
+            this.panel2.Size = new System.Drawing.Size(931, 278);
             this.panel2.TabIndex = 0;
             // 
             // dgvDelete
             // 
             this.dgvDelete.AllowUserToAddRows = false;
             this.dgvDelete.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgvDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDelete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDelete.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDelete.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDelete.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDelete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDelete.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dgvDelete.Location = new System.Drawing.Point(63, 0);
+            this.dgvDelete.Location = new System.Drawing.Point(47, 0);
+            this.dgvDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDelete.Name = "dgvDelete";
             this.dgvDelete.ReadOnly = true;
             this.dgvDelete.RowHeadersVisible = false;
             this.dgvDelete.RowHeadersWidth = 51;
             this.dgvDelete.RowTemplate.Height = 24;
-            this.dgvDelete.Size = new System.Drawing.Size(1110, 342);
+            this.dgvDelete.Size = new System.Drawing.Size(833, 278);
             this.dgvDelete.TabIndex = 2;
             this.dgvDelete.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDelete.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -313,11 +302,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtCategory);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnShow);
             this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Controls.Add(this.cmbCategory);
             this.panel1.Controls.Add(this.txtPrice);
             this.panel1.Controls.Add(this.lblPrice);
             this.panel1.Controls.Add(this.lblCategory);
@@ -328,8 +317,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1241, 767);
+            this.panel1.Size = new System.Drawing.Size(931, 623);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -341,20 +331,44 @@
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(803, 217);
+            this.btnDelete.Location = new System.Drawing.Point(602, 176);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(180, 45);
+            this.btnDelete.Size = new System.Drawing.Size(135, 37);
             this.btnDelete.TabIndex = 26;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // txtCategory
+            // 
+            this.txtCategory.BorderThickness = 3;
+            this.txtCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategory.DefaultText = "";
+            this.txtCategory.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategory.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategory.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCategory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategory.Location = new System.Drawing.Point(198, 164);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.PasswordChar = '\0';
+            this.txtCategory.PlaceholderText = "";
+            this.txtCategory.ReadOnly = true;
+            this.txtCategory.SelectedText = "";
+            this.txtCategory.Size = new System.Drawing.Size(172, 36);
+            this.txtCategory.TabIndex = 27;
+            // 
             // frmUcDelete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmUcDelete";
-            this.Size = new System.Drawing.Size(1241, 767);
+            this.Size = new System.Drawing.Size(931, 623);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDelete)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -368,7 +382,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnShow;
         private Guna.UI2.WinForms.Guna2Button btnClear;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbCategory;
         private Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -382,5 +395,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvDelete;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private Guna.UI2.WinForms.Guna2TextBox txtCategory;
     }
 }

@@ -16,6 +16,7 @@ namespace RestaurantManagement
 {
     public partial class frmForgotPasswordVarify : Form
     {
+        private frmLogin F1 { set; get; }
         
         int randomCode;
         public static string to;
@@ -30,6 +31,13 @@ namespace RestaurantManagement
         {
             InitializeComponent();
         }
+        public frmForgotPasswordVarify(frmLogin f1)
+        {
+            InitializeComponent();
+
+            this.F1 = f1;
+        }
+
 
         private void btnSendCode_Click(object sender, EventArgs e)
         {
@@ -93,11 +101,10 @@ namespace RestaurantManagement
             if (randomCode.ToString() == txtCode.Text.ToString())
             {
                 string email = txtEmail.Text;
-                frmForgotPasswordSetPassword obj = new frmForgotPasswordSetPassword(email);
 
-                Hide();
-                obj.Location = this.Location;
-                obj.Show();
+                frmForgotPasswordSetPassword obj = new frmForgotPasswordSetPassword(email,this);
+                obj.Visible= true;
+                this.Hide();
             }
             else
             {
@@ -107,8 +114,7 @@ namespace RestaurantManagement
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmLogin f = new frmLogin();
-            f.Show();
+            this.F1.Visible= true;
             this.Hide();
         }
     }
