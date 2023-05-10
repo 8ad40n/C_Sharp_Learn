@@ -64,7 +64,64 @@ namespace RestaurantManagement
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(this.txtFoodId.Text) || String.IsNullOrEmpty(this.txtFoodName.Text) ||
+                String.IsNullOrEmpty(this.txtPrice.Text) || String.IsNullOrEmpty(this.cmbCategory.Text))
+            {
+                MessageBox.Show("Fields are blank!  Plaese select a Row first to Update");
+            }
 
+            else
+            {
+                if (this.dgvUpdate.SelectedRows.Count < 1)
+                {
+                    MessageBox.Show("Plaese select a Row first to Update", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                try
+                {
+                    var FoodId = this.dgvUpdate.CurrentRow.Cells[0].Value.ToString();
+                    var FoodName = this.dgvUpdate.CurrentRow.Cells[1].Value.ToString();
+
+                    DialogResult dr = MessageBox.Show("Are you sure you want to change?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (dr == DialogResult.No)
+                    {
+                        //MessageBox.Show("No delete");
+                        return;
+                    }
+
+                    var query = "BEGIN TRANSACTION; UPDATE FoodDetails SET FoodName = '"+txtFoodName.Text+"'WHERE FoodId='"+txtFoodId.Text+"';UPDATE FoodPrices SET Category = '"+cmbCategory.Text+"',Price = '"+txtPrice.Text+"'WHERE FoodId='"+txtFoodId.Text+"';COMMIT;";
+                    var count = this.Da.ExecuteDMLQuery(query);
+
+                   // if (count == 1)
+                        MessageBox.Show("Data updated Properly");
+                   // else
+                   //     MessageBox.Show("Data upgradation failed");
+
+                    this.PopulateGridView();
+                    this.ClearContent();
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show("An error has occured: " + exc.Message);
+                }
+            }
+        }
+
+        private void dgvUpdate_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvUpdate.SelectedRows != null && dgvUpdate.SelectedRows.Count > 0)
+            {
+                string FoodId = dgvUpdate.CurrentRow.Cells[0].Value.ToString();
+                string FoodName = dgvUpdate.CurrentRow.Cells[1].Value.ToString();
+                string Category = dgvUpdate.CurrentRow.Cells[2].Value.ToString();
+                string Price = dgvUpdate.CurrentRow.Cells[3].Value.ToString();
+
+                txtFoodId.Text = FoodId;
+                txtFoodName.Text = FoodName;
+                cmbCategory.Text = Category;
+                txtPrice.Text = Price;
+            }
         }
     }
 }

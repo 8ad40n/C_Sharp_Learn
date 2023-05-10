@@ -42,9 +42,6 @@ namespace RestaurantManagement
 
                 f.Visible= true;
                 this.Hide();
-                
-
-
             }
         }
 

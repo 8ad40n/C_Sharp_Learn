@@ -59,6 +59,13 @@ namespace RestaurantManagement
             frmUcDelete f = new frmUcDelete();
             addUserControl(f);
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            F1.Visible= true;
+            this.Hide();
+
+        }
     }
     
 }

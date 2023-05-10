@@ -16,6 +16,7 @@ namespace RestaurantManagement
     {
         private frmSplashScreen F1 { get; set; }
         private frmForgotPasswordSetPassword F2 { get; set; }
+        
         public frmLogin()
         {
             InitializeComponent();
@@ -32,6 +33,8 @@ namespace RestaurantManagement
             InitializeComponent();
             this.F2 = f2;
         }
+
+        
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
