@@ -9,6 +9,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
+using System.Globalization;
 
 namespace RestaurantManagement
 {
@@ -50,18 +52,53 @@ namespace RestaurantManagement
             this.txtOrderId.Clear();
             this.nudQuantity.Value = 0;
             this.dtpOrderDate.Value = DateTime.Now;
-            this.txtDiscount.Text = "0";
             this.txtPrice.Clear();
             this.txtTotal.Clear();
             this.cmbCategory.SelectedIndex = 0;
             this.txtSearch.Clear();
             this.listBox1.Items.Clear();
+            this.dgvPlaceOrder.Rows.Clear();
+            this.dgvPlaceOrder.Refresh();
+
 
             this.AutoIdGenerate();
         }
 
+        protected int n;
+        protected float total = 0.0f;
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (String.IsNullOrEmpty(this.txtItemName.Text) || String.IsNullOrEmpty(this.txtPrice.Text) ||
+                String.IsNullOrEmpty(this.nudQuantity.Text) || String.IsNullOrEmpty(this.txtTotal.Text))
+                {
+                    MessageBox.Show("Fields are blank!");
+                }
+                else
+                {
+                    if (nudQuantity.Text != "0" && txtTotal.Text != null)
+                    {
+                        n = dgvPlaceOrder.Rows.Add();
+                        dgvPlaceOrder.Rows[n].Cells[0].Value = txtItemName.Text;
+                        dgvPlaceOrder.Rows[n].Cells[1].Value = txtPrice.Text;
+                        dgvPlaceOrder.Rows[n].Cells[2].Value = nudQuantity.Text;
+                        dgvPlaceOrder.Rows[n].Cells[3].Value = txtTotal.Text;
+
+                        total += int.Parse(txtTotal.Text);
+                        lblTK.Text = total + "TK";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Minimum quantity need to be 1!","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error has occurred: " + ex.Message);
+            }
+
 
         }
 
@@ -158,8 +195,9 @@ namespace RestaurantManagement
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            nudQuantity.ResetText();
             txtTotal.Clear();
+            nudQuantity.Text="0";
+            
 
             string text = listBox1.GetItemText(listBox1.SelectedItem);
             txtItemName.Text = text;
@@ -173,16 +211,208 @@ namespace RestaurantManagement
             }
             catch(Exception ex)
             {
-                MessageBox.Show("An error occurred while retrieving food names: " + ex.Message);
+                MessageBox.Show("An error has occurred: " + ex.Message);
             }
+        }
+
+
+        int amount;
+        private void dgvPlaceOrder_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                amount = int.Parse(dgvPlaceOrder.Rows[e.RowIndex].Cells[3].Value.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error has occurred: " + ex.Message);
+            }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvPlaceOrder.Rows.RemoveAt(this.dgvPlaceOrder.SelectedRows[0].Index);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error has occurred: " + ex.Message);
+            }
+            total -= amount;
+            lblTK.Text = total + "TK";
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            PrintPDF();
         }
 
         private void nudQuantity_ValueChanged(object sender, EventArgs e)
         {
-            Int64 quantity = Int64.Parse(nudQuantity.Value.ToString());
-            Int64 price = Int64.Parse(txtPrice.Text);
+            try
+            {
+                if (listBox1.SelectedItems.Count > 0)
+                {
+                    Int64 quantity = Int64.Parse(nudQuantity.Value.ToString());
+                    Int64 price = Int64.Parse(txtPrice.Text);
 
-            txtTotal.Text = (quantity * price).ToString();
+                    txtTotal.Text = (quantity * price).ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error has occurred: " + ex.Message);
+            }
+
+
+
         }
+
+
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.txtOrderId.Text) || String.IsNullOrEmpty(this.txtCustomerName.Text))
+            {
+                MessageBox.Show("Fields are blank!");
+            }
+
+            else
+            {
+                try
+                {
+                    //float Total = float.Parse(lblTK.Text);
+                    string sql1 = "INSERT INTO OrdersInfo (OrderID,CustomerName,OrderDate,Total) VALUES ('" + txtOrderId.Text + "', '" + txtCustomerName.Text + "','" + dtpOrderDate.Value + "','" + lblTK.Text+ "');";
+                    Da.ExecuteQuery(sql1);
+
+                    foreach (DataGridViewRow row in dgvPlaceOrder.Rows)
+                    {
+                        // Access the cell values for each row
+                        string itemName = row.Cells[0].Value.ToString();
+                        string quantity = row.Cells[2].Value.ToString();
+
+
+                        // Construct the SQL INSERT statement
+                        string sql2 = "INSERT INTO OrdersItems (OrderID, Item, Quantity) VALUES ('" + txtOrderId.Text + "', '" + itemName + "','" + quantity + "')";
+                        Da.ExecuteQuery(sql2);
+                    }
+
+                    DialogResult d = MessageBox.Show("Are you sure want to confirm?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (d == DialogResult.No)
+                        return;
+
+
+
+
+                    MessageBox.Show("Successfully added!");
+                    this.ClearContent();
+
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error has occured!", ex.Message);
+                }
+
+                //try
+                //{
+                //    float Total;
+                //    if (float.TryParse(lblTK.Text.Trim(), NumberStyles.Float, CultureInfo.InvariantCulture, out Total))
+                //    {
+                //        string sql1 = "INSERT INTO OrdersInfo (OrderID, CustomerName, OrderDate, Total) VALUES ('" + txtOrderId.Text + "', '" + txtCustomerName.Text + "','" + dtpOrderDate.Value.ToString("yyyy-MM-dd") + "','" + Total.ToString() + "');";
+                //        Da.ExecuteQuery(sql1);
+
+                //        foreach (DataGridViewRow row in dgvPlaceOrder.Rows)
+                //        {
+                //            string itemName = row.Cells[0].Value.ToString();
+                //            string quantity = row.Cells[2].Value.ToString();
+
+                //            string sql2 = "INSERT INTO OrdersItems (OrderID, Item, Quantity) VALUES ('" + txtOrderId.Text + "', '" + itemName + "','" + quantity + "')";
+                //            Da.ExecuteQuery(sql2);
+                //        }
+
+                //        DialogResult result = MessageBox.Show("Are you sure you want to confirm?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                //        if (result == DialogResult.Yes)
+                //        {
+                //            MessageBox.Show("Successfully added!");
+                //            ClearContent();
+                //        }
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("Invalid Total value: " + lblTK.Text);
+                //    }
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show("An error has occurred: " + ex.Message);
+                //}
+
+
+            }
+
+        }
+
+
+
+
+
+
+
+        private void PrintPDF()
+        {
+            // Create a PrintDocument object
+            PrintDocument printDocument = new PrintDocument();
+
+            // Set the PrintPage event handler
+            printDocument.PrintPage += new PrintPageEventHandler(PrintDocument_PrintPage);
+
+            // Set the printer name to "Microsoft Print to PDF"
+            printDocument.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+            // Print the document
+            printDocument.Print();
+        }
+
+        
+
+        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            // Create a font for the document
+            Font font = new Font("Arial", 12);
+
+            // Set the starting position for printing
+            float y = 50;
+
+            // Print the customer information
+            e.Graphics.DrawString("Customer Name: " + txtCustomerName.Text, font, Brushes.Black, new PointF(50, y));
+            y += 20;
+
+            // Print the order items
+            int i = 0;
+            while(i < dgvPlaceOrder.Rows.Count)
+            {
+                string itemName = dgvPlaceOrder.Rows[i].Cells[0].Value.ToString();
+                string quantity = dgvPlaceOrder.Rows[i].Cells[2].Value.ToString();
+                string price = dgvPlaceOrder.Rows[i].Cells[1].Value.ToString();
+                string total = dgvPlaceOrder.Rows[i].Cells[3].Value.ToString();
+
+                string orderItem = string.Format("{0} x {1} (Price: {2}, Total: {3})", quantity, itemName, price, total);
+                e.Graphics.DrawString(orderItem, font, Brushes.Black, new PointF(50, y));
+                y += 20;
+
+                i++;
+            }
+            
+
+            // Print the total amount
+            string totalAmount = "Total Amount: " + lblTK.Text;
+            e.Graphics.DrawString(totalAmount, font, Brushes.Black, new PointF(50, y));
+        }
+
     }
 }
