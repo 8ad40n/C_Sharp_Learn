@@ -21,7 +21,7 @@ namespace RestaurantManagement
             this.Da = new DataAccess();
 
             this.PopulateGridView();
-            //this.AutoIdGenerate();
+            this.AutoIdGenerate();
         }
 
 
@@ -46,7 +46,7 @@ namespace RestaurantManagement
             
 
             this.dgvAdd.ClearSelection();
-            //this.AutoIdGenerate();
+            this.AutoIdGenerate();
         }
 
         //private void AutoIdGenerate()
@@ -55,16 +55,33 @@ namespace RestaurantManagement
         //    var dt = this.Da.ExecuteQueryTable(q);
         //    var lastId = dt.Rows[0][0].ToString();
         //    string[] s = lastId.Split('-');
-        //    int temp = Convert.ToInt32(s[1]);
-        //    string newId = "m-" + (++temp).ToString("d3");
+        //    int temp = Convert.ToInt32(s[0]);
+        //    string newId = "m-" + (++temp).ToString("d1");
         //    this.txtFoodId.Text = newId;
         //    //MessageBox.Show(newId);
         //}
+
+        private void AutoIdGenerate()
+        {
+            var q = "select FoodId from FoodDetails order by FoodId desc;";
+            var dt = this.Da.ExecuteQueryTable(q);
+            var lastId = dt.Rows[0][0].ToString();
+            string[] s = lastId.Split();
+            int temp = Convert.ToInt32(s[0]);
+            string newId = (++temp).ToString("d1");
+            this.txtFoodId.Text = newId;
+            //MessageBox.Show(newId);
+        }
+
+
+
         private void btnShow_Click(object sender, EventArgs e)
         {
             this.PopulateGridView();
 
         }
+
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -79,19 +96,20 @@ namespace RestaurantManagement
                 try
                 {
 
-                string sqlSelect = "SELECT * FROM FoodDetails WHERE FoodId = '" + txtFoodId.Text + "';";
+                string sqlSelect = "SELECT * FROM FoodDetails WHERE FoodId = '" + txtFoodId.Text + "'or FoodName='"+txtFoodName.Text+"';";
 
                 Da.ExecuteQueryTable(sqlSelect);
 
 
                     if (Da.Ds.Tables[0].Rows.Count > 0)
                     {
-                        MessageBox.Show("FoodId already taken");
+                        MessageBox.Show("Item already exists");
                     }
 
 
                     else
                     {
+
                         
 
                         string sql1 = "INSERT INTO FoodDetails (FoodId, FoodName) VALUES ('" + txtFoodId.Text + "', '" + txtFoodName.Text + "');";

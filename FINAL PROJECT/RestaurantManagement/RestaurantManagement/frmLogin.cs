@@ -86,7 +86,7 @@ namespace RestaurantManagement
                 }
                 else
                 {
-                    frmEmployeeDashboard emp = new frmEmployeeDashboard(this);
+                    frmStaffDashboard emp = new frmStaffDashboard(this);
                     emp.Show();
                     this.Hide();
                 }

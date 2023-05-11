@@ -80,11 +80,11 @@
     <Compile Include="frmAdminDashboard.Designer.cs">
       <DependentUpon>frmAdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEmployeeDashboard.cs">
+    <Compile Include="frmStaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEmployeeDashboard.Designer.cs">
-      <DependentUpon>frmEmployeeDashboard.cs</DependentUpon>
+    <Compile Include="frmStaffDashboard.Designer.cs">
+      <DependentUpon>frmStaffDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="frmForgotPasswordSetPassword.cs">
       <SubType>Form</SubType>
@@ -122,6 +122,12 @@
     <Compile Include="frmUcDelete.Designer.cs">
       <DependentUpon>frmUcDelete.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUcPlaceOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcPlaceOrder.Designer.cs">
+      <DependentUpon>frmUcPlaceOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUcUpdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,8 +136,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmEmployeeDashboard.resx">
-      <DependentUpon>frmEmployeeDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="frmStaffDashboard.resx">
+      <DependentUpon>frmStaffDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcAdd.resx">
       <DependentUpon>frmUcAdd.cs</DependentUpon>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcDelete.resx">
       <DependentUpon>frmUcDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUcPlaceOrder.resx">
+      <DependentUpon>frmUcPlaceOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcUpdate.resx">
       <DependentUpon>frmUcUpdate.cs</DependentUpon>
