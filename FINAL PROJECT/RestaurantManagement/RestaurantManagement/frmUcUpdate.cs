@@ -123,5 +123,20 @@ namespace RestaurantManagement
                 txtPrice.Text = Price;
             }
         }
+
+        private void lblFoodId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFoodName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

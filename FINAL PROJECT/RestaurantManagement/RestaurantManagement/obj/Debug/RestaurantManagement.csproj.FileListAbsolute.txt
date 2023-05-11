@@ -21,3 +21,6 @@ D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\o
 D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmUcDelete.resources
 D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmStaffDashboard.resources
 D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmUcPlaceOrder.resources
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmManagerDashboard.resources
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmUcSalesReport.resources
+D:\AIUB\CODING\C Sharp\FINAL PROJECT\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.frmAdminLoginForSignUp.resources

@@ -75,22 +75,36 @@ namespace RestaurantManagement
                 MessageBox.Show("Valid Login");
 
                 string sqlDashboard = "select * from UserInfo where Role ='Admin' and Username='"+txtUsername.Text+"';";
-
                 d.ExecuteQueryTable(sqlDashboard);
 
+
+               
                 if (d.Ds.Tables[0].Rows.Count==1)
                 {
                     frmAdminDashboard admin = new frmAdminDashboard(this);
                     admin.Show();
                     this.Hide();
                 }
-                else
+
+                string sqlDashboard2 = "select * from UserInfo where Role ='Staff' and Username='" + txtUsername.Text + "';";
+                d.ExecuteQueryTable(sqlDashboard2);
+
+                if (d.Ds.Tables[0].Rows.Count == 1)
                 {
                     frmStaffDashboard emp = new frmStaffDashboard(this);
                     emp.Show();
                     this.Hide();
                 }
+                
+                string sqlDashboard3 = "select * from UserInfo where Role ='Manager' and Username='" + txtUsername.Text + "';";
+                d.ExecuteQueryTable(sqlDashboard3);
 
+                if (d.Ds.Tables[0].Rows.Count == 1)
+                {
+                    frmManagerDashboard man = new frmManagerDashboard(this);
+                    man.Show();
+                    this.Hide();
+                }
 
             }
             else
@@ -118,7 +132,7 @@ namespace RestaurantManagement
 
         private void lblSignUpNow_Click(object sender, EventArgs e)
         {
-            frmSignUp f = new frmSignUp(this);
+            frmAdminLoginForSignUp f = new frmAdminLoginForSignUp(this);
             f.Show();
             this.Hide();
         }

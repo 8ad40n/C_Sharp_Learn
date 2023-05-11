@@ -117,5 +117,10 @@ namespace RestaurantManagement
             this.F1.Visible= true;
             this.Hide();
         }
+
+        private void frmForgotPasswordVarify_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

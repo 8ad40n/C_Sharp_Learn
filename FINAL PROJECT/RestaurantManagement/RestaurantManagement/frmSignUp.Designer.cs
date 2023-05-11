@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignUp));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbShow = new System.Windows.Forms.CheckBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.lblCreateAccount = new System.Windows.Forms.Label();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
@@ -51,7 +52,6 @@
             this.lblGender = new System.Windows.Forms.Label();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblFullName = new System.Windows.Forms.Label();
-            this.cbShow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +94,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 615);
             this.panel1.TabIndex = 1;
+            // 
+            // cbShow
+            // 
+            this.cbShow.AutoSize = true;
+            this.cbShow.Checked = true;
+            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShow.Location = new System.Drawing.Point(562, 471);
+            this.cbShow.Name = "cbShow";
+            this.cbShow.Size = new System.Drawing.Size(62, 20);
+            this.cbShow.TabIndex = 23;
+            this.cbShow.Text = "Show";
+            this.cbShow.UseVisualStyleBackColor = true;
+            this.cbShow.CheckedChanged += new System.EventHandler(this.cbShow_CheckedChanged);
             // 
             // btnClear
             // 
@@ -242,8 +255,8 @@
             this.cbRole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbRole.ItemHeight = 30;
             this.cbRole.Items.AddRange(new object[] {
-            "Admin",
-            "Employee"});
+            "Staff",
+            "Manager"});
             this.cbRole.Location = new System.Drawing.Point(47, 334);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(262, 36);
@@ -428,19 +441,6 @@
             this.lblFullName.Size = new System.Drawing.Size(113, 27);
             this.lblFullName.TabIndex = 0;
             this.lblFullName.Text = "Full Name:";
-            // 
-            // cbShow
-            // 
-            this.cbShow.AutoSize = true;
-            this.cbShow.Checked = true;
-            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShow.Location = new System.Drawing.Point(562, 471);
-            this.cbShow.Name = "cbShow";
-            this.cbShow.Size = new System.Drawing.Size(62, 20);
-            this.cbShow.TabIndex = 23;
-            this.cbShow.Text = "Show";
-            this.cbShow.UseVisualStyleBackColor = true;
-            this.cbShow.CheckedChanged += new System.EventHandler(this.cbShow_CheckedChanged);
             // 
             // frmSignUp
             // 

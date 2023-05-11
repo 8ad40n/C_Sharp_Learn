@@ -85,6 +85,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.btnConfirm);
             this.panel3.Controls.Add(this.btnClear);
             this.panel3.Controls.Add(this.txtCustomerName);
@@ -108,6 +109,7 @@
             this.panel3.Controls.Add(this.lblPrice);
             this.panel3.Controls.Add(this.lblItemName);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.panel3.Location = new System.Drawing.Point(396, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(845, 767);
@@ -167,16 +169,20 @@
             // lblCustomerName
             // 
             this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblCustomerName.Location = new System.Drawing.Point(69, 105);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(167, 25);
+            this.lblCustomerName.Size = new System.Drawing.Size(139, 20);
             this.lblCustomerName.TabIndex = 20;
             this.lblCustomerName.Text = "Customer Name";
             // 
             // dtpOrderDate
             // 
+            this.dtpOrderDate.AutoRoundedCorners = true;
+            this.dtpOrderDate.BorderRadius = 16;
+            this.dtpOrderDate.BorderThickness = 1;
             this.dtpOrderDate.Checked = true;
+            this.dtpOrderDate.Enabled = false;
             this.dtpOrderDate.FillColor = System.Drawing.Color.White;
             this.dtpOrderDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -190,6 +196,8 @@
             // 
             // txtOrderId
             // 
+            this.txtOrderId.AutoRoundedCorners = true;
+            this.txtOrderId.BorderRadius = 16;
             this.txtOrderId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOrderId.DefaultText = "";
             this.txtOrderId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -212,30 +220,30 @@
             // lblOrderDate
             // 
             this.lblOrderDate.AutoSize = true;
-            this.lblOrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderDate.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblOrderDate.Location = new System.Drawing.Point(511, 32);
             this.lblOrderDate.Name = "lblOrderDate";
-            this.lblOrderDate.Size = new System.Drawing.Size(118, 25);
+            this.lblOrderDate.Size = new System.Drawing.Size(109, 20);
             this.lblOrderDate.TabIndex = 17;
             this.lblOrderDate.Text = "Order Date";
             // 
             // lblOrderId
             // 
             this.lblOrderId.AutoSize = true;
-            this.lblOrderId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderId.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblOrderId.Location = new System.Drawing.Point(69, 32);
             this.lblOrderId.Name = "lblOrderId";
-            this.lblOrderId.Size = new System.Drawing.Size(94, 25);
+            this.lblOrderId.Size = new System.Drawing.Size(89, 20);
             this.lblOrderId.TabIndex = 16;
             this.lblOrderId.Text = "Order ID";
             // 
             // lblGrandTotal
             // 
             this.lblGrandTotal.AutoSize = true;
-            this.lblGrandTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandTotal.Location = new System.Drawing.Point(336, 665);
+            this.lblGrandTotal.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
+            this.lblGrandTotal.Location = new System.Drawing.Point(341, 665);
             this.lblGrandTotal.Name = "lblGrandTotal";
-            this.lblGrandTotal.Size = new System.Drawing.Size(126, 25);
+            this.lblGrandTotal.Size = new System.Drawing.Size(119, 20);
             this.lblGrandTotal.TabIndex = 15;
             this.lblGrandTotal.Text = "Grand Total";
             // 
@@ -243,12 +251,13 @@
             // 
             this.lblTK.AutoSize = true;
             this.lblTK.BackColor = System.Drawing.Color.IndianRed;
-            this.lblTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTK.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblTK.Location = new System.Drawing.Point(366, 703);
             this.lblTK.Name = "lblTK";
-            this.lblTK.Size = new System.Drawing.Size(77, 25);
+            this.lblTK.Size = new System.Drawing.Size(69, 20);
             this.lblTK.TabIndex = 14;
             this.lblTK.Text = "0.0 TK";
+            this.lblTK.Click += new System.EventHandler(this.lblTK_Click);
             // 
             // btnPrint
             // 
@@ -286,9 +295,10 @@
             this.dgvPlaceOrder.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvPlaceOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPlaceOrder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -302,7 +312,7 @@
             this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -461,45 +471,46 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblTotal.Location = new System.Drawing.Point(511, 187);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(61, 25);
+            this.lblTotal.Size = new System.Drawing.Size(59, 20);
             this.lblTotal.TabIndex = 4;
             this.lblTotal.Text = "Total";
             // 
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblQuantity.Location = new System.Drawing.Point(69, 267);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(93, 25);
+            this.lblQuantity.Size = new System.Drawing.Size(89, 20);
             this.lblQuantity.TabIndex = 3;
             this.lblQuantity.Text = "Quantity";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblPrice.Location = new System.Drawing.Point(511, 107);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(61, 25);
+            this.lblPrice.Size = new System.Drawing.Size(59, 20);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "Price";
             // 
             // lblItemName
             // 
             this.lblItemName.AutoSize = true;
-            this.lblItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblItemName.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblItemName.Location = new System.Drawing.Point(69, 187);
             this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(115, 25);
+            this.lblItemName.Size = new System.Drawing.Size(99, 20);
             this.lblItemName.TabIndex = 1;
             this.lblItemName.Text = "Item Name";
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.lblPlaceOrder);
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.txtSearch);
@@ -515,7 +526,7 @@
             // 
             this.lblPlaceOrder.AutoSize = true;
             this.lblPlaceOrder.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaceOrder.Location = new System.Drawing.Point(73, 50);
+            this.lblPlaceOrder.Location = new System.Drawing.Point(88, 32);
             this.lblPlaceOrder.Name = "lblPlaceOrder";
             this.lblPlaceOrder.Size = new System.Drawing.Size(212, 44);
             this.lblPlaceOrder.TabIndex = 3;
@@ -578,10 +589,10 @@
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
             this.lblCategory.Location = new System.Drawing.Point(32, 134);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(100, 25);
+            this.lblCategory.Size = new System.Drawing.Size(89, 20);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Category";
             // 

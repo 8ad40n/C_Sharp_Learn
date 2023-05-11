@@ -317,42 +317,7 @@ namespace RestaurantManagement
                     MessageBox.Show("An error has occured!", ex.Message);
                 }
 
-                //try
-                //{
-                //    float Total;
-                //    if (float.TryParse(lblTK.Text.Trim(), NumberStyles.Float, CultureInfo.InvariantCulture, out Total))
-                //    {
-                //        string sql1 = "INSERT INTO OrdersInfo (OrderID, CustomerName, OrderDate, Total) VALUES ('" + txtOrderId.Text + "', '" + txtCustomerName.Text + "','" + dtpOrderDate.Value.ToString("yyyy-MM-dd") + "','" + Total.ToString() + "');";
-                //        Da.ExecuteQuery(sql1);
-
-                //        foreach (DataGridViewRow row in dgvPlaceOrder.Rows)
-                //        {
-                //            string itemName = row.Cells[0].Value.ToString();
-                //            string quantity = row.Cells[2].Value.ToString();
-
-                //            string sql2 = "INSERT INTO OrdersItems (OrderID, Item, Quantity) VALUES ('" + txtOrderId.Text + "', '" + itemName + "','" + quantity + "')";
-                //            Da.ExecuteQuery(sql2);
-                //        }
-
-                //        DialogResult result = MessageBox.Show("Are you sure you want to confirm?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                //        if (result == DialogResult.Yes)
-                //        {
-                //            MessageBox.Show("Successfully added!");
-                //            ClearContent();
-                //        }
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("Invalid Total value: " + lblTK.Text);
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show("An error has occurred: " + ex.Message);
-                //}
-
-
+                
             }
 
         }
@@ -388,6 +353,9 @@ namespace RestaurantManagement
             // Set the starting position for printing
             float y = 50;
 
+            e.Graphics.DrawString("Date & time: " + dtpOrderDate.Value, font, Brushes.Black, new PointF(50, y));
+            y += 20;
+
             // Print the customer information
             e.Graphics.DrawString("Customer Name: " + txtCustomerName.Text, font, Brushes.Black, new PointF(50, y));
             y += 20;
@@ -414,5 +382,9 @@ namespace RestaurantManagement
             e.Graphics.DrawString(totalAmount, font, Brushes.Black, new PointF(50, y));
         }
 
+        private void lblTK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,6 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess.cs" />
+    <Compile Include="frmAdminLoginForSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminLoginForSignUp.Designer.cs">
+      <DependentUpon>frmAdminLoginForSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerDashboard.Designer.cs">
+      <DependentUpon>frmManagerDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUcAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     <Compile Include="frmUcPlaceOrder.Designer.cs">
       <DependentUpon>frmUcPlaceOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUcSalesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcSalesReport.Designer.cs">
+      <DependentUpon>frmUcSalesReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUcUpdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,6 +154,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdminLoginForSignUp.resx">
+      <DependentUpon>frmAdminLoginForSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerDashboard.resx">
+      <DependentUpon>frmManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStaffDashboard.resx">
       <DependentUpon>frmStaffDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcPlaceOrder.resx">
       <DependentUpon>frmUcPlaceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUcSalesReport.resx">
+      <DependentUpon>frmUcSalesReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcUpdate.resx">
       <DependentUpon>frmUcUpdate.cs</DependentUpon>

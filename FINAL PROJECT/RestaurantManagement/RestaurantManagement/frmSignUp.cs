@@ -13,14 +13,14 @@ namespace RestaurantManagement
 {
     public partial class frmSignUp : Form
     {
-        private frmLogin F1 { get; set; }
+        private frmAdminLoginForSignUp F1 { get; set; }
 
         public frmSignUp()
         {
             InitializeComponent();
         }
 
-        public frmSignUp(frmLogin f1)
+        public frmSignUp(frmAdminLoginForSignUp f1)
         {
             InitializeComponent();
             this.F1 = f1;

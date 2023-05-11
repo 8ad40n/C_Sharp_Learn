@@ -35,9 +35,9 @@
             this.txtCode = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCode = new System.Windows.Forms.Label();
             this.btnSendCode = new Guna.UI2.WinForms.Guna2Button();
-            this.pbReset = new System.Windows.Forms.PictureBox();
             this.lblResetPassword = new System.Windows.Forms.Label();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.pbReset = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbReset)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,17 +145,6 @@
             this.btnSendCode.Text = "Send Code";
             this.btnSendCode.Click += new System.EventHandler(this.btnSendCode_Click);
             // 
-            // pbReset
-            // 
-            this.pbReset.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pbReset.Image = ((System.Drawing.Image)(resources.GetObject("pbReset.Image")));
-            this.pbReset.Location = new System.Drawing.Point(2, 82);
-            this.pbReset.Name = "pbReset";
-            this.pbReset.Size = new System.Drawing.Size(520, 464);
-            this.pbReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbReset.TabIndex = 7;
-            this.pbReset.TabStop = false;
-            // 
             // lblResetPassword
             // 
             this.lblResetPassword.AutoSize = true;
@@ -185,6 +174,17 @@
             this.btnBack.Text = "Back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // pbReset
+            // 
+            this.pbReset.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pbReset.Image = ((System.Drawing.Image)(resources.GetObject("pbReset.Image")));
+            this.pbReset.Location = new System.Drawing.Point(2, 82);
+            this.pbReset.Name = "pbReset";
+            this.pbReset.Size = new System.Drawing.Size(520, 464);
+            this.pbReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbReset.TabIndex = 7;
+            this.pbReset.TabStop = false;
+            // 
             // frmForgotPasswordVarify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,6 +205,7 @@
             this.Name = "frmForgotPasswordVarify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPasswordVarify";
+            this.Load += new System.EventHandler(this.frmForgotPasswordVarify_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbReset)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
