@@ -24,5 +24,38 @@ namespace RestaurantManagement
             InitializeComponent();
             F1 = f1;
         }
+
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(userControl);
+            userControl.BringToFront();
+
+        }
+        private void btnSalesReport_Click(object sender, EventArgs e)
+        {
+            frmUcSalesReport f = new frmUcSalesReport();
+            addUserControl(f);
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            frmUcManagerHomecs f = new frmUcManagerHomecs();
+            addUserControl(f);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            F1.Visible = true;
+            this.Hide();
+
+        }
     }
 }

@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminLoginForSignUp));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.lblLogIn = new System.Windows.Forms.Label();
+            this.lblOnlyAdmin = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
@@ -40,13 +42,11 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lblOnlyAdmin = new System.Windows.Forms.Label();
-            this.lblLogIn = new System.Windows.Forms.Label();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,16 +71,45 @@
             this.panel1.Size = new System.Drawing.Size(1017, 544);
             this.panel1.TabIndex = 0;
             // 
-            // guna2PictureBox1
+            // btnBack
             // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(577, 485);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.btnBack.AutoRoundedCorners = true;
+            this.btnBack.BorderRadius = 20;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.Black;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(623, 418);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 42);
+            this.btnBack.TabIndex = 27;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // lblLogIn
+            // 
+            this.lblLogIn.AutoSize = true;
+            this.lblLogIn.Font = new System.Drawing.Font("Monospac821 BT", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogIn.Location = new System.Drawing.Point(684, 90);
+            this.lblLogIn.Name = "lblLogIn";
+            this.lblLogIn.Size = new System.Drawing.Size(178, 51);
+            this.lblLogIn.TabIndex = 26;
+            this.lblLogIn.Text = "Log In";
+            // 
+            // lblOnlyAdmin
+            // 
+            this.lblOnlyAdmin.AutoSize = true;
+            this.lblOnlyAdmin.BackColor = System.Drawing.Color.Black;
+            this.lblOnlyAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOnlyAdmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblOnlyAdmin.Location = new System.Drawing.Point(35, 488);
+            this.lblOnlyAdmin.Name = "lblOnlyAdmin";
+            this.lblOnlyAdmin.Size = new System.Drawing.Size(457, 26);
+            this.lblOnlyAdmin.TabIndex = 25;
+            this.lblOnlyAdmin.Text = "Only admin can create account for other users";
             // 
             // pictureBox2
             // 
@@ -220,45 +249,16 @@
             this.lblUsername.TabIndex = 15;
             this.lblUsername.Text = "Username: ";
             // 
-            // lblOnlyAdmin
+            // guna2PictureBox1
             // 
-            this.lblOnlyAdmin.AutoSize = true;
-            this.lblOnlyAdmin.BackColor = System.Drawing.Color.Black;
-            this.lblOnlyAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOnlyAdmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblOnlyAdmin.Location = new System.Drawing.Point(35, 488);
-            this.lblOnlyAdmin.Name = "lblOnlyAdmin";
-            this.lblOnlyAdmin.Size = new System.Drawing.Size(500, 29);
-            this.lblOnlyAdmin.TabIndex = 25;
-            this.lblOnlyAdmin.Text = "Only admin can create account for other users";
-            // 
-            // lblLogIn
-            // 
-            this.lblLogIn.AutoSize = true;
-            this.lblLogIn.Font = new System.Drawing.Font("Monospac821 BT", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogIn.Location = new System.Drawing.Point(684, 90);
-            this.lblLogIn.Name = "lblLogIn";
-            this.lblLogIn.Size = new System.Drawing.Size(178, 52);
-            this.lblLogIn.TabIndex = 26;
-            this.lblLogIn.Text = "Log In";
-            // 
-            // btnBack
-            // 
-            this.btnBack.AutoRoundedCorners = true;
-            this.btnBack.BorderRadius = 20;
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.Black;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(623, 418);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(93, 42);
-            this.btnBack.TabIndex = 27;
-            this.btnBack.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(577, 485);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // frmAdminLoginForSignUp
             // 
@@ -266,13 +266,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1017, 544);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAdminLoginForSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdminLoginForSignUp";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

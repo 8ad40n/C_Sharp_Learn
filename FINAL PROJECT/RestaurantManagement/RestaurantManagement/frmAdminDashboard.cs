@@ -13,19 +13,33 @@ namespace RestaurantManagement
     
     public partial class frmAdminDashboard : Form
     {
+
+       
         bool sidebarExpand;
 
         private frmLogin F1 { get; set; }
         public frmAdminDashboard()
         {
             InitializeComponent();
+
+            //frmUcHomeAdmin f = new frmUcHomeAdmin();
+            //addUserControl(f);
         }
 
         public frmAdminDashboard(frmLogin f1)
         {
             InitializeComponent();
             F1 = f1;
+            
+
+
+            //frmUcHomeAdmin f = new frmUcHomeAdmin();
+            //addUserControl(f);
+
+
         }
+
+      
 
         private void addUserControl(UserControl userControl) 
         { 
@@ -60,12 +74,6 @@ namespace RestaurantManagement
             addUserControl(f);
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            F1.Show();
-            this.Hide();
-
-        }
 
         private void panelContainer_Paint(object sender, PaintEventArgs e)
         {
@@ -100,6 +108,30 @@ namespace RestaurantManagement
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnUpdateUserInfo_Click(object sender, EventArgs e)
+        {
+            frmUcUpdateUsers f = new frmUcUpdateUsers();
+            addUserControl(f);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            //frmUcHomeAdmin f = new frmUcHomeAdmin(Name);
+            //addUserControl(f);
+
+            frmUcHomeAdmin f1 = new frmUcHomeAdmin();
+            addUserControl(f1);
+
+
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            F1.Visible = true;
+            this.Hide();
         }
     }
     

@@ -134,6 +134,18 @@
     <Compile Include="frmUcDelete.Designer.cs">
       <DependentUpon>frmUcDelete.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUcHomeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcHomeAdmin.Designer.cs">
+      <DependentUpon>frmUcHomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUcManagerHomecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcManagerHomecs.Designer.cs">
+      <DependentUpon>frmUcManagerHomecs.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUcPlaceOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,11 +158,23 @@
     <Compile Include="frmUcSalesReport.Designer.cs">
       <DependentUpon>frmUcSalesReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUcStaffHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcStaffHome.Designer.cs">
+      <DependentUpon>frmUcStaffHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUcUpdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frmUcUpdate.Designer.cs">
       <DependentUpon>frmUcUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUcUpdateUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUcUpdateUsers.Designer.cs">
+      <DependentUpon>frmUcUpdateUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,14 +211,26 @@
     <EmbeddedResource Include="frmUcDelete.resx">
       <DependentUpon>frmUcDelete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUcHomeAdmin.resx">
+      <DependentUpon>frmUcHomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUcManagerHomecs.resx">
+      <DependentUpon>frmUcManagerHomecs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUcPlaceOrder.resx">
       <DependentUpon>frmUcPlaceOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcSalesReport.resx">
       <DependentUpon>frmUcSalesReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUcStaffHome.resx">
+      <DependentUpon>frmUcStaffHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUcUpdate.resx">
       <DependentUpon>frmUcUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUcUpdateUsers.resx">
+      <DependentUpon>frmUcUpdateUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

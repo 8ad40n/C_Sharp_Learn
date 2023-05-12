@@ -36,20 +36,26 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSpashScreen = new System.Windows.Forms.Label();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnSalesReport = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.panelContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContainer
             // 
-            this.panelContainer.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.Controls.Add(this.panel7);
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(307, 0);
             this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
@@ -86,7 +92,6 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.btnDelete);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 393);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
@@ -96,7 +101,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnUpdate);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 301);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
@@ -116,12 +120,61 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnHome);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(305, 206);
             this.panel3.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.label1);
+            this.panel7.Controls.Add(this.lblSpashScreen);
+            this.panel7.Controls.Add(this.guna2PictureBox2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1241, 767);
+            this.panel7.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.GhostWhite;
+            this.label1.Font = new System.Drawing.Font("Monospac821 BT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(547, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 40);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Welcome";
+            // 
+            // lblSpashScreen
+            // 
+            this.lblSpashScreen.AutoSize = true;
+            this.lblSpashScreen.BackColor = System.Drawing.Color.GhostWhite;
+            this.lblSpashScreen.Font = new System.Drawing.Font("Monospac821 BT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpashScreen.ForeColor = System.Drawing.Color.Black;
+            this.lblSpashScreen.Location = new System.Drawing.Point(344, 49);
+            this.lblSpashScreen.Name = "lblSpashScreen";
+            this.lblSpashScreen.Size = new System.Drawing.Size(577, 40);
+            this.lblSpashScreen.TabIndex = 39;
+            this.lblSpashScreen.Text = "Restaurant Management System";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(391, 249);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(516, 386);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 38;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // btnLogOut
             // 
@@ -130,55 +183,18 @@
             this.btnLogOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogOut.FillColor = System.Drawing.Color.Transparent;
-            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI Symbol", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.Font = new System.Drawing.Font("Monospac821 BT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLogOut.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnLogOut.Location = new System.Drawing.Point(6, 658);
+            this.btnLogOut.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnLogOut.Location = new System.Drawing.Point(9, 681);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(293, 82);
-            this.btnLogOut.TabIndex = 6;
-            this.btnLogOut.Text = "Log out";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.Transparent;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Symbol", 16.2F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDelete.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDelete.Location = new System.Drawing.Point(15, 6);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(293, 82);
-            this.btnDelete.TabIndex = 7;
-            this.btnDelete.Text = "Delete";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Symbol", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUpdate.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnUpdate.Location = new System.Drawing.Point(15, 6);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(293, 75);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "Update";
+            this.btnLogOut.TabIndex = 42;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnSalesReport
             // 
@@ -187,17 +203,38 @@
             this.btnSalesReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSalesReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSalesReport.FillColor = System.Drawing.Color.Transparent;
-            this.btnSalesReport.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesReport.Font = new System.Drawing.Font("Monospac821 BT", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnSalesReport.ForeColor = System.Drawing.Color.White;
             this.btnSalesReport.Image = ((System.Drawing.Image)(resources.GetObject("btnSalesReport.Image")));
             this.btnSalesReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSalesReport.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSalesReport.Location = new System.Drawing.Point(15, 6);
+            this.btnSalesReport.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSalesReport.Location = new System.Drawing.Point(9, 7);
             this.btnSalesReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalesReport.Name = "btnSalesReport";
             this.btnSalesReport.Size = new System.Drawing.Size(293, 82);
             this.btnSalesReport.TabIndex = 4;
             this.btnSalesReport.Text = "Sales Report";
+            this.btnSalesReport.Click += new System.EventHandler(this.btnSalesReport_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Monospac821 BT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnHome.Location = new System.Drawing.Point(0, 10);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(300, 82);
+            this.btnHome.TabIndex = 7;
+            this.btnHome.Text = "Home";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // frmManagerDashboard
             // 
@@ -205,13 +242,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1548, 767);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManagerDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmManagerDashboard";
+            this.panelContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,13 +264,16 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
         private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2Button btnSalesReport;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSpashScreen;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
+        private Guna.UI2.WinForms.Guna2Button btnLogOut;
     }
 }

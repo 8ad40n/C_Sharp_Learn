@@ -22,7 +22,9 @@ namespace RestaurantManagement
         {
             InitializeComponent();
             this.F1 = f1;
-            
+            //this.Name = Name;
+
+
         }
 
         private void addUserControl(UserControl userControl)
@@ -44,6 +46,26 @@ namespace RestaurantManagement
             frmUcPlaceOrder f = new frmUcPlaceOrder();
             addUserControl(f);
 
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            //frmUcStaffHome f = new frmUcStaffHome(Name);
+            //addUserControl(f);
+
+            frmUcStaffHome f1 = new frmUcStaffHome();
+            addUserControl(f1);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click_1(object sender, EventArgs e)
+        {
+            F1.Visible= true;
+            this.Hide();
         }
     }
 }

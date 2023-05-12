@@ -77,6 +77,7 @@ namespace RestaurantManagement
                 string sqlDashboard = "select * from UserInfo where Role ='Admin' and Username='"+txtUsername.Text+"';";
                 d.ExecuteQueryTable(sqlDashboard);
 
+                
 
                
                 if (d.Ds.Tables[0].Rows.Count==1)
@@ -89,6 +90,8 @@ namespace RestaurantManagement
                 string sqlDashboard2 = "select * from UserInfo where Role ='Staff' and Username='" + txtUsername.Text + "';";
                 d.ExecuteQueryTable(sqlDashboard2);
 
+
+                
                 if (d.Ds.Tables[0].Rows.Count == 1)
                 {
                     frmStaffDashboard emp = new frmStaffDashboard(this);

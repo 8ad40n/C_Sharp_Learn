@@ -86,7 +86,7 @@ namespace RestaurantManagement
                         dgvPlaceOrder.Rows[n].Cells[3].Value = txtTotal.Text;
 
                         total += int.Parse(txtTotal.Text);
-                        lblTK.Text = total + "TK";
+                        lblTK.Text = total.ToString();
                     }
                     else
                     {
@@ -240,7 +240,7 @@ namespace RestaurantManagement
                 MessageBox.Show("An error has occurred: " + ex.Message);
             }
             total -= amount;
-            lblTK.Text = total + "TK";
+            lblTK.Text = total.ToString();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)

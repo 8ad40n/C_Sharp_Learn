@@ -65,6 +65,7 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.lblMoney = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlaceOrder)).BeginInit();
@@ -85,7 +86,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.lblMoney);
             this.panel3.Controls.Add(this.btnConfirm);
             this.panel3.Controls.Add(this.btnClear);
             this.panel3.Controls.Add(this.txtCustomerName);
@@ -109,7 +111,7 @@
             this.panel3.Controls.Add(this.lblPrice);
             this.panel3.Controls.Add(this.lblItemName);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(396, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(845, 767);
@@ -118,11 +120,15 @@
             // 
             // btnConfirm
             // 
+            this.btnConfirm.AutoRoundedCorners = true;
+            this.btnConfirm.BorderRadius = 21;
+            this.btnConfirm.BorderThickness = 1;
             this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnConfirm.FillColor = System.Drawing.Color.Black;
+            this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
             this.btnConfirm.Location = new System.Drawing.Point(516, 349);
             this.btnConfirm.Name = "btnConfirm";
@@ -133,21 +139,28 @@
             // 
             // btnClear
             // 
+            this.btnClear.AutoRoundedCorners = true;
+            this.btnClear.BorderRadius = 21;
+            this.btnClear.BorderThickness = 1;
             this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClear.FillColor = System.Drawing.Color.Black;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(74, 349);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(229, 44);
+            this.btnClear.Size = new System.Drawing.Size(228, 44);
             this.btnClear.TabIndex = 24;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // txtCustomerName
             // 
+            this.txtCustomerName.AutoRoundedCorners = true;
+            this.txtCustomerName.BorderColor = System.Drawing.Color.Black;
+            this.txtCustomerName.BorderRadius = 16;
             this.txtCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCustomerName.DefaultText = "";
             this.txtCustomerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -156,8 +169,9 @@
             this.txtCustomerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCustomerName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCustomerName.ForeColor = System.Drawing.Color.Black;
             this.txtCustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCustomerName.Location = new System.Drawing.Point(74, 134);
+            this.txtCustomerName.Location = new System.Drawing.Point(73, 136);
             this.txtCustomerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.PasswordChar = '\0';
@@ -197,6 +211,7 @@
             // txtOrderId
             // 
             this.txtOrderId.AutoRoundedCorners = true;
+            this.txtOrderId.BorderColor = System.Drawing.Color.Black;
             this.txtOrderId.BorderRadius = 16;
             this.txtOrderId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOrderId.DefaultText = "";
@@ -206,6 +221,7 @@
             this.txtOrderId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtOrderId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOrderId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtOrderId.ForeColor = System.Drawing.Color.Black;
             this.txtOrderId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtOrderId.Location = new System.Drawing.Point(74, 61);
             this.txtOrderId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -250,22 +266,27 @@
             // lblTK
             // 
             this.lblTK.AutoSize = true;
-            this.lblTK.BackColor = System.Drawing.Color.IndianRed;
-            this.lblTK.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
-            this.lblTK.Location = new System.Drawing.Point(366, 703);
+            this.lblTK.BackColor = System.Drawing.Color.Black;
+            this.lblTK.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTK.ForeColor = System.Drawing.Color.White;
+            this.lblTK.Location = new System.Drawing.Point(401, 704);
             this.lblTK.Name = "lblTK";
-            this.lblTK.Size = new System.Drawing.Size(69, 20);
+            this.lblTK.Size = new System.Drawing.Size(46, 24);
             this.lblTK.TabIndex = 14;
-            this.lblTK.Text = "0.0 TK";
+            this.lblTK.Text = "0.0";
             this.lblTK.Click += new System.EventHandler(this.lblTK_Click);
             // 
             // btnPrint
             // 
+            this.btnPrint.AutoRoundedCorners = true;
+            this.btnPrint.BorderRadius = 21;
+            this.btnPrint.BorderThickness = 1;
             this.btnPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPrint.FillColor = System.Drawing.Color.Black;
+            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.Color.White;
             this.btnPrint.Location = new System.Drawing.Point(626, 684);
             this.btnPrint.Name = "btnPrint";
@@ -276,15 +297,19 @@
             // 
             // btnRemove
             // 
+            this.btnRemove.AutoRoundedCorners = true;
+            this.btnRemove.BorderRadius = 21;
+            this.btnRemove.BorderThickness = 1;
             this.btnRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRemove.FillColor = System.Drawing.Color.Black;
+            this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.Location = new System.Drawing.Point(74, 684);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(104, 44);
+            this.btnRemove.Size = new System.Drawing.Size(119, 44);
             this.btnRemove.TabIndex = 12;
             this.btnRemove.Text = "Remove";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
@@ -298,7 +323,7 @@
             this.dgvPlaceOrder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -312,14 +337,14 @@
             this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPlaceOrder.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlaceOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPlaceOrder.Location = new System.Drawing.Point(74, 418);
+            this.dgvPlaceOrder.Location = new System.Drawing.Point(73, 424);
             this.dgvPlaceOrder.Name = "dgvPlaceOrder";
             this.dgvPlaceOrder.ReadOnly = true;
             this.dgvPlaceOrder.RowHeadersVisible = false;
@@ -380,11 +405,15 @@
             // 
             // btnAddToCart
             // 
+            this.btnAddToCart.AutoRoundedCorners = true;
+            this.btnAddToCart.BorderRadius = 21;
+            this.btnAddToCart.BorderThickness = 1;
             this.btnAddToCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddToCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddToCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddToCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddToCart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddToCart.FillColor = System.Drawing.Color.Black;
+            this.btnAddToCart.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddToCart.ForeColor = System.Drawing.Color.White;
             this.btnAddToCart.Location = new System.Drawing.Point(516, 287);
             this.btnAddToCart.Name = "btnAddToCart";
@@ -395,7 +424,10 @@
             // 
             // nudQuantity
             // 
+            this.nudQuantity.AutoRoundedCorners = true;
             this.nudQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.nudQuantity.BorderColor = System.Drawing.Color.Black;
+            this.nudQuantity.BorderRadius = 16;
             this.nudQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nudQuantity.Location = new System.Drawing.Point(74, 296);
@@ -407,6 +439,9 @@
             // 
             // txtTotal
             // 
+            this.txtTotal.AutoRoundedCorners = true;
+            this.txtTotal.BorderColor = System.Drawing.Color.Black;
+            this.txtTotal.BorderRadius = 16;
             this.txtTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTotal.DefaultText = "";
             this.txtTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -415,6 +450,7 @@
             this.txtTotal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTotal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTotal.ForeColor = System.Drawing.Color.Black;
             this.txtTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotal.Location = new System.Drawing.Point(516, 216);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -428,6 +464,9 @@
             // 
             // txtPrice
             // 
+            this.txtPrice.AutoRoundedCorners = true;
+            this.txtPrice.BorderColor = System.Drawing.Color.Black;
+            this.txtPrice.BorderRadius = 16;
             this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrice.DefaultText = "";
             this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -436,6 +475,7 @@
             this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPrice.ForeColor = System.Drawing.Color.Black;
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.Location = new System.Drawing.Point(516, 136);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -449,6 +489,9 @@
             // 
             // txtItemName
             // 
+            this.txtItemName.AutoRoundedCorners = true;
+            this.txtItemName.BorderColor = System.Drawing.Color.Black;
+            this.txtItemName.BorderRadius = 16;
             this.txtItemName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtItemName.DefaultText = "";
             this.txtItemName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -457,6 +500,7 @@
             this.txtItemName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtItemName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtItemName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtItemName.ForeColor = System.Drawing.Color.Black;
             this.txtItemName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtItemName.Location = new System.Drawing.Point(74, 216);
             this.txtItemName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -510,7 +554,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.lblPlaceOrder);
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.txtSearch);
@@ -525,18 +569,19 @@
             // lblPlaceOrder
             // 
             this.lblPlaceOrder.AutoSize = true;
-            this.lblPlaceOrder.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaceOrder.Location = new System.Drawing.Point(88, 32);
+            this.lblPlaceOrder.Font = new System.Drawing.Font("Monospac821 BT", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaceOrder.Location = new System.Drawing.Point(47, 43);
             this.lblPlaceOrder.Name = "lblPlaceOrder";
-            this.lblPlaceOrder.Size = new System.Drawing.Size(212, 44);
-            this.lblPlaceOrder.TabIndex = 3;
+            this.lblPlaceOrder.Size = new System.Drawing.Size(308, 51);
+            this.lblPlaceOrder.TabIndex = 28;
             this.lblPlaceOrder.Text = "Place Order";
             // 
             // listBox1
             // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.listBox1.BackColor = System.Drawing.Color.Black;
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 29;
             this.listBox1.Location = new System.Drawing.Point(37, 340);
@@ -547,6 +592,9 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.AutoRoundedCorners = true;
+            this.txtSearch.BorderColor = System.Drawing.Color.Black;
+            this.txtSearch.BorderRadius = 17;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearch.DefaultText = "";
             this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -555,6 +603,7 @@
             this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Location = new System.Drawing.Point(37, 247);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -562,19 +611,22 @@
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(318, 43);
+            this.txtSearch.Size = new System.Drawing.Size(318, 36);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // cmbCategory
             // 
+            this.cmbCategory.AutoRoundedCorners = true;
             this.cmbCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategory.BorderColor = System.Drawing.Color.Black;
+            this.cmbCategory.BorderRadius = 17;
             this.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbCategory.ForeColor = System.Drawing.Color.Black;
             this.cmbCategory.ItemHeight = 30;
             this.cmbCategory.Items.AddRange(new object[] {
             "Burger",
@@ -590,11 +642,23 @@
             // 
             this.lblCategory.AutoSize = true;
             this.lblCategory.Font = new System.Drawing.Font("Monospac821 BT", 10.2F);
-            this.lblCategory.Location = new System.Drawing.Point(32, 134);
+            this.lblCategory.Location = new System.Drawing.Point(33, 149);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(89, 20);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Category";
+            // 
+            // lblMoney
+            // 
+            this.lblMoney.AutoSize = true;
+            this.lblMoney.BackColor = System.Drawing.Color.Black;
+            this.lblMoney.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.ForeColor = System.Drawing.Color.White;
+            this.lblMoney.Location = new System.Drawing.Point(349, 704);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(46, 24);
+            this.lblMoney.TabIndex = 26;
+            this.lblMoney.Text = "BDT";
             // 
             // frmUcPlaceOrder
             // 
@@ -644,12 +708,13 @@
         private System.Windows.Forms.Label lblOrderId;
         private Guna.UI2.WinForms.Guna2TextBox txtCustomerName;
         private System.Windows.Forms.Label lblCustomerName;
-        private System.Windows.Forms.Label lblPlaceOrder;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Button btnConfirm;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Label lblPlaceOrder;
+        private System.Windows.Forms.Label lblMoney;
     }
 }
