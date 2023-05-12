@@ -1,0 +1,16 @@
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\Guna.UI2.dll
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\MetroFramework.Design.dll
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\MetroFramework.dll
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\bin\Debug\MetroFramework.Fonts.dll
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.frmCalculator.resources
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Calculator\Calculator\obj\Debug\Calculator.pdb

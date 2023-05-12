@@ -14,6 +14,8 @@ namespace RestaurantManagement
 {
     public partial class frmLogin : Form
     {
+
+        private frmSignUp F3 { get; set; }
         private frmSplashScreen F1 { get; set; }
         private frmForgotPasswordSetPassword F2 { get; set; }
         
@@ -34,7 +36,13 @@ namespace RestaurantManagement
             this.F2 = f2;
         }
 
-        
+        public frmLogin(frmSignUp f3)
+        {
+            InitializeComponent();
+            this.F3 = f3;
+        }
+
+
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {

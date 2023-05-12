@@ -78,7 +78,8 @@ namespace RestaurantManagement
                             {
                                 MessageBox.Show("User account created successfully");
 
-                                F1.Visible = true;
+                                frmLogin f = new frmLogin(this);
+                                f.Visible = true;
                                 this.Hide();
 
                             }
