@@ -63,5 +63,10 @@ namespace RestaurantManagement
             frmUsersInfoManager f = new frmUsersInfoManager();
             addUserControl(f);
         }
+
+        private void btnCross_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

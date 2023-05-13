@@ -423,6 +423,7 @@
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.calculatorScreen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCalculator";

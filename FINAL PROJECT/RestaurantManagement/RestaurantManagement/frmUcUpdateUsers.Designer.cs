@@ -55,6 +55,7 @@
             this.lblDOB = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdate)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,7 +66,7 @@
             // 
             this.lblUpdateUser.AutoSize = true;
             this.lblUpdateUser.Font = new System.Drawing.Font("Monospac821 BT", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpdateUser.Location = new System.Drawing.Point(464, 25);
+            this.lblUpdateUser.Location = new System.Drawing.Point(419, 29);
             this.lblUpdateUser.Name = "lblUpdateUser";
             this.lblUpdateUser.Size = new System.Drawing.Size(672, 51);
             this.lblUpdateUser.TabIndex = 27;
@@ -376,6 +377,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnCross);
             this.panel1.Controls.Add(this.dtpDOB);
             this.panel1.Controls.Add(this.cmbRole);
             this.panel1.Controls.Add(this.lblDOB);
@@ -470,6 +472,24 @@
             this.guna2PictureBox1.TabIndex = 26;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(1185, 7);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 33;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
+            // 
             // frmUcUpdateUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -511,5 +531,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbRole;
         private System.Windows.Forms.Label lblDOB;
         private System.Windows.Forms.Label lblRole;
+        private Guna.UI2.WinForms.Guna2CircleButton btnCross;
     }
 }

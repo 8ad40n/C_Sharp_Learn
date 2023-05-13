@@ -51,6 +51,7 @@
             this.lblDeleteFood = new System.Windows.Forms.Label();
             this.txtCategory = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDelete)).BeginInit();
             this.panel1.SuspendLayout();
@@ -327,6 +328,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnCross);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.lblDeleteFood);
             this.panel1.Controls.Add(this.txtCategory);
@@ -416,6 +418,24 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(1188, 5);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 31;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
+            // 
             // frmUcDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -454,5 +474,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCategory;
         private System.Windows.Forms.Label lblDeleteFood;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnCross;
     }
 }

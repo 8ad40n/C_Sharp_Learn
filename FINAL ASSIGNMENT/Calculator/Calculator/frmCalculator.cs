@@ -61,14 +61,22 @@ namespace Calculator
 
         private void btnPoint_Click(object sender, EventArgs e)
         {
-            if (calculatorScreen.Text.Contains("."))
+            try
             {
-                calculatorScreen.Text = calculatorScreen.Text;
+                if (calculatorScreen.Text.Contains("."))
+                {
+                    calculatorScreen.Text = calculatorScreen.Text;
+                }
+                else
+                {
+                    calculatorScreen.Text = calculatorScreen.Text + ".";
+                }
             }
-            else
+            catch(Exception ex)
             {
-                calculatorScreen.Text = calculatorScreen.Text + ".";
+                MessageBox.Show(ex.Message);
             }
+            
         }
 
         
@@ -102,17 +110,11 @@ namespace Calculator
                         break;
 
                     case "/":
-                        if (oparand2 == 0)
-                        {
-                            calculatorScreen.Text = "Infinity";
-                            break;
-                        }
-                        else
-                        {
-                            result = oparand1 / oparand2;
-                            calculatorScreen.Text = Convert.ToString(result);
-                            break;
-                        }
+                        
+                        result = oparand1 / oparand2;
+                        calculatorScreen.Text = Convert.ToString(result);
+                        break;
+                        
                 }
             }
             catch(Exception ex)
@@ -124,23 +126,50 @@ namespace Calculator
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
-            oparand1 = Convert.ToDouble(calculatorScreen.Text);
-            opr = "*";
-            calculatorScreen.Clear();
+            try
+            {
+                oparand1 = Convert.ToDouble(calculatorScreen.Text);
+                opr = "*";
+                calculatorScreen.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
-        private void btnMinus_Click(object sender, EventArgs e)
+        
+
+    private void btnMinus_Click(object sender, EventArgs e)
         {
-            oparand1 = Convert.ToDouble(calculatorScreen.Text);
-            opr = "-";
-            calculatorScreen.Clear();
+            try
+            {
+                oparand1 = Convert.ToDouble(calculatorScreen.Text);
+                opr = "-";
+                calculatorScreen.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
-            oparand1 = Convert.ToDouble(calculatorScreen.Text);
-            opr = "/";
-            calculatorScreen.Clear();
+            try
+            {
+                oparand1 = Convert.ToDouble(calculatorScreen.Text);
+                opr = "/";
+                calculatorScreen.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -150,19 +179,36 @@ namespace Calculator
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            if (calculatorScreen.Text.Length > 0)
+
+            try
             {
-                calculatorScreen.Text = calculatorScreen.Text.Remove(calculatorScreen.Text.Length - 1);
+                if (calculatorScreen.Text.Length > 0)
+                {
+                    calculatorScreen.Text = calculatorScreen.Text.Remove(calculatorScreen.Text.Length - 1);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            oparand1 = Convert.ToDouble(calculatorScreen.Text);
-            opr = "+";
-            calculatorScreen.Clear();
+            try
+            {
+                oparand1 = Convert.ToDouble(calculatorScreen.Text);
+                opr = "+";
+                calculatorScreen.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
 

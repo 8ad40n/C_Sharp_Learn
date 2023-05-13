@@ -36,5 +36,10 @@ namespace RestaurantManagement
             string sql = "select FoodDetails.FoodId,FoodDetails.FoodName,FoodPrices.Category,FoodPrices.Price from FoodDetails,FoodPrices where FoodDetails.FoodId=FoodPrices.FoodId and FoodDetails.FoodName like '" + this.txtSearch.Text + "%';";
             this.PopulateGridView(sql);
         }
+
+        private void btnCross_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

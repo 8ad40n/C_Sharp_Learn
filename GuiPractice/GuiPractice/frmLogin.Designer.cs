@@ -31,6 +31,7 @@
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblLogIn = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -39,7 +40,6 @@
             this.lblPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.Panel1.SuspendLayout();
             this.Panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -84,6 +84,17 @@
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(631, 655);
             this.Panel2.TabIndex = 1;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(296, 12);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(332, 36);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton1.TabIndex = 9;
+            this.metroButton1.Text = "metroButton1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // btnSignUp
             // 
@@ -214,16 +225,6 @@
             this.lblUserName.Size = new System.Drawing.Size(155, 36);
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "User Name:";
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(89, 547);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(332, 36);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton1.TabIndex = 9;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
             // 
             // frmLogin
             // 

@@ -34,9 +34,11 @@
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
-            this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
             this.cbShowPassword = new System.Windows.Forms.CheckBox();
             this.txtRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -124,24 +126,6 @@
             this.lblRole.TabIndex = 5;
             this.lblRole.Text = "Role:";
             // 
-            // btnCreate
-            // 
-            this.btnCreate.AutoRoundedCorners = true;
-            this.btnCreate.BackColor = System.Drawing.Color.Transparent;
-            this.btnCreate.BorderRadius = 29;
-            this.btnCreate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCreate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCreate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCreate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(621, 475);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(229, 61);
-            this.btnCreate.TabIndex = 9;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
             // cbShowPassword
             // 
             this.cbShowPassword.AutoSize = true;
@@ -177,11 +161,67 @@
             this.txtRole.Size = new System.Drawing.Size(229, 36);
             this.txtRole.TabIndex = 8;
             // 
+            // btnCreate
+            // 
+            this.btnCreate.AutoRoundedCorners = true;
+            this.btnCreate.BackColor = System.Drawing.Color.Transparent;
+            this.btnCreate.BorderRadius = 29;
+            this.btnCreate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCreate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCreate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCreate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate.ForeColor = System.Drawing.Color.White;
+            this.btnCreate.Location = new System.Drawing.Point(621, 475);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(229, 61);
+            this.btnCreate.TabIndex = 9;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 29;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(246, 625);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(229, 61);
+            this.guna2Button1.TabIndex = 11;
+            this.guna2Button1.Text = "Create";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 29;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(721, 12);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(229, 61);
+            this.guna2Button2.TabIndex = 12;
+            this.guna2Button2.Text = "Create";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 712);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.cbShowPassword);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtRole);
@@ -208,8 +248,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblRole;
-        private Guna.UI2.WinForms.Guna2Button btnCreate;
         private System.Windows.Forms.CheckBox cbShowPassword;
         private Guna.UI2.WinForms.Guna2ComboBox txtRole;
+        private Guna.UI2.WinForms.Guna2Button btnCreate;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

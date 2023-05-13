@@ -51,6 +51,7 @@
             this.dgvUpdate = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -60,6 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnCross);
             this.panel1.Controls.Add(this.lblUpdateFood);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.txtSearch);
@@ -408,6 +410,24 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(63, 342);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(1187, 8);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 31;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
+            // 
             // frmUcUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -445,5 +465,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label lblUpdateFood;
+        private Guna.UI2.WinForms.Guna2CircleButton btnCross;
     }
 }

@@ -38,6 +38,7 @@
             this.lblResetPassword = new System.Windows.Forms.Label();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.pbReset = new System.Windows.Forms.PictureBox();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbReset)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,12 +191,31 @@
             this.pbReset.TabIndex = 7;
             this.pbReset.TabStop = false;
             // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(880, 4);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 31;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
+            // 
             // frmForgotPasswordVarify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(933, 623);
+            this.Controls.Add(this.btnCross);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblResetPassword);
             this.Controls.Add(this.pbReset);
@@ -205,6 +225,7 @@
             this.Controls.Add(this.btnVerify);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmForgotPasswordVarify";
@@ -228,5 +249,6 @@
         private System.Windows.Forms.PictureBox pbReset;
         private System.Windows.Forms.Label lblResetPassword;
         private Guna.UI2.WinForms.Guna2Button btnBack;
+        private Guna.UI2.WinForms.Guna2CircleButton btnCross;
     }
 }

@@ -67,5 +67,10 @@ namespace RestaurantManagement
             F1.Visible= true;
             this.Hide();
         }
+
+        private void btnCross_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

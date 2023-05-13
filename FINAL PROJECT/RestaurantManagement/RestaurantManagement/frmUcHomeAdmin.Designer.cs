@@ -39,6 +39,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblSpashScreen = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,11 +61,11 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Monospac821 BT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(13, 135);
+            this.lblWelcome.Location = new System.Drawing.Point(55, 135);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(89, 20);
+            this.lblWelcome.Size = new System.Drawing.Size(79, 20);
             this.lblWelcome.TabIndex = 29;
-            this.lblWelcome.Text = "Welcome,";
+            this.lblWelcome.Text = "Welcome";
             // 
             // dgvMenu
             // 
@@ -127,7 +128,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.lblWelcome);
-            this.panel1.Location = new System.Drawing.Point(1006, 16);
+            this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(189, 208);
             this.panel1.TabIndex = 31;
@@ -180,11 +181,30 @@
             this.txtSearch.TabIndex = 34;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(1184, 7);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 35;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
+            // 
             // frmUcHomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.btnCross);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblSpashScreen);
             this.Controls.Add(this.guna2PictureBox2);
@@ -211,5 +231,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label lblSpashScreen;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        private Guna.UI2.WinForms.Guna2CircleButton btnCross;
     }
 }

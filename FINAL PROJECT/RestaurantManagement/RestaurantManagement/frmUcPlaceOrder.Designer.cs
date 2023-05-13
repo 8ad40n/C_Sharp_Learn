@@ -66,6 +66,7 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlaceOrder)).BeginInit();
@@ -87,6 +88,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.btnCross);
             this.panel3.Controls.Add(this.lblMoney);
             this.panel3.Controls.Add(this.btnConfirm);
             this.panel3.Controls.Add(this.btnClear);
@@ -617,7 +619,7 @@
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(37, 247);
+            this.txtSearch.Location = new System.Drawing.Point(37, 287);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -659,6 +661,24 @@
             this.lblCategory.Size = new System.Drawing.Size(89, 20);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Category";
+            // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(792, 6);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 31;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
             // 
             // frmUcPlaceOrder
             // 
@@ -716,5 +736,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Label lblPlaceOrder;
         private System.Windows.Forms.Label lblMoney;
+        private Guna.UI2.WinForms.Guna2CircleButton btnCross;
     }
 }

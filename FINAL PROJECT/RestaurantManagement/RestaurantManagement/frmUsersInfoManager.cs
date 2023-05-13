@@ -40,5 +40,10 @@ namespace RestaurantManagement
         {
             this.PopulateGridView();
         }
+
+        private void btnCross_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -76,5 +76,10 @@ namespace RestaurantManagement
         {
             this.ClearContent();
         }
+
+        private void btnCross_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

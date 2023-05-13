@@ -86,9 +86,12 @@ namespace RestaurantManagement
                 string sqlDashboard = "select * from UserInfo where Role ='Admin' and Username='"+txtUsername.Text+"';";
                 d.ExecuteQueryTable(sqlDashboard);
 
-                
 
-               
+                this.txtUsername.Clear();
+                this.txtPassword.Clear();
+
+
+
                 if (d.Ds.Tables[0].Rows.Count==1)
                 {
                     frmAdminDashboard admin = new frmAdminDashboard(this);
@@ -147,6 +150,11 @@ namespace RestaurantManagement
             frmAdminLoginForSignUp f = new frmAdminLoginForSignUp(this);
             f.Show();
             this.Hide();
+        }
+
+        private void btnCross_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

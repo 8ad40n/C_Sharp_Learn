@@ -90,6 +90,18 @@ namespace GuiPractice
                 txtPassword.UseSystemPasswordChar = true;
             }
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            f1.Visible = true;
+            this.Visible= false;
+        }
     }
 }
 
