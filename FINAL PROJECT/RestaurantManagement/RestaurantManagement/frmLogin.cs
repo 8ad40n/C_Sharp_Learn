@@ -81,14 +81,10 @@ namespace RestaurantManagement
 
             if (d.Ds.Tables[0].Rows.Count == 1)
             {
-                MessageBox.Show("Successful Login.\nWelcome "+txtUsername.Text);
+                MessageBox.Show("Successful Login.\nWelcome, "+txtUsername.Text);
 
                 string sqlDashboard = "select * from UserInfo where Role ='Admin' and Username='"+txtUsername.Text+"';";
                 d.ExecuteQueryTable(sqlDashboard);
-
-
-                this.txtUsername.Clear();
-                this.txtPassword.Clear();
 
 
 
@@ -120,7 +116,8 @@ namespace RestaurantManagement
                     man.Show();
                     this.Hide();
                 }
-
+                this.txtUsername.Clear();
+                this.txtPassword.Clear();
             }
             else
             {
