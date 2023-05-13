@@ -125,9 +125,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(97, 309);
+            this.pictureBox2.Location = new System.Drawing.Point(106, 316);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -135,9 +135,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(97, 217);
+            this.pictureBox1.Location = new System.Drawing.Point(106, 224);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -181,8 +181,6 @@
             // cbShow
             // 
             this.cbShow.AutoSize = true;
-            this.cbShow.Checked = true;
-            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShow.Location = new System.Drawing.Point(392, 358);
             this.cbShow.Name = "cbShow";
             this.cbShow.Size = new System.Drawing.Size(62, 20);
@@ -209,7 +207,7 @@
             this.txtPassword.Location = new System.Drawing.Point(147, 309);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderText = "Enter password";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(307, 42);

@@ -176,6 +176,12 @@
     <Compile Include="frmUcUpdateUsers.Designer.cs">
       <DependentUpon>frmUcUpdateUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUsersInfoManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUsersInfoManager.Designer.cs">
+      <DependentUpon>frmUsersInfoManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdminLoginForSignUp.resx">
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUcUpdateUsers.resx">
       <DependentUpon>frmUcUpdateUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsersInfoManager.resx">
+      <DependentUpon>frmUsersInfoManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

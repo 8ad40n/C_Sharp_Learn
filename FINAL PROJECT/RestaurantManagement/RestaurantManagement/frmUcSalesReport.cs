@@ -37,8 +37,8 @@ namespace RestaurantManagement
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            
 
+            MessageBox.Show("Generating the sales report from "+dtpStartDate.Value+" to "+dtpEndDate.Value +" !");
             decimal totalSale = 0; // Initialize totalSale variable here
 
             string query = "SELECT * FROM OrdersInfo WHERE OrderDate >= '" + dtpStartDate.Value + "' AND OrderDate <= '" + dtpEndDate.Value + "';";

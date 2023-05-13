@@ -59,9 +59,9 @@
             this.lblSpashScreen.BackColor = System.Drawing.Color.GhostWhite;
             this.lblSpashScreen.Font = new System.Drawing.Font("Monospac821 BT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpashScreen.ForeColor = System.Drawing.Color.Black;
-            this.lblSpashScreen.Location = new System.Drawing.Point(34, 46);
+            this.lblSpashScreen.Location = new System.Drawing.Point(29, 29);
             this.lblSpashScreen.Name = "lblSpashScreen";
-            this.lblSpashScreen.Size = new System.Drawing.Size(578, 41);
+            this.lblSpashScreen.Size = new System.Drawing.Size(577, 40);
             this.lblSpashScreen.TabIndex = 1;
             this.lblSpashScreen.Text = "Restaurant Management System";
             this.lblSpashScreen.Click += new System.EventHandler(this.lblSpashScreen_Click);

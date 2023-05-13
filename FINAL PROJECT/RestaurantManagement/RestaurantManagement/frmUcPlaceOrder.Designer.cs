@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblMoney = new System.Windows.Forms.Label();
             this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.txtCustomerName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -65,7 +66,6 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.lblMoney = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlaceOrder)).BeginInit();
@@ -117,6 +117,18 @@
             this.panel3.Size = new System.Drawing.Size(845, 767);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // lblMoney
+            // 
+            this.lblMoney.AutoSize = true;
+            this.lblMoney.BackColor = System.Drawing.Color.Black;
+            this.lblMoney.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.ForeColor = System.Drawing.Color.White;
+            this.lblMoney.Location = new System.Drawing.Point(349, 704);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(46, 24);
+            this.lblMoney.TabIndex = 26;
+            this.lblMoney.Text = "BDT";
             // 
             // btnConfirm
             // 
@@ -609,7 +621,7 @@
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search";
+            this.txtSearch.PlaceholderText = "Search by food name";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(318, 36);
             this.txtSearch.TabIndex = 0;
@@ -647,18 +659,6 @@
             this.lblCategory.Size = new System.Drawing.Size(89, 20);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Category";
-            // 
-            // lblMoney
-            // 
-            this.lblMoney.AutoSize = true;
-            this.lblMoney.BackColor = System.Drawing.Color.Black;
-            this.lblMoney.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.ForeColor = System.Drawing.Color.White;
-            this.lblMoney.Location = new System.Drawing.Point(349, 704);
-            this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(46, 24);
-            this.lblMoney.TabIndex = 26;
-            this.lblMoney.Text = "BDT";
             // 
             // frmUcPlaceOrder
             // 

@@ -17,6 +17,8 @@ namespace RestaurantManagement
         public frmAdminLoginForSignUp()
         {
             InitializeComponent();
+            this.txtPassword.UseSystemPasswordChar = true;
+
 
         }
 
@@ -37,13 +39,13 @@ namespace RestaurantManagement
 
         private void cbShow_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbShow.Checked == true)
+            if (cbShow.Checked)
             {
-                this.txtPassword.UseSystemPasswordChar = false;
+                this.txtPassword.PasswordChar = '\0';
             }
             else
             {
-                this.txtPassword.UseSystemPasswordChar = true;
+                this.txtPassword.PasswordChar = '●';
             }
         }
 

@@ -47,10 +47,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvDelete = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblDeleteFood = new System.Windows.Forms.Label();
             this.txtCategory = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.lblDeleteFood = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDelete)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,7 +99,7 @@
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(148, 36);
             this.btnShow.TabIndex = 24;
-            this.btnShow.Text = "Show";
+            this.btnShow.Text = "Refresh";
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // btnClear
@@ -350,6 +350,27 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(99, 51);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(354, 273);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 29;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // lblDeleteFood
+            // 
+            this.lblDeleteFood.AutoSize = true;
+            this.lblDeleteFood.Font = new System.Drawing.Font("Monospac821 BT", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeleteFood.Location = new System.Drawing.Point(582, 48);
+            this.lblDeleteFood.Name = "lblDeleteFood";
+            this.lblDeleteFood.Size = new System.Drawing.Size(308, 51);
+            this.lblDeleteFood.TabIndex = 28;
+            this.lblDeleteFood.Text = "Delete Food";
+            // 
             // txtCategory
             // 
             this.txtCategory.AutoRoundedCorners = true;
@@ -394,27 +415,6 @@
             this.btnDelete.TabIndex = 26;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // lblDeleteFood
-            // 
-            this.lblDeleteFood.AutoSize = true;
-            this.lblDeleteFood.Font = new System.Drawing.Font("Monospac821 BT", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeleteFood.Location = new System.Drawing.Point(582, 48);
-            this.lblDeleteFood.Name = "lblDeleteFood";
-            this.lblDeleteFood.Size = new System.Drawing.Size(308, 52);
-            this.lblDeleteFood.TabIndex = 28;
-            this.lblDeleteFood.Text = "Delete Food";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(99, 51);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(354, 273);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 29;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // frmUcDelete
             // 

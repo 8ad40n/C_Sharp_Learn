@@ -69,7 +69,7 @@
             this.txtNewPassword.Location = new System.Drawing.Point(589, 189);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.PasswordChar = '\0';
+            this.txtNewPassword.PasswordChar = '●';
             this.txtNewPassword.PlaceholderText = "Enter password";
             this.txtNewPassword.SelectedText = "";
             this.txtNewPassword.Size = new System.Drawing.Size(293, 48);
@@ -93,7 +93,7 @@
             this.txtConfirmPassword.Location = new System.Drawing.Point(589, 309);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.PasswordChar = '\0';
+            this.txtConfirmPassword.PasswordChar = '●';
             this.txtConfirmPassword.PlaceholderText = "Enter password again";
             this.txtConfirmPassword.SelectedText = "";
             this.txtConfirmPassword.Size = new System.Drawing.Size(293, 48);
@@ -113,6 +113,7 @@
             // 
             this.btnConfirm.AutoRoundedCorners = true;
             this.btnConfirm.BorderRadius = 28;
+            this.btnConfirm.BorderThickness = 1;
             this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -150,8 +151,8 @@
             // btnBack
             // 
             this.btnBack.AutoRoundedCorners = true;
-            this.btnBack.BorderColor = System.Drawing.Color.White;
             this.btnBack.BorderRadius = 17;
+            this.btnBack.BorderThickness = 1;
             this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -169,8 +170,6 @@
             // cbShow
             // 
             this.cbShow.AutoSize = true;
-            this.cbShow.Checked = true;
-            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShow.Location = new System.Drawing.Point(820, 364);
             this.cbShow.Name = "cbShow";
             this.cbShow.Size = new System.Drawing.Size(62, 20);

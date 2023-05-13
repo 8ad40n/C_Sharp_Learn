@@ -98,8 +98,6 @@
             // cbShow
             // 
             this.cbShow.AutoSize = true;
-            this.cbShow.Checked = true;
-            this.cbShow.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShow.Location = new System.Drawing.Point(562, 471);
             this.cbShow.Name = "cbShow";
             this.cbShow.Size = new System.Drawing.Size(62, 20);
@@ -112,6 +110,7 @@
             // 
             this.btnClear.AutoRoundedCorners = true;
             this.btnClear.BorderRadius = 25;
+            this.btnClear.BorderThickness = 1;
             this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -140,6 +139,7 @@
             // 
             this.btnBack.AutoRoundedCorners = true;
             this.btnBack.BorderRadius = 25;
+            this.btnBack.BorderThickness = 1;
             this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -158,6 +158,7 @@
             // 
             this.btnConfirm.AutoRoundedCorners = true;
             this.btnConfirm.BorderRadius = 25;
+            this.btnConfirm.BorderThickness = 1;
             this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -189,7 +190,7 @@
             this.txtConfirmPassword.Location = new System.Drawing.Point(362, 426);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.PasswordChar = '\0';
+            this.txtConfirmPassword.PasswordChar = '●';
             this.txtConfirmPassword.PlaceholderText = "Enter password again";
             this.txtConfirmPassword.SelectedText = "";
             this.txtConfirmPassword.Size = new System.Drawing.Size(262, 38);
@@ -267,11 +268,12 @@
             this.dtpDOB.AutoRoundedCorners = true;
             this.dtpDOB.BorderColor = System.Drawing.Color.Blue;
             this.dtpDOB.BorderRadius = 22;
+            this.dtpDOB.BorderThickness = 1;
             this.dtpDOB.Checked = true;
             this.dtpDOB.FillColor = System.Drawing.Color.White;
             this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpDOB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDOB.Location = new System.Drawing.Point(362, 245);
             this.dtpDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -320,7 +322,7 @@
             this.txtSetPassword.Location = new System.Drawing.Point(47, 424);
             this.txtSetPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSetPassword.Name = "txtSetPassword";
-            this.txtSetPassword.PasswordChar = '\0';
+            this.txtSetPassword.PasswordChar = '●';
             this.txtSetPassword.PlaceholderText = "Enter password";
             this.txtSetPassword.SelectedText = "";
             this.txtSetPassword.Size = new System.Drawing.Size(262, 38);

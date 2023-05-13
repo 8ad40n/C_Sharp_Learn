@@ -19,6 +19,8 @@ namespace RestaurantManagement
         public frmForgotPasswordSetPassword()
         {
             InitializeComponent();
+            this.txtNewPassword.UseSystemPasswordChar = true;
+            this.txtConfirmPassword.UseSystemPasswordChar = true;
         }
         public frmForgotPasswordSetPassword(string email, frmForgotPasswordVarify f1)
         {
@@ -73,16 +75,17 @@ namespace RestaurantManagement
 
         private void cbShow_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbShow.Checked == true)
+            if (cbShow.Checked)
             {
-                this.txtNewPassword.UseSystemPasswordChar = false;
-                this.txtConfirmPassword.UseSystemPasswordChar = false;
+                this.txtNewPassword.PasswordChar = '\0';
+                this.txtConfirmPassword.PasswordChar = '\0';
 
             }
             else
             {
-                this.txtNewPassword.UseSystemPasswordChar = true;
-                this.txtConfirmPassword.UseSystemPasswordChar = true;
+                this.txtNewPassword.PasswordChar = '●';
+                this.txtConfirmPassword.PasswordChar = '●';
+
             }
         }
     }

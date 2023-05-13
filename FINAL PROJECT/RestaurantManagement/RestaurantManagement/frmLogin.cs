@@ -22,6 +22,7 @@ namespace RestaurantManagement
         public frmLogin()
         {
             InitializeComponent();
+            //this.txtPassword.UseSystemPasswordChar = true;
         }
 
         public frmLogin(frmSplashScreen f1)
@@ -57,15 +58,15 @@ namespace RestaurantManagement
 
         private void cbShow_CheckedChanged(object sender, EventArgs e)
         {
-            if(cbShow.Checked == true)
+            if(cbShow.Checked)
             {
-                this.txtPassword.UseSystemPasswordChar= false;
+                this.txtPassword.PasswordChar = '\0';
             }
             else
             {
-                this.txtPassword.UseSystemPasswordChar = true;
+                this.txtPassword.PasswordChar = '●';
             }
-            
+
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -80,7 +81,7 @@ namespace RestaurantManagement
 
             if (d.Ds.Tables[0].Rows.Count == 1)
             {
-                MessageBox.Show("Valid Login");
+                MessageBox.Show("Successful Login.\nWelcome "+txtUsername.Text);
 
                 string sqlDashboard = "select * from UserInfo where Role ='Admin' and Username='"+txtUsername.Text+"';";
                 d.ExecuteQueryTable(sqlDashboard);

@@ -66,9 +66,10 @@ namespace RestaurantManagement
             var q = "select FoodId from FoodDetails order by FoodId desc;";
             var dt = this.Da.ExecuteQueryTable(q);
             var lastId = dt.Rows[0][0].ToString();
-            string[] s = lastId.Split();
-            int temp = Convert.ToInt32(s[0]);
-            string newId = (++temp).ToString("d1");
+            string[] s = lastId.Split('-');
+            int temp = Convert.ToInt32(s[1]);
+            string newId = "f-" + (++temp).ToString("d2");
+            //string newId = (++temp).ToString("d2");
             this.txtFoodId.Text = newId;
             //MessageBox.Show(newId);
         }
@@ -96,7 +97,9 @@ namespace RestaurantManagement
                 try
                 {
 
-                string sqlSelect = "SELECT * FROM FoodDetails WHERE FoodId = '" + txtFoodId.Text + "'or FoodName='"+txtFoodName.Text+"';";
+                    
+
+                    string sqlSelect = "SELECT * FROM FoodDetails WHERE FoodId = '" + txtFoodId.Text + "'or FoodName='"+txtFoodName.Text+"';";
 
                 Da.ExecuteQueryTable(sqlSelect);
 
@@ -128,7 +131,7 @@ namespace RestaurantManagement
 
                         if (a > 0 && b > 0)
                         {
-                            MessageBox.Show("Successfully added!");
+                            MessageBox.Show(txtFoodName.Text+" has been added successfully!");
                             this.PopulateGridView();
                             this.ClearContent();
 

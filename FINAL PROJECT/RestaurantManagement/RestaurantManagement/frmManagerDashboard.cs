@@ -57,5 +57,11 @@ namespace RestaurantManagement
             this.Hide();
 
         }
+
+        private void btnUpdateUserInfo_Click(object sender, EventArgs e)
+        {
+            frmUsersInfoManager f = new frmUsersInfoManager();
+            addUserControl(f);
+        }
     }
 }

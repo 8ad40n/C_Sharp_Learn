@@ -78,7 +78,9 @@
             // btnVerify
             // 
             this.btnVerify.AutoRoundedCorners = true;
+            this.btnVerify.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVerify.BorderRadius = 20;
+            this.btnVerify.BorderThickness = 1;
             this.btnVerify.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnVerify.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnVerify.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -130,7 +132,9 @@
             // btnSendCode
             // 
             this.btnSendCode.AutoRoundedCorners = true;
+            this.btnSendCode.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSendCode.BorderRadius = 20;
+            this.btnSendCode.BorderThickness = 1;
             this.btnSendCode.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSendCode.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSendCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -158,8 +162,9 @@
             // btnBack
             // 
             this.btnBack.AutoRoundedCorners = true;
-            this.btnBack.BorderColor = System.Drawing.Color.White;
+            this.btnBack.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBack.BorderRadius = 17;
+            this.btnBack.BorderThickness = 1;
             this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

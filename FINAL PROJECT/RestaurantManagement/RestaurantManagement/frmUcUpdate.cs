@@ -94,7 +94,7 @@ namespace RestaurantManagement
                     var count = this.Da.ExecuteDMLQuery(query);
 
                    // if (count == 1)
-                        MessageBox.Show("Data updated Properly");
+                        MessageBox.Show(txtFoodName.Text+" has been updated!");
                    // else
                    //     MessageBox.Show("Data upgradation failed");
 
