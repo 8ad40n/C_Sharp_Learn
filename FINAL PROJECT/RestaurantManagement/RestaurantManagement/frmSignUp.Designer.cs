@@ -95,6 +95,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 615);
             this.panel1.TabIndex = 1;
+            
             // 
             // cbShow
             // 
@@ -282,6 +283,7 @@
             this.dtpDOB.Size = new System.Drawing.Size(262, 46);
             this.dtpDOB.TabIndex = 13;
             this.dtpDOB.Value = new System.DateTime(2023, 4, 21, 0, 7, 8, 279);
+            
             // 
             // cbGender
             // 
@@ -386,6 +388,7 @@
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(262, 38);
             this.txtUsername.TabIndex = 5;
+            
             // 
             // lblUsername
             // 

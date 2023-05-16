@@ -105,11 +105,6 @@ namespace RestaurantManagement
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnUpdateUserInfo_Click(object sender, EventArgs e)
         {
             frmUcUpdateUsers f = new frmUcUpdateUsers();

@@ -1,0 +1,11 @@
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\bin\Debug\Login_Form.exe.config
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\bin\Debug\Login_Form.exe
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\bin\Debug\Login_Form.pdb
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.csproj.AssemblyReference.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.csproj.SuggestedBindingRedirects.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.Properties.Resources.resources
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.csproj.GenerateResource.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.csproj.CoreCompileInputs.cache
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.exe
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.pdb
+D:\AIUB\CODING\C Sharp\FINAL ASSIGNMENT\Login_Form\Login_Form\obj\Debug\Login_Form.TakeOrder.resources

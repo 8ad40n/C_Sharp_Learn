@@ -124,12 +124,13 @@ namespace RestaurantManagement
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            dgvDelete.ClearSelection();
         }
 
         private void btnCross_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        
     }
 }

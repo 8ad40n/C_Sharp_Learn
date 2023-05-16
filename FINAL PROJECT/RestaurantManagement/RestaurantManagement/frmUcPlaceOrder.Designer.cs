@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblMoney = new System.Windows.Forms.Label();
             this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
@@ -66,7 +67,6 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.btnCross = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlaceOrder)).BeginInit();
@@ -119,6 +119,24 @@
             this.panel3.Size = new System.Drawing.Size(845, 767);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // btnCross
+            // 
+            this.btnCross.BorderThickness = 2;
+            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCross.ForeColor = System.Drawing.Color.Red;
+            this.btnCross.Location = new System.Drawing.Point(792, 6);
+            this.btnCross.Name = "btnCross";
+            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCross.Size = new System.Drawing.Size(48, 44);
+            this.btnCross.TabIndex = 31;
+            this.btnCross.Text = "❌";
+            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
             // 
             // lblMoney
             // 
@@ -645,7 +663,10 @@
             this.cmbCategory.Items.AddRange(new object[] {
             "Burger",
             "Beverage",
-            "Dessert"});
+            "Dessert",
+            "Coffee",
+            "Pizza",
+            "Pasta"});
             this.cmbCategory.Location = new System.Drawing.Point(37, 175);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(318, 36);
@@ -661,24 +682,6 @@
             this.lblCategory.Size = new System.Drawing.Size(89, 20);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Category";
-            // 
-            // btnCross
-            // 
-            this.btnCross.BorderThickness = 2;
-            this.btnCross.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCross.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCross.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCross.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCross.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCross.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCross.ForeColor = System.Drawing.Color.Red;
-            this.btnCross.Location = new System.Drawing.Point(792, 6);
-            this.btnCross.Name = "btnCross";
-            this.btnCross.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnCross.Size = new System.Drawing.Size(48, 44);
-            this.btnCross.TabIndex = 31;
-            this.btnCross.Text = "❌";
-            this.btnCross.Click += new System.EventHandler(this.btnCross_Click);
             // 
             // frmUcPlaceOrder
             // 

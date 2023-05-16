@@ -34,14 +34,22 @@ namespace RestaurantManagement
       
         private void AutoIdGenerate()
         {
-            var q = "select OrderID from OrdersInfo order by OrderID desc;";
-            var dt = this.Da.ExecuteQueryTable(q);
-            var lastId = dt.Rows[0][0].ToString();
-            string[] s = lastId.Split();
-            int temp = Convert.ToInt32(s[0]);
-            string newId = (++temp).ToString("d1");
-            this.txtOrderId.Text = newId;
-            //MessageBox.Show(newId);
+            try
+            {
+                var q = "select OrderID from OrdersInfo order by OrderID desc;";
+                var dt = this.Da.ExecuteQueryTable(q);
+                var lastId = dt.Rows[0][0].ToString();
+                string[] s = lastId.Split();
+                int temp = Convert.ToInt32(s[0]);
+                string newId = (++temp).ToString("d3");
+                this.txtOrderId.Text = newId;
+                //MessageBox.Show(newId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
 
@@ -58,7 +66,6 @@ namespace RestaurantManagement
             this.txtSearch.Clear();
             this.listBox1.Items.Clear();
             this.dgvPlaceOrder.Rows.Clear();
-            this.dgvPlaceOrder.Refresh();
 
 
             this.AutoIdGenerate();
@@ -178,19 +185,12 @@ namespace RestaurantManagement
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
+            dgvPlaceOrder.ClearSelection();
         }
 
         private void frmUcPlaceOrder_Load(object sender, EventArgs e)
         {
-            //string query = "SELECT DISTINCT Category FROM FoodPrices";
-            //Da.ExecuteQueryTable(query);
-
-            //DataTable categoryTable = Da.Ds.Tables[0];
-            //foreach (DataRow row in categoryTable.Rows)
-            //{
-            //    cmbCategory.Items.Add(row["Category"].ToString());
-            //}
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -231,16 +231,23 @@ namespace RestaurantManagement
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            try
+            if (dgvPlaceOrder.SelectedRows.Count > 0)
             {
-                dgvPlaceOrder.Rows.RemoveAt(this.dgvPlaceOrder.SelectedRows[0].Index);
+
+                DataGridViewRow selectedRow = dgvPlaceOrder.SelectedRows[0];
+
+                int totalValue = int.Parse(selectedRow.Cells[3].Value.ToString());
+
+
+                dgvPlaceOrder.Rows.Remove(selectedRow);
+
+                total -= totalValue;
+                lblTK.Text = total.ToString();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("An error has occurred: " + ex.Message);
+                MessageBox.Show("Please select a row to delete.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            total -= amount;
-            lblTK.Text = total.ToString();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -282,18 +289,18 @@ namespace RestaurantManagement
             {
                 try
                 {
-                    //float Total = float.Parse(lblTK.Text);
+                    
                     string sql1 = "INSERT INTO OrdersInfo (OrderID,CustomerName,OrderDate,Total) VALUES ('" + txtOrderId.Text + "', '" + txtCustomerName.Text + "','" + dtpOrderDate.Value + "','" + lblTK.Text+ "');";
                     Da.ExecuteQuery(sql1);
 
                     foreach (DataGridViewRow row in dgvPlaceOrder.Rows)
                     {
-                        // Access the cell values for each row
+                        
                         string itemName = row.Cells[0].Value.ToString();
                         string quantity = row.Cells[2].Value.ToString();
 
 
-                        // Construct the SQL INSERT statement
+                        
                         string sql2 = "INSERT INTO OrdersItems (OrderID, Item, Quantity) VALUES ('" + txtOrderId.Text + "', '" + itemName + "','" + quantity + "')";
                         Da.ExecuteQuery(sql2);
                     }
@@ -330,16 +337,12 @@ namespace RestaurantManagement
 
         private void PrintPDF()
         {
-            // Create a PrintDocument object
             PrintDocument printDocument = new PrintDocument();
 
-            // Set the PrintPage event handler
             printDocument.PrintPage += new PrintPageEventHandler(PrintDocument_PrintPage);
 
-            // Set the printer name to "Microsoft Print to PDF"
             printDocument.PrinterSettings.PrinterName = "Microsoft Print to PDF";
 
-            // Print the document
             printDocument.Print();
         }
 
@@ -347,20 +350,16 @@ namespace RestaurantManagement
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
-            // Create a font for the document
             Font font = new Font("Arial", 12);
 
-            // Set the starting position for printing
             float y = 50;
 
             e.Graphics.DrawString("Date & time: " + dtpOrderDate.Value, font, Brushes.Black, new PointF(50, y));
             y += 20;
 
-            // Print the customer information
             e.Graphics.DrawString("Customer Name: " + txtCustomerName.Text, font, Brushes.Black, new PointF(50, y));
             y += 20;
 
-            // Print the order items
             int i = 0;
             while(i < dgvPlaceOrder.Rows.Count)
             {
@@ -377,7 +376,6 @@ namespace RestaurantManagement
             }
             
 
-            // Print the total amount
             string totalAmount = "Total Amount: " + lblTK.Text;
             e.Graphics.DrawString(totalAmount, font, Brushes.Black, new PointF(50, y));
         }

@@ -128,9 +128,11 @@ namespace Calculator
         {
             try
             {
+                
                 oparand1 = Convert.ToDouble(calculatorScreen.Text);
                 opr = "*";
                 calculatorScreen.Clear();
+
             }
             catch (Exception ex)
             {

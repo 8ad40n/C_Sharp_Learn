@@ -20,8 +20,12 @@ namespace RestaurantManagement
 
             this.Da = new DataAccess();
 
+
+
             this.PopulateGridView();
             this.AutoIdGenerate();
+
+            
         }
 
 
@@ -39,7 +43,7 @@ namespace RestaurantManagement
             this.txtFoodId.Clear();
             this.txtFoodName.Clear();
             this.txtPrice.Clear();
-            this.cmbCategory.Text=null;
+            this.cmbCategory.Text= null;
             
 
             this.txtSearch.Clear();
@@ -49,17 +53,6 @@ namespace RestaurantManagement
             this.AutoIdGenerate();
         }
 
-        //private void AutoIdGenerate()
-        //{
-        //    var q = "select FoodId from FoodDetails order by FoodId desc;";
-        //    var dt = this.Da.ExecuteQueryTable(q);
-        //    var lastId = dt.Rows[0][0].ToString();
-        //    string[] s = lastId.Split('-');
-        //    int temp = Convert.ToInt32(s[0]);
-        //    string newId = "m-" + (++temp).ToString("d1");
-        //    this.txtFoodId.Text = newId;
-        //    //MessageBox.Show(newId);
-        //}
 
         private void AutoIdGenerate()
         {
@@ -173,6 +166,12 @@ namespace RestaurantManagement
         private void btnCross_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void frmUcAdd_Load(object sender, EventArgs e)
+        {
+            dgvAdd.ClearSelection();
+
         }
     }
 }

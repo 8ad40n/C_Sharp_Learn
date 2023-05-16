@@ -45,5 +45,10 @@ namespace RestaurantManagement
         {
             Application.Exit();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            dgvUpdate.ClearSelection();
+        }
     }
 }

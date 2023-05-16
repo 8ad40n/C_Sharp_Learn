@@ -47,11 +47,11 @@ namespace RestaurantManagement
 
             foreach (DataGridViewRow row in dgvSales.Rows)
             {
-                if (!row.IsNewRow)
-                {
+                //if (!row.IsNewRow)
+                //{
                     decimal sale = Convert.ToDecimal(row.Cells["Total"].Value);
                     totalSale += sale;
-                }
+               // }
             }
 
             // Display the total sale in a label
