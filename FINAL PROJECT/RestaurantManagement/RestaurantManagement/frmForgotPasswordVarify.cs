@@ -60,8 +60,8 @@ namespace RestaurantManagement
                 MailMessage message = new MailMessage();
 
                 to = txtEmail.Text;
-                from = "8ad40n@gmail.com";
-                pass = "uupdllgckmhuzgqg";
+                from = "restaurentmanagement@gmail.com";
+                pass = "gqebtkdusbtscblo";
 
                 message.To.Add(to);
                 message.From = new MailAddress(from);
