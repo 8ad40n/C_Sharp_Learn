@@ -40,7 +40,6 @@
             this.lblQuantity = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.dgvFood = new System.Windows.Forms.DataGridView();
             this.txtOrderId = new System.Windows.Forms.TextBox();
             this.lblOrderID = new System.Windows.Forms.Label();
             this.lblOrderDate = new System.Windows.Forms.Label();
@@ -57,9 +56,10 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnAddtoCart = new System.Windows.Forms.Button();
             this.lblTK = new System.Windows.Forms.Label();
+            this.dgvFood = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFoodID
@@ -178,22 +178,6 @@
             this.lblTotal.TabIndex = 13;
             this.lblTotal.Text = "Total:";
             this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
-            // 
-            // dgvFood
-            // 
-            this.dgvFood.AllowUserToAddRows = false;
-            this.dgvFood.AllowUserToDeleteRows = false;
-            this.dgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFood.Location = new System.Drawing.Point(45, 376);
-            this.dgvFood.Name = "dgvFood";
-            this.dgvFood.ReadOnly = true;
-            this.dgvFood.RowHeadersWidth = 51;
-            this.dgvFood.RowTemplate.Height = 24;
-            this.dgvFood.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFood.Size = new System.Drawing.Size(468, 243);
-            this.dgvFood.TabIndex = 15;
-            this.dgvFood.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFood_CellContentClick);
-            this.dgvFood.SelectionChanged += new System.EventHandler(this.dgvFood_SelectionChanged);
             // 
             // txtOrderId
             // 
@@ -359,6 +343,22 @@
             this.lblTK.Text = "0.0";
             this.lblTK.Click += new System.EventHandler(this.lblTK_Click);
             // 
+            // dgvFood
+            // 
+            this.dgvFood.AllowUserToAddRows = false;
+            this.dgvFood.AllowUserToDeleteRows = false;
+            this.dgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFood.Location = new System.Drawing.Point(45, 376);
+            this.dgvFood.Name = "dgvFood";
+            this.dgvFood.ReadOnly = true;
+            this.dgvFood.RowHeadersWidth = 51;
+            this.dgvFood.RowTemplate.Height = 24;
+            this.dgvFood.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvFood.Size = new System.Drawing.Size(468, 243);
+            this.dgvFood.TabIndex = 15;
+            this.dgvFood.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFood_CellContentClick);
+            this.dgvFood.SelectionChanged += new System.EventHandler(this.dgvFood_SelectionChanged);
+            // 
             // TakeOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -391,9 +391,10 @@
             this.Controls.Add(this.lblFoodID);
             this.Name = "TakeOrder";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.TakeOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,7 +414,6 @@
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.DataGridView dgvFood;
         private System.Windows.Forms.TextBox txtOrderId;
         private System.Windows.Forms.Label lblOrderID;
         private System.Windows.Forms.Label lblOrderDate;
@@ -430,6 +430,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        
     }
 }
 

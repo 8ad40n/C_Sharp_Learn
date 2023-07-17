@@ -390,5 +390,10 @@ namespace Login_Form
         {
 
         }
+
+        private void TakeOrder_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
