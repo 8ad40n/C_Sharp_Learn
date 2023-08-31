@@ -1,8 +1,0 @@
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\bin\Debug\AkibAnjumNawar.exe.config
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\bin\Debug\AkibAnjumNawar.exe
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\bin\Debug\AkibAnjumNawar.pdb
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\obj\Debug\AkibAnjumNawar.csproj.AssemblyReference.cache
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\obj\Debug\AkibAnjumNawar.csproj.SuggestedBindingRedirects.cache
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\obj\Debug\AkibAnjumNawar.csproj.CoreCompileInputs.cache
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\obj\Debug\AkibAnjumNawar.exe
-D:\AIUB\CODING\C Sharp\AkibAnjumNawar\AkibAnjumNawar\obj\Debug\AkibAnjumNawar.pdb
